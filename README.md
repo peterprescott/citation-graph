@@ -40,4 +40,30 @@
     - to produce the list of nodes, just run through table 3 which lists all the books.
     - to produce the list of edges, run through tables 1 and 2, generating all the edges.
     
-    
+## MVP: Visualized graph of *Predictive Postcode*, 
+
+- with full set of citations scraped from Google Scholar, 
+- and full set of references gleaned from PDF of references chapter.
+- Book data gained from Zotero and interpreted by pybtex (https://docs.pybtex.org/api/parsing.html)
+- Data stored in ~~SQLite database~~ .bib files so that it's all human readable.
+
+Or actually,
+- instead of building a webscraper, let's for the moment just pull all the citations into Zotero using the Chrome toolbar plugin, 
+    and use Zotero + BetterBibTex to generate a .bib citations file.
+- and then let's just manually add some references to Zotero, and similarly generate a reference .bib file.
+- then let's use pybtex to pull in those .bib files
+- and then let's see if we can build an interface between a static front-end web-page using a JavaScript Fetch call 
+    to pull in the relevant bibliographic data from a Flask API. https://pythonise.com/series/learning-flask/flask-and-fetch-api
+- we might be able to automate the documentation for the API: https://flask-apispec.readthedocs.io/en/latest/
+
+
+## Software (that will be) used:
+- Zotero
+- Better Bibtex for Zotero (https://retorque.re/zotero-better-bibtex/citing/)
+- Python
+- Pylint
+- Pipenv
+- Flask
+- Sphinx (& ReadTheDocs) -- using Napoleon Extension & m2r
+- Git (& GitHub)
+
