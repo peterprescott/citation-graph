@@ -103,7 +103,7 @@ svg.append("rect")
     .attr("fill", "#F7F7F7");
 
 
-d3.json("swatwads.json", function(error, graph) {
+d3.json("citations.json", function(error, graph) {
   graphdata=graph;
   graphRec=JSON.parse(JSON.stringify(graph)); //Add this line
 
