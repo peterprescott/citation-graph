@@ -46,8 +46,9 @@ class Text(object):
             self.get_detail(pybtex_data)
     
     def __repr__(self):
+        """ """
         # ~ return self.key
-        return '\n'+ self.key + ': ' + self.title + ' (' + self.year +')'
+        return '\n'+ self.key + ': ' + self.title
     
     def get_detail(self, pybtex_data=None):
         if pybtex_data: 
@@ -76,17 +77,21 @@ class Text(object):
         
     def get_citations(self):
 
-        bib_data = parse_file(os.path.join('bib_files',f'{self.key}_citations.bib'))
-        return bib_data
-        
-        self.type
-        self.authors
-        self.abstractmethod
-        self.year
-        self.publisher
-        self.doi
-        self.isbn
-        self.length
+        if self.citations != []:
+            return self.citations
+        elif self.cite_data:
+            bib_data = parse_file(os.path.join('bib_files',f'{self.key}_citations.bib'))
+            bib_data.entries[self.key]
+            for entry in bib_data.entries:
+                if entry != self.key:
+                    self.references.append(Text(entry, bib_data.entries[entry]))
+            return self.citations
+        else:
+            message = 'There are no citations!'
+            print(message)
+            return []
+
+
         
 # ~ class Author(object)
 
@@ -95,6 +100,6 @@ if __name__ == '__main__':
     example_key = 'RWebberBurrows2018'
     example_text = Text(example_key)
     e = example_text
-    print(type(e), e.key, e.references)
+    print(type(e), e.key, e.references, e.citations)
     # ~ for ref in e.references:
         # ~ print(type(ref))
