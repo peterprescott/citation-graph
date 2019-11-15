@@ -57,10 +57,12 @@ Or actually,
 - we might be able to automate the documentation for the API: https://flask-apispec.readthedocs.io/en/latest/
 
 
+
 ## Software (that will be) used:
 - Zotero
 - Better Bibtex for Zotero (https://retorque.re/zotero-better-bibtex/citing/)
 - Python
+- Pybtex ( + documentation from https://www1.unipa.it/paolo.monella/pybtex/index.html)
 - Pylint
 - Pipenv
 - Flask

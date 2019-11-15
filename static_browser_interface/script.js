@@ -14,7 +14,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
     .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width / 2, height / 2));
+    //~ .force("center", d3.forceCenter(width / 2, height / 2));
 
 function load_graph(graph) {
 
@@ -40,7 +40,7 @@ function load_graph(graph) {
           .on("drag", dragged)
           .on("end", dragended));
 
-  var lables = node.append("text")
+  var labels = node.append("text")
       .text(function(d) {
         return d.id;
       })
@@ -114,4 +114,5 @@ function fetch_and_load(json_api_address){
 
 
 //~ load_graph('miserables.json')
+
 fetch_and_load('http://127.0.0.1:5000/api/RWebberBurrows2018')
