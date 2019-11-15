@@ -60,7 +60,7 @@ Okay, for tomorrow:
 - add JS functionality:
     - when you call the API, you should *add* data to the front-end, not lose what's already there.
     - add some of the A-Z extra functionality: 
-        - arrows
+        - ~~arrows~~
         - no overlap
         - ~~(bigger circles)~~
         - highlighting

@@ -26,7 +26,8 @@ function loadGraph(graph) {
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .attr("stroke-width", function(d) { return Math.sqrt(d.value); })
+      .style("marker-end",  "url(#suit)");
 
   var node = svg.append("g")
       .attr("class", "nodes")
@@ -35,7 +36,7 @@ function loadGraph(graph) {
     .enter().append("g")
 
   var circles = node.append("circle")
-      .attr("r", 5)
+      .attr("r", 6)
       .attr("fill", function(d) { return color(d.group); })
       .call(d3.drag()
           .on("start", dragstarted)
@@ -52,12 +53,29 @@ function loadGraph(graph) {
   node.append("title")
       .text(function(d) { return d.id; });
 
+svg.append("defs").selectAll("marker")
+    .data(["suit", "licensing", "resolved"])
+  .enter().append("marker")
+    .attr("id", function(d) { return d; })
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 25)
+    .attr("refY", 0)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+  .append("path")
+    .attr("d", "M0,-5L10,0L0,5 L10,0 L0, -5")
+    .style("stroke", "#4679BD")
+    .style("opacity", "0.6");
+
   simulation
       .nodes(graph.nodes)
       .on("tick", ticked);
 
   simulation.force("link")
       .links(graph.links);
+      
+      
 
   function ticked() {
     link
