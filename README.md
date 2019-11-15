@@ -56,6 +56,19 @@ Or actually,
     to pull in the relevant bibliographic data from a Flask API. https://pythonise.com/series/learning-flask/flask-and-fetch-api
 - we might be able to automate the documentation for the API: https://flask-apispec.readthedocs.io/en/latest/
 
+Okay, for tomorrow:
+- add JS functionality:
+    - when you call the API, you should *add* data to the front-end, not lose what's already there.
+    - add some of the A-Z extra functionality: 
+        - arrows
+        - no overlap
+        - ~~(bigger circles)~~
+        - highlighting
+        - pinning down nodes
+        - search
+- scrape PDFs with Python (or even Ruby!)
+- use pyzotero and scrape Google Scholar
+- integrate literature.Text class into Flask API.
 
 
 ## Software (that will be) used:
