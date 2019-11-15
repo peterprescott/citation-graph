@@ -9,6 +9,10 @@ verify_ssl = true
 pybtex = "*"
 flask = "*"
 flask-cors = "*"
+l = "*"
+pypdf2 = "*"
+tika = "*"
+regex = "*"
 
 [requires]
 python_version = "3.7"
