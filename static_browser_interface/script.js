@@ -9,15 +9,16 @@ var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
-var color = d3.scaleOrdinal(d3.schemeCategory20);
+var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
     .force("charge", d3.forceManyBody())
-    //~ .force("center", d3.forceCenter(width / 2, height / 2));
+    .force("center", d3.forceCenter(width / 2, height / 2));
 
-function load_graph(graph) {
+function loadGraph(graph) {
 
+	svg.selectAll("*").remove();
 
   var link = svg.append("g")
       .attr("class", "links")
@@ -91,7 +92,10 @@ function dragended(d) {
 
 
 
-function fetch_and_load(json_api_address){
+function fetch_JSON_data(json_api_address){
+	
+	
+	
     fetch(json_api_address)
       .then(function(response) {
         if (response.status !== 200) {
@@ -99,8 +103,51 @@ function fetch_and_load(json_api_address){
           return;
         }
         response.json().then(function(data) {
-            console.log(data)
-            load_graph(data);
+            
+
+            
+        
+			// add unique values from data.nodes to totalData.nodes
+			
+			// for each value in data.nodes
+			for (var i=0; i < data.nodes.length ; i++){
+			
+				// presume node is new_input until we find otherwise
+				var new_input = "true"
+				
+				// check if data is new_input by comparison of ids with each node in totalData
+				for (var j=0; j < totalData.nodes.length; j++){
+					if (data.nodes[i].id == totalData.nodes[j].id){
+						new_input = "false"
+					}					
+				}
+				
+				if (new_input === "true") {	
+					totalData.nodes.push(data.nodes[i])	}
+			}
+
+			// for each value in data.links
+			for (var i=0; i < data.links.length ; i++){
+			
+				// presume node is new_input until we find otherwise
+				var new_input = "true"
+				
+				// check if data is new_input by comparison of ids with each node in totalData
+				for (var j=0; j < totalData.links.length; j++){
+					
+					if ((data.links[i].source.id == totalData.links[j].source.id) 
+							&& (data.links[i].target.id == totalData.links[j].target.id)){
+						
+						//~ new_input = "false"
+					}					
+				}
+				
+				if (new_input === "true") {	
+					totalData.links.push(data.links[i])	}
+			}
+            
+
+            loadGraph(totalData)
           
         });
       })
@@ -109,10 +156,17 @@ function fetch_and_load(json_api_address){
     });
     
     
+    
 }
 
+totalData = {"nodes":[{"id":"Example"}],"links":[]}
 
 
-//~ load_graph('miserables.json')
+function clickButton(){
+	console.log('Clicked Button')
+	fetch_JSON_data('http://127.0.0.1:5000/api/RWebberBurrows2018')
+}
 
-fetch_and_load('http://127.0.0.1:5000/api/RWebberBurrows2018')
+loadGraph(totalData)
+
+//~ 
