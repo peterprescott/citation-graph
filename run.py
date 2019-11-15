@@ -67,7 +67,7 @@ def generate_graph_json(key):
                                 )
                             )
             if entry != key:
-                edge_list.append(dict(source = key, target = entry, value = 1))
+                edge_list.append(dict(source = entry, target = key, value = 1))
     
     return {"nodes": node_list, "links": edge_list}
 
