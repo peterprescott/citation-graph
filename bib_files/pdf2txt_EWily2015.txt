@@ -1,0 +1,4006 @@
+
+Annual lecture article
+
+Urban Studies
+2015, Vol. 52(14) 2515–2550
+� Urban Studies Journal Limited 2015
+Reprints and permissions:
+sagepub.co.uk/journalsPermissions.nav
+DOI: 10.1177/0042098015601362
+usj.sagepub.com
+
+Gentrification on the planetary urban
+frontier: The evolution of Turner’s
+noösphere
+
+Elvin Wyly
+University of British Columbia, Canada
+
+Abstract
+As capitalist urbanisation evolves, so too does gentrification. Theories and experiences that have
+anchored the reference points of gentrification in the Global North for half a century are now
+rapidly evolving into more cosmopolitan, dynamic world urban systems of variegated gentrifica-
+tions. These trends seem to promise a long-overdue postcolonial provincialisation of the
+entrenched Global North bias of urban theory. Yet there is a jarring paradox between the mate-
+rial realities of some of the largest non-military urban displacements in human history in the
+Global South, alongside a growing reluctance to ‘impose’ Northern languages, theories and poli-
+tics of gentrification to understand these processes. In this paper, I negotiate this paradox through
+an engagement of several seemingly unrelated empirical trends and theoretical debates in urban
+studies and gentrification. My central argument is that interdependent yet partially autonomous
+developments in urban entrepreneurialism and transnational markets in labour, real estate and
+education are transcending the dichotomy between gentrification in cities (the traditional focus of
+so much place-based research) versus gentrification as a dimension of planetary urbanisation. Amidst
+the planetary technological transformations now celebrated as ‘cognitive capitalism’ and a
+communications-consciousness ‘noösphere’, these developments are coalescing into a global, cos-
+mopolitan and multicultural tapestry of explicitly evolutionary class transformations of urban
+space that adapt to multiply scaled contingencies of urban history, socio-cultural difference, state
+power and terrains of resistance. The argument proceeds in three steps. First, I explain how
+social Darwinism was deeply embedded within conventional urban theory in the decades before
+Ruth Glass gave us a language for the discussion of gentrification, thus perpetuating debates over
+narrow empirical issues at the expense of deeper critical scrutiny of the evolutionary logics of
+socio-spatial classifications. Second, I examine the recent movement for a ‘cosmopolitan decolo-
+nisation’ of gentrification theory that has emerged at the precise moment when powerful alliances
+are consolidating the networked infrastructures of gentrification on an unprecedented scale.
+Third, I analyse the contemporary evolution of gentrification as a recombinant blend of old and
+new, as the means of class transformation of urban space are accelerated through intensified
+
+Corresponding author:
+
+Elvin Wyly, University of British Columbia, Geography,
+
+1984 West Mall, Vancouver, British Columbia V6T 1Z2,
+
+Canada, UK.
+
+Email: ewyly@geog.ubc.ca
+
+http://crossmark.crossref.org/dialog/?doi=10.1177%2F0042098015601362&domain=pdf&date_stamp=2015-10-06
+
+
+competition in work, education and housing. The built environments of planetary urbanisation
+provide ample opportunities not only for diverse cosmopolitan descendants of old-fashioned
+urban renewal in the style of Haussmann’s Paris or Moses’ New York, but also for new genera-
+tions of ‘capitalists with conscience’–entrepreneurial coalitions closing ‘moral rent gaps’ by inte-
+grating the economic profits of gentrification with the discourses and practices of environmental
+sustainability, socially responsible development and global fields of educational opportunity. All of
+these escalating competitions are legitimated as inclusive multicultural meritocracies. Yet the
+relentless optimism of competitive innovation in the cognitive-capitalist noösphere is creating
+dangerous new frontiers of human ecology that reproduce the social-Darwinist ‘form of society’
+that Frederick Jackson Turner envisioned in his theorisation of the ‘recurrence of the process of
+evolution’ in America’s colonial-settler waves of violent dispossession.
+
+Keywords
+Chicago School, gentrification, noösphere, social Darwinism
+
+Received April 2015; accepted July 2015
+
+Sexton’s new frontier
+
+‘With the sum total of human knowledge,
+past and present, at our fingertips’, we are
+told on the website Big Think (2014), ‘we’re
+faced with a crisis of attention: which ideas
+should we engage with, and why?’. Big
+Think promises to help us sift through this
+vast informational rainforest, offering ‘an
+evolving roadmap to the best thinking on
+the planet’, so we can appreciate and use the
+important concepts that can be ‘lenses for
+envisioning the future’. John Sexton, the
+charismatic and polarising ‘imperial
+President’ (Aviv, 2013) of New York
+University, has seen that future, and in a Big
+Think video (Sexton, 2008) he offers an
+appropriately audacious thought on what it
+all means. ‘Biodiversity is good’, he empha-
+sises, challenging the obsolete American
+melting-pot ideology that tried to turn
+America ‘into some great Velveeta cheese of
+humanity’. No, Sexton warns, this kind of
+assimilationist logic is wrong and dangerous.
+Now, ‘post-environmental movement’, we
+now know that biodiversity is good, and
+‘Human diversity is good. Intellectual diver-
+sity is good. This is a wonderful gift from
+
+God. We don’t want to homogenize. We
+want to create communities of microcom-
+munities. New York is the first experiment
+in what the whole world is going to be.’
+Sexton’s vision for NYU is an institution in
+and of the city, ‘ecosystemic in the city’, that
+will demonstrate through its community of
+microcommunities how ‘humanity begins to
+operate like a great watch of interconnecting
+parts, not isolated from each other, but a
+whole that’s greater than the sum of the
+parts’.
+
+For those who remember the history of
+urban theory, Sexton’s ‘ecosystemic’ meta-
+phors immediately remind us of the domi-
+nant Chicago School human ecology
+tradition of the 20th century, where the city
+‘is a product of nature, and particularly of
+human nature,’ (Park, 1925: 1), with biologi-
+cal metaphors for neighbourhood change as
+‘invasion and succession’, as each social
+group develops in its own distinctive ‘natural
+area’ of the city. The bio-logical genealogy
+of the Chicago School is certainly important
+for any understanding of the significance of
+Sexton’s project, but his direct inspiration
+comes from a more surprising, obscure
+source:
+
+2516 Urban Studies 52(14)
+
+
+
+I have a doctorate in religion, trained by the
+Jesuits, so I tend to think in Teilhardian terms
+about a kind of noösphere, where there’s a
+whole different way of existence for human-
+kind .
+
+Pierre Teilhard de Chardin (1881–1955) was
+an evolutionary vertebrate palaeontologist
+who was also an ordained Jesuit priest: his
+life’s work became a philosophical synthesis of
+the science of human evolution with the faith
+of Catholic theology. He was a prolific writer,
+but some of his most important works only
+appeared posthumously, thanks to the
+Church’s prohibition on his challenges to offi-
+cial doctrine. The concept that captures
+Sexton’s imagination comes from the Greek
+noos (mind) + sphaera (sphere), which
+Teilhard de Chardin developed through con-
+versations in Paris in the 1920s with the
+French philosopher Edouard le Roy and the
+Russian geochemist-cosmologist Vladimir
+Vernadsky (Turner, 2005). Surveying the
+spreading environmental consequences of
+urbanisation and industrialisation, Vernadsky
+foresaw a collective human understanding of
+the need to live as part of, rather than against,
+nature in all of Earth’s ‘terrestrial zone con-
+taining life’ (Teilhard de Chardin, 1947, rep-
+rinted in Teilhard de Chardin, 1964: 151).
+Teilhard de Chardin refined the noösphere
+into the idea of a planetary ‘superstage of con-
+sciousness’, a ‘process of co-cerebration’ and
+‘co-reflexive evolution’ in an irresistible inflex-
+ion from complex divergence towards a move
+that is ‘compressional and converging’, driven
+‘by the double curvature of our rounded
+mother-planet and of our converging minds’
+(Teilhard de Chardin, 1956: 109, 112, 111).
+Put simply, the expansion of travel, communi-
+cation and human interaction to the planetary
+scale would allow – through ‘our converging
+minds’ – an entirely new phase of the collec-
+tive evolution of humanity. Humanity would
+‘move toward unheard-of and unimaginable
+degrees of organized complexity and of
+
+reflective consciousness’, to become ‘ultra-
+reflexive (that is, ‘‘ultra-human’’)’ along the
+way to an ‘implosive concentration’ of the
+‘cultural noösphere’ of Earth and every other
+‘thinking planet’ in what de Chardin acknowl-
+edged was a ‘wild hypothesis of a transhuman
+universe’ (de Chardin, 1956: 111). Teilhard de
+Chardin’s noösphere combined the state of
+the art in biology and palaeontology to fuse
+‘the rise of self-evolution’ of an ‘unbroken
+sheet of organized consciousness’ (Teilhard de
+Chardin, 1956: 109) with Christian theology in
+a universalising cosmological ontology of
+humanity, nature, science, communication,
+culture and God. The ‘Last Page of the
+Journal of Pierre Teilhard de Chardin’, written
+on Maundy Thursday in 1955 three days
+before his death, presents a concise diagram of
+‘What I believe’, and connects ‘Christogenesis’
+to an evolutionary cosmology:
+
+Cosmos = Cosmogenesis – Biogenesis –
+Noogenesis –
+
+The universe is centered – Evolutively .
+(Teilhard de Chardin, 1955, in Teilhard de
+Chardin, 1964: 311)
+
+This equation appears under the notes ‘St.
+Paul – the three verses: En pase panta
+Theos’. This is Greek for ‘God All in All’,
+the culmination of 1 Corinthians (26–28),
+written by the Apostle Paul in 55 cE in an
+attempt to unify a fractious church begun
+only three years earlier in Corinth, Greece’s
+thriving, cosmopolitan world city of the day
+– with its synagogue and its raucous temples
+to Apollo and Aphrodite. Teilhard de
+Chardin died in the Corinth of the American
+Century, New York City, at the height of an
+imperial modernity shaped by a collective
+imagined community built on histories of a
+West descended from the Greek polis.
+Images and narratives of these collective
+memories of the present were suddenly
+flooding the expanding planetary circuits of
+the electronic age – and Teilhard died in
+
+Wyly 2517
+
+
+
+‘almost famous’ obscurity, even as technolo-
+gical communications breakthroughs were
+vindicating his claim that ‘the axis of
+twentieth-century social evolution lay in the
+psychic (interpersonal) and political realm’
+(Buttimer, 1971: 85). In an oral history in
+the 1990s, Tom Wolfe recalls that Marshall
+McLuhan was ‘deeply influenced’ by
+Teilhard de Chardin, but McLuhan ‘never’
+acknowledged the connection to avoid
+offending the Catholic hierarchy at his pro-
+fessional home, St. Michael’s College at the
+University of Toronto (see Cavell, 2002:
+256). But now, in the 21st century, the
+Teilhardian medium is the message, in a
+‘superstage of consciousness’ achieved
+through planetary communication circuits of
+entertainment, advertising, marketing,
+investment and education in a multipolar
+world of diverse, dynamic global cities. The
+noösphere has been the buzzword, the next
+new thing in Silicon Valley for more than a
+decade (Lanier, 2010, 2013), and there is
+now a thriving literature analysing how glo-
+balisation and technological change have
+given rise to a new kind of ‘cognitive-cul-
+tural capitalism’ (Moulier-Boutang, 2012;
+Scott, 2007, 2011a, 2011b, 2014) – a
+‘‘‘knowledge-based’’ capitalism’ with ‘biome-
+dical and genetic engineering and artificial
+intelligence at the forefront’ (Harvey, 2014:
+xii). Sexton’s (2008) contribution to these
+discussions involves ‘glocalizing’ NYU’s eco-
+systemic heritage: ‘we take being in that
+local city and we extrapolate it out to the
+world’. Sexton’s noösphere is what he calls
+the Global Network University: students are
+admitted to NYU through one of three gate-
+ways – NYU New York, NYU Shanghai, or
+NYU Abu Dhabi – and then spend parts of
+their degree programme circulating amongst
+a world urban system of ‘idea capitals’
+including Accra, Berlin, Buenos Aires,
+Florence, London, Madrid, Paris, Prague,
+Sydney, Tel Aviv and Washington, DC.
+Sexton is explicit in moving beyond the
+
+‘Eurocentric bias’ of existing Ivy League
+Study Abroad programmes, and the goal is
+‘at least 16 sites’ in world idea capitals, ‘with
+at least one on each of the six inhabited con-
+tinents’ (Sexton, 2010).
+
+Sexton’s purpose is to mobilise educa-
+tional institutions in the world’s ‘glocal cit-
+ies’ to demonstrate the power and
+possibilities of collective human understand-
+ing through diversity – as an emancipatory
+alternative to the ‘fortress mentality’ of gat-
+ing strategies that are destined for global
+catastrophe in rising fears and tensions, ‘cul-
+minating in a ‘‘clash of civilizations’’’
+(Sexton, 2010). The noösphere, in other
+words, offers ‘a tremendous opportunity in
+the process of global evolution’ (Sexton,
+2010). A university ‘in and of the city’,
+Sexton shows us, can teach us how to nur-
+ture what Kwame Anthony Appiah (1997)
+calls ‘cosmopolitan patriots’–‘men and
+women whose interests, vision, and alle-
+giance are not bounded by place or sover-
+eignty and who are ‘‘citizens of the world’’
+as well as of their particular cultures’
+(Sexton, 2010). While the phrase carries a
+whiff of elitism, ‘cosmopolitan patriots’
+embody an elitism of meritocratic achieve-
+ment that moves beyond the narrow nation-
+alist patriotism of the 19th and 20th
+centuries – with a fresh transnational out-
+look that signals the possibility of a benign,
+empathetic and responsible collective force
+for progressive change. The world’s best stu-
+dents will come to learn with – and trans-
+form – NYU’s world-class faculty in
+‘kaleidoscopic interaction with deep connec-
+tivity’, as humanity learns how to produce
+future generations of ‘citizens of global soci-
+ety’. This is among the world’s most selec-
+tive classes: of the more than 9000 who
+applied for the inaugural class, NYU Abu
+Dhabi admitted only 188, representing 39
+countries and 43 different languages.1
+
+Sexton draws inspiration from cosmopo-
+litan patriots as today’s planetary pioneers.2
+
+2518 Urban Studies 52(14)
+
+
+
+They have the competitive drive and individ-
+ual ambition signified by Richard Florida’s
+(2003, 2006) ‘creative class’, but their diverse
+and hybrid educational trajectories give
+them a transnationally refined version of the
+political progressivism associated with the
+‘new middle class’ remaking of city life (Ley,
+1996), and they also understand what it
+means to think and act within collective
+assemblages of the human and non-human –
+creative human beings circulating in a sys-
+tem that he describes as ‘connected skeletally
+by highly sophisticated’ ‘social networking
+technology’. To see where the cosmopolitan
+patriots are going, Sexton borrows from a
+borrowed metaphor of Prime Minister
+Gordon Brown:
+
+To adapt an aphorism coined by President
+Kennedy, the new frontier is that there is no
+frontier: no frontier for the internet, for the
+mobile phone, for e-mails, for the cyber-world;
+no frontier for the capacity of individuals to
+influence, inform, or even infuriate each other.
+(quoted in Sexton, 2010)
+
+Frontier. Consider three dictionary defini-
+tions: ‘the border separating one country
+from another’, ‘an area of mental activity
+where much remains to be done’ and ‘a mar-
+ginal region between settled and unsettled
+lands’ (Cayne, 1990: 382). This is where John
+Sexton’s Big Think, Gordon Brown’s New
+Frontier, and Pierre Teilhard de Chardin’s
+noösphere help us understand the frontiers
+of gentrification today – more than half a
+century after Ruth Glass (1964) first gave us
+a word to describe this process of urban
+transformation. In The New Urban Frontier,
+Neil Smith (1996) analysed how the genoci-
+dal disposessions of Frederick Jackson
+Turner’s understanding of the frontier in
+18th- and 19th-century America – ‘the meet-
+ing point between savagery and civilization’
+(Turner, 1893: 200) – became the powerful
+discourses and material realities of develo-
+pers ‘circling the wagons’ to retake Harlem
+
+and all the other territories lost in America’s
+20th-century urban crisis. In ‘Gentrification
+as global urban strategy’, Smith (2002) diag-
+nosed how these frontier processes were
+being consolidated through transnational
+urban systems of entrepreneurial capitalist-
+state coalitions mobilising city spaces as
+vehicles for speculative real-estate accumula-
+tion. And in one of his last written works,
+‘The evolution of gentrification’, Smith
+(2011) diagnosed the accelerating pace of
+dispossession as cosmopolitan capital oper-
+ated through transnational network architec-
+tures of revanchist uneven development on a
+planetary scale.
+
+Yet there is a tantalising absence in
+Smith’s use of the word evolution. While he
+diagnoses ‘an extraordinary new departure’
+in the scale of today’s ‘economic excommu-
+nication of working-class people from their
+communities’, Smith is uncharacteristically
+cautious and modest in this essay, and never
+pushes the meaning of ‘evolution’ beyond
+the familiar, neutral sense of change or
+transformation. We can learn a great deal if
+we take Smith’s title literally, to be bold and
+explicit on the evolutionary dynamics of
+gentrification. Part of my inspiration here
+comes from Eric Clark (1987), who under-
+took a meticulous examination of centuries
+of land records in order to build an empiri-
+cal foundation for Smith’s (1979) theory of
+the rent gap in the dynamics of urban trans-
+formation; more recently, analysing the
+unprecedented challenge of ‘collective self-
+regulation’ of planetary humanity that will
+be required if we are to achieve sustainabil-
+ity, Clark has documented the distortions of
+evolutionary science that have privileged
+‘gene-centered thought’ and an ‘excessive
+individualism’ that obscures Darwin’s per-
+spective on species participating collectively
+in their own development (Clark and Clark,
+2012: 563). In this paper, my goal is to
+extend this line of inquiry, focusing more
+explicitly on the matter of evolution in
+
+Wyly 2519
+
+
+
+frontier metaphors in urban theory, and in
+the driving ambitions of cosmopolitan patri-
+ots and their visionary mentors such as John
+Sexton. My central claim is that we are liv-
+ing through a planetary software update of
+19th-century, Turneresque social Darwinism
+– creating a bizarre transnational urbanisa-
+tion of Chicago School positivist logics
+masked by the deceptive drop-down-menu
+multiculturalism of Silicon Valley’s auto-
+mated postpositivist standpoint epistemolo-
+gies. The noösphere is the new frontier of
+gentrification as the new urban colonialism
+(Atkinson and Bridge, 2005) of today’s pla-
+netary cognitive capitalism. We are chal-
+lenged to reconsider the explicit and implicit
+political ethics of the ‘recurrence of the pro-
+cess of evolution’ in the ‘process of expan-
+sion’ of this new frontier (Turner, 1893:
+200).
+
+Let me tell this story in three parts. First,
+we’ll consider the role of evolution in the his-
+torical context of conventional urban theory
+before Ruth Glass gave us a discourse for
+the analysis of gentrification. The key point
+here is that fundamental axioms of a
+hijacked social Darwinism accomplished a
+stealth corruption of mainstream urban the-
+ory, necessitating the aggressive political
+edge that came to define the very best of gen-
+trification scholarship; unfortunately, gentri-
+fication theory was shaped by reactions to
+specific and partial aspects of the Chicago
+School’s legacy – perpetuating debates over
+narrow empirical issues, and distracting
+attention from the evolutionary frontier
+ontology that is much more relevant for an
+understanding of the cognitive-capitalist
+noösphere under conditions of planetary
+urbanisation. Second, we’ll consider a recent
+political paradox that has emerged with the
+arrival of planetary urbanisation: influential,
+well-intentioned calls for cosmopolitan per-
+spectives from beyond the ‘core’ of the
+Global North are being voiced at the precise
+moment when powerful coalitions are
+
+consolidating the networked infrastructures
+of gentrification on an unprecedented plane-
+tary scale. Third, I will evaluate the way this
+latest era of gentrification is a recombinant
+blend of old and new, with intensified class
+competition in education, labour and hous-
+ing markets legitimated on the basis of harsh
+19th-century evolutionary frontier philoso-
+phies masquerading as inclusive multicul-
+tural meritocracies. Special scrutiny is here
+reserved for the bizarre technological theolo-
+gies enacted in and through Silicon Valley – a
+location that only begins in the San
+Francisco Bay Area. The ‘non-place urban
+realm’ of ‘community without propinquity’
+diagnosed by the Berkeley urban theorist
+Melvin Webber (1964) has been thoroughly
+transnationalised, as the ‘massive communi-
+cation systems’ (p. 86) of urbanism are now
+enmeshed in planetary networks of finance,
+information and production sweatshops – all
+interconnected through billions of smart-
+phones that promise the wealth of accumu-
+lated human knowledge at the swipe of a
+thumb. The possibilities seem infinite. But
+Silicon Valley’s noösphere is creating dan-
+gerous new frontiers of Turner’s evolution-
+ary encounters between ‘savagery and
+civilization’.
+
+The urbanisation of evolutionary
+consciousness
+
+The first part of our story involves the way
+social Darwinism was encoded into the 20th-
+century hegemony of urban theory that con-
+ditioned public policy, capital investment
+and social analysis in the generations before
+Ruth Glass (1964: xviii) first wrote the word
+‘gentrification’. As industrialisation trans-
+formed political economy at the beginning
+of the 19th century and produced the world’s
+first urbanised nation at century’s end, evo-
+lutionary perspectives on urban life were
+quite explicit. In Cities in Evolution, Patrick
+Geddes (1915) portrayed the day’s emergent,
+
+2520 Urban Studies 52(14)
+
+
+
+large, polycentric city-regions – what he
+called ‘conurbations’ – as the logical evolu-
+tion of previous kinds of cities, in a new
+industrial revolution. For Geddes, the old
+‘paleotechnic’ industrial age dominated by
+obsessions with individual wealth and class
+division was evolving, through urbanisation,
+to a ‘neo-technic order’ of collective, civic
+wealth, ‘its skill directed by life towards life,
+and for life .’. Humanity would set its mind
+‘towards house-building and town-planning,
+even towards city design; and all these upon
+a scale to rival – nay, surpass – the past
+glories of history’ (Geddes, 1915: 71).
+
+Robert Ezra Park was similarly explicit
+when he was strengthening the foundations
+of a department of sociology at the
+University of Chicago that would eventually
+come to be known as ‘Urbanism,
+Incorporated’ (Martindale, 1958: 28). Park’s
+(1921) theoretical justification for the young
+discipline – ‘the science of collective beha-
+vior’ (p. 21) – combined Durkheim’s theories
+of organic solidarity with the social philoso-
+phies of the 19th century physical scientists
+who had made sociology possible. Auguste
+Comte’s (1842) ontology of ‘social physics’
+offered a scientific, post-theistic positivist
+theory of cumulative, intergenerational
+advancement in the ‘Great Being’ of human-
+ity, while Herbert Spencer’s grand synthesis
+of biology and physics provided a frame-
+work for the progress of industrial moder-
+nity and the development of what he had
+called as early as 1860 the ‘social organism’.
+In turning to Spencer, Park was channelling
+the evolutionary theorist with the deepest
+influence on the American mind in the last
+half of the 19th century. ‘Mr. Herbert
+Spencer is already a power in the world’, the
+Atlantic Monthly enthused in 1864; ‘As far
+as the frontiers of knowledge where the
+intellect may go, there is no living man
+whose guidance may more safely be trusted.
+Mr. Spencer represents the scientific spirit of
+the age’ (Atlantic Monthly, 1864: 775, 776).
+
+Yet that spirit was a chaotic conception of
+revolutionary advances in science mangled
+with the entrenched conservatism of eco-
+nomics and religion. Spencer’s ‘doctrine of
+the Unknowable’ provided an overriding
+concession that gave theologians a credible,
+face-saving reconciliation of creationism and
+evolution (albeit an obsolete Lamarckian
+version) while his insistence on the absolute
+freedom of private enterprise made him the
+philosopher of choice for America’s domi-
+nant capitalists. In a Sunday-school speech,
+John D Rockefeller cited Spencer’s catch-
+phrase ‘the survival of the fittest’ to justify
+the ‘law of nature’ and ‘the law of God’ in
+the growth of the era’s powerful industrial
+and financial trusts (cited in Ghent, 1902:
+29). But if Park’s (1921) theorisation of the
+‘collective mind’ and the ‘social conscious-
+ness’ was influenced by Spencer’s linear lais-
+sez-faire evolution – Spencer was, after all, a
+major influence on Albion W Small, the
+sociologist who hired Park at Chicago –
+there were other, more progressive influ-
+ences at work. Long before he came to
+Chicago Sociology, Park took a low-paid
+research assistant position after completing
+his doctorate in order to work at Harvard
+with the pragmatist philosopher William
+James. Earlier still, as an undergraduate at
+the University of Michigan between 1883
+and 1887, Park had been deeply shaped by
+the teaching of a newly arrived PhD from
+Johns Hopkins – John Dewey. Of the ten
+courses Park took in the philosophy depart-
+ment, six were with Dewey.
+
+Dewey fundamentally transformed
+Spencer’s self-rationalising apologies for
+structured social inequalities – what Dewey
+(1920: 190) called ‘the apparatus for intellec-
+tual justification of the established order’.
+Whereas Spencer’s logic portrayed individ-
+ual competition and selection in a fixed envi-
+ronment, Dewey realised that Spencer
+misunderstood Darwin: cooperation matters
+as well as competition, and the environment
+
+Wyly 2521
+
+
+
+is changed by human actions – which change
+over the generations as human knowledge
+and tradition evolve.3 Born in the year
+Darwin’s Origin of Species was published,
+Dewey in later years wrote that the book
+not only ‘marked an epoch in the develop-
+ment of the natural sciences’, but also revo-
+lutionised nearly all of the ‘conceptions that
+had become the furniture of the mind’ over
+2000 years, transforming ‘the logic of knowl-
+edge’ across the expanding terrain of the
+social sciences ‘and hence the treatment of
+morals, politics, and religion’ (Dewey, 1909:
+90). In America, however, these ideas had
+been distorted by the brutal orthodoxy of
+the ‘laissez-faire conservatives’ (Hofstadter,
+1944) – the hardcore Cro-Magnons whose
+extreme positions were too much even for
+Richard Ely, the conservative economist
+who helped fuse ‘environment, evolution,
+and cartography’ by getting Frederick
+Jackson Turner so interested in maps when
+Turner was pursuing an otherwise classical,
+non-geographical history curriculum at
+Johns Hopkins (Block, 1980: 32). Ely (1884:
+64) became concerned that evolutionary the-
+ory was being abused ‘as an excuse for doing
+nothing while people starve’, citing the ‘all-
+sufficiency of competition as a plea for
+grinding the poor’.
+
+Dewey brought together Comte’s insights
+on the intergenerational collective of knowl-
+edge (what Marx once called the ‘general
+intellect’) with Darwinian evolution. It is not
+just bodies and physical characteristics that
+evolve; knowledge, understanding, methods
+of communication, social and cultural insti-
+tutions, and human possibility evolve too.
+And we can decide how to participate in our
+evolution. In the same way Spencer’s dog-
+matic commitment to an atomised individu-
+alism had provided a fraudulent justification
+for laissez-faire, ‘our ingrained habit of
+regarding intelligence as an individual pos-
+session’ (Dewey, 1939: 456) had thwarted
+the progressive possibilities of education and
+
+politics. ‘Intelligence is a social asset’, Dewey
+(1939: 456) emphasised, ‘with a function as
+public as its origin, in the concrete, in social
+coöperation’. There was no need to remain
+trapped by the retrograde conservatism of
+Spencerian Social Darwinism, of ‘drifting’,
+waiting ‘for the slow process of evolution’ as
+the ‘working out of unconscious, natural
+law’ (Dewey, 1918, quoted in Dewey, 1939:
+424). Cooperation and the development of
+the collective societal wealth of knowledge
+make us active, conscious participants in our
+relations with one another and with the
+social and natural environments in which we
+build and share knowledge. ‘It is proved
+now’, Dewey wrote, ‘that it is possible for
+human beings to take hold of human affairs
+and manage them, to see an end which has
+to be gained, a purpose which must be ful-
+filled, and deliberately and intelligently go to
+work to organize the means, the resources,
+and the methods of accomplishing those
+results’ (Dewey, 1918, quoted in Dewey,
+1939: 424). Evolution is a collective, social
+process that proceeds through cooperation
+and communication – social relations that
+were concentrating and accelerating with
+urbanisation. The ‘untranscendental prag-
+matist’ Dewey and the ‘empirical sociologist’
+Park became America’s most perceptive ana-
+lysts of how cooperative, communicative
+evolution was urbanising (White and White,
+1962: 155).
+
+This is where we encounter a fascinating
+yet forgotten moment in our inherited mem-
+ories of urban studies. Viewed as a distant
+historical reference point, Chicago School
+urbanism is today understood as a van-
+quished but unrepentent hegemony, as a
+‘bourgeois social science’ so dominant that
+Harvey (1978: 68) once likened a debate
+request to ‘an invitation to the sheep to
+come sit down and parley with the wolves’.
+The ossified dogmatic paradigm Harvey
+encountered in the last quarter of the 20th
+century was a betrayal of the progressive
+
+2522 Urban Studies 52(14)
+
+
+
+possibilities of the first. The most crucial
+potential emerges from the fascination that
+Dewey, Park, and the first generation of
+Chicago School sociologists had for the cen-
+tral role of communications technologies in
+accelerating the circulation of information
+and meaning in urban society – a circulation
+process that was constantly altering the very
+constitution of ‘society’ and thus producing
+new social environments for the collective
+process of evolution of the next generation.
+‘Park espoused a cognitive Darwinism’, J
+Nicholas Entrikin (1980: 47) writes in a land-
+mark history of human ecology, ‘in which
+knowledge evolved and expanded in order to
+meet the needs created by new problems’
+faced by humanity. ‘Cognitive Darwinism’
+might strike you as a bizarre, slightly trou-
+bling phrase: Darwinian evolution requires
+death to achieve progress, and ‘cognitive’
+means that you are now thinking about what
+it means for that progress to involve your
+death. I certainly did a double-take, and
+thought of my own mortality, when I first
+saw the phrase in Entrikin’s brilliant histor-
+iography of a figure so central to Chicago
+School urban theory. The phrase has been
+forgotten, with only a few exceptions (e.g.
+Rescher, 1977, 2005),4 because evolutionary
+urbanism developed a politicised amnesia.
+Especially in America, evolutionary social
+theory began to avoid explicit references to
+Spencer, Darwin or any other clearly recog-
+nised biological framework. Park’s work at
+Chicago building a new urban theory took
+place in the era of the Scopes Trial, and the
+violence of the ‘War to End All Wars’ had
+discredited the influential racist and imperi-
+alist perversions of Darwinism that had
+made so much of European civilisation and
+Teutonic superiority. Likewise for the
+eugenics movement that flourished from the
+turn of the century, which ‘grew with such
+great rapidity that by 1915 it had reached
+the dimensions of a fad’, when notions of
+the preservation of the ‘racial stock’ as a
+
+‘means of national salvation’ fostered sup-
+port for the geopolitical theories of ‘evolu-
+tionary human geography’ led by ‘militant
+nationalists’ such as Theodore Roosevelt
+and his geographer, Isaiah Bowman – who,
+not incidentally, declared that Turner’s
+death in 1932 was ‘a loss no less severe to
+American geography than to the study of
+American history’ (Bowman, 1932: 499; cf.
+Hofstadter, 1944: 161, 163–164; Smith, 2003:
+223). The eugenics movement became politi-
+cally toxic as the Nazis pursued its logic in a
+refined science of genocide. In this environ-
+ment, ‘[m]ention of Darwinism in the social
+sciences became highly unfashionable’
+(Hodgson, 2009: xix).
+
+Despite (or perhaps because of) this hos-
+tile environment, evolutionary logics quickly
+mutated in ways that made them ever more
+central to mainstream theories of change in
+economy, society and urbanism. The para-
+dox was most pronounced in economics.
+The Darwinian epistemologies of Milton
+Friedman’s (1953: 22) portrayal of the
+maximisation-of-returns hypothesis of firm
+survival in terms of ‘natural selection’ and
+Thorstein Veblen’s proposal for a recon-
+struction of economics as a ‘post-Darwinian’
+science were downplayed in favour of the
+technocratic, neutral discourses that were
+coming to define American logical positi-
+vism (Hodgson, 2003a; Mirowski, 2005).5
+
+The institutional and evolutionary econo-
+mist Geoffrey Hodgson (2003a: 93) notes
+that as late as the establishment of the
+Association for Evolutionary Economics in
+1966, the label ‘evolutionary’ was adopted
+‘only by ridding it of any of its former and
+Veblenian connections with Darwinism and
+by interpreting it in the broad and banal
+sense of ‘‘change’’’. And yet Darwinism had
+always been a ‘derivative of political econ-
+omy’ (Hofstadter, 1944: 38), what Donald
+MacKenzie (1976: 503) calls ‘the biological
+variant of political economy’. Darwin
+struggled for more than a year after his
+
+Wyly 2523
+
+
+
+expeditions on the Beagle trying to make
+sense of his samples and empirical observa-
+tions, but it was only after he read a book
+on the political economy of population that
+he ‘at last got a theory by which to work’.6
+
+The theory that Darwin finally got –
+Malthus’s (1798) Essay on the Principle of
+Population – had become one of the defini-
+tive manifestos of the 19th century. Darwin
+was reading the sixth edition, published in
+1826 (Secord, 2008: xix), and it helped break
+his writer’s block as he worked out the
+details of his theory – until the discovery
+that the naturalist Alfred Russel Wallace
+was pursuing the same line of inquiry led to
+a simultaneous announcement at the 1858
+meeting of the Linnaean Society in London.
+‘Since it had been one of the great figures of
+the classical economic tradition who had led
+Spencer, Darwin, and Wallace toward their
+evolutionary theories’, the historian Richard
+Hofstadter (1944: 144) observes, ‘the econo-
+mists might have had some justification for
+proclaiming that biology had merely univer-
+salized a truth that had been in their posses-
+sion for a long time’. The core of economics
+had always privileged laissez-faire competi-
+tion as a ‘doctrine of social selection’
+(Hofstadter, 1944: 144), and Keynes (1926:
+113) went so far as to declare that ‘the prin-
+ciple of the Survival of the Fittest could be
+regarded as one vast generalization of the
+Ricardian economics’.
+
+From the 1940s through the 1960s during
+the period Hodgson (2009: xix) labels ‘The
+Dark Age of Darwinism in Economics’, the
+field’s foundational implicit social
+Darwinism conditioned the development of
+conventional urban theory, as neoclassical
+economic methodology was enmeshed with
+Chicago sociology frameworks for analysing
+neighbourhoods, cities and metropolitan
+regions. Classical economics and social
+Darwinism were both founded on an axio-
+matic trinity: (1) ‘the fundamentally self-
+interested animal’ maximising utility
+
+(survival), (2) the normality and universality
+of competition, and (3) the survival of the
+organism/producer/worker most efficiently
+adapted to its environment. Yet while ‘both
+classical economics and natural selection
+were doctrines of natural law’ (Hofstadter,
+1944: 145), the 20th-century consolidation of
+econometrics created an entirely new infra-
+structure in which social Darwinist processes
+could be embedded in the technocratically
+scientific and presumptively neutral, objec-
+tive mechanisms of simultaneous equations,
+general and partial equilibrium solutions,
+and marginal productivity estimates as
+applied to the exploding observational vistas
+of economic data. The methodological gen-
+ealogy goes all the way down, to a literally
+embodied Darwinian lineage: we would not
+have the correlation coefficient if Darwin’s
+cousin, the eugenicist Francis Galton and
+author of Hereditary Genius (1869) had not
+been so obsessed with the ‘Gaussian Law of
+Error’ describing the variations around the
+averages of physical measures of human
+bodies (biometrics) and the ‘mental peculia-
+rities of different races’ (p. v); those varia-
+tions around the mean ‘could be made the
+source of intellectual progress: specifically
+for Galton’s purposes geniuses could be
+made’ (Barnes, 1998: 213). And in turn we
+would not have chi-square or regression if
+Karl Pearson had not been so anxious to
+‘provide his particular form of Darwinism
+with a proper scientific basis’ (Norton, 1978:
+6) and if he had not been inspired in 1890 to
+focus on statistics after meeting a zoology
+professor, Walter Weldon, who was infusing
+Galton’s ideas into evolutionary biology to
+create a ‘mathematical theory of evolution’
+(Norton, 1978: 6). When Galton died, his
+financial remains allowed Pearson to
+become the first Galton Professor of
+Eugenics at University College, London,
+and to merge the two laboratories he
+directed – the Biometric Laboratory and the
+Galton Laboratory for National Eugenics –
+
+2524 Urban Studies 52(14)
+
+
+
+into the Department of Applied Statistics.
+The Galton legacy of correlation and the
+dismal-science moralism of Malthus that
+inspired Darwin almost crossed paths with
+the noösphere and urban studies at the inter-
+national symposium in Princeton, New
+Jersey in 1955 (‘Man’s Role in Changing the
+Face of the Earth’) where Father Teilhard
+was scheduled to present his paper, ‘The
+Antiquity and World Expansion of Human
+Culture’ (de Chardin, 1956). Teilhard didn’t
+make it, but Patrick Geddes’ American aco-
+lyte Lewis Mumford did, and so did Sir
+Charles Galton Darwin (grandson of the
+Darwin), delivering a neomalthusian warn-
+ing on ‘the menace of world overpopulation’
+and outlining a ‘rather fanciful exaggeration’
+in the form of a scenario of a ‘genetic sur-
+geon’ working to improve humanity by dis-
+tilling all of the accumulated knowledge of
+the chromosomes of humanity ‘to produce
+an embryo which will develop into’ a ‘really
+great man’: ‘Shakespeare, Newton,
+Napoleon, or – let us be broadminded, since
+we cannot foresee the political tastes of the
+surgeon – perhaps Marx’ (Darwin, 1956:
+965).7
+
+To be sure, this discussion takes us a long
+way from the familiar debates of the gentrifi-
+cation literatures. But this context was cru-
+cial in shaping urban social theory at a
+pivotal moment, when vivid memories of the
+environmental determinism of Turner’s day
+(see Block, 1980) jostled awkwardly with a
+new evolutionary mainstream from econom-
+ics, mathematics and physics (Berry, 1978,
+1980) and the aspirations of the social
+sciences’ quantitative revolutions. In the
+industrialised urbanism of America, these
+tensions could be resolved through the
+implicitly Darwinian economics of ‘applied
+statistics’ and the ‘imperial conquests of the
+rational actor model’ (Hodgson, 2003b: x)
+fused with Chicago School human ecology –
+yielding a comprehensive and internally con-
+sistent matrix of policy-relevant theory.
+
+Housing filtering metaphors emphasised
+households’ adaptive responses to the
+changing landscape of old and new homes in
+the expanding metropolis (Lowry, 1960).
+Neighbourhood ‘life cycle’ theories natura-
+lised the hierarchical processes of ‘upward’
+status mobility via suburbanisation, and
+‘downward’ spirals of decline with racial
+transition in the inner city (Metzger, 2000).
+The deeply influential Alonso–Muth
+(Alonso, 1964; Muth, 1969) formulation of
+spatial equilibrium had the effect of conceal-
+ing the ruthless struggles of urban class com-
+petition behind the elegant calculus of
+market-clearing locational bid-rent curves.
+The explicit ethno-racial hierarchies that
+structured the spatial evolution of the
+American metropolis – such as Homer
+Hoyt’s (1933: 314–316) famous ranking of
+the effect of different racial groups on neigh-
+bourhood rents in Chicago, from ‘English,
+Scotch and Scandinavians’ at the top to
+‘Negroes and Mexicans’ at the bottom –
+emerged from interwar America’s putrid
+stew of market democracy and populist
+Spencerian eugenic racist thought. But all
+could safely be hidden in the multivariate
+masquerade of hedonic pricing models and
+the economic discourse of ‘property values’
+as a floating signifier for the dangers of dif-
+ference.8 And the entire theoretical appara-
+tus was hard-wired as the default setting in
+the mainframes of urban public policy
+through the deceptively obscure accounting
+jargon of ‘highest and best use’, distracting
+attention from the political contradictions of
+property rights in capitalist urban planning
+(Krueckeberg, 1995).
+
+This is the historical context that shaped
+the discourse and analysis of gentrification
+in urban theory: social Darwinist competi-
+tion disguised in the naturalised narratives of
+Chicago-School urban ecology and quanti-
+fied neoclassical equilibrium. Initial
+responses to the empirical realities of a pro-
+cess that defied the expectations of
+
+Wyly 2525
+
+
+
+mainstream urban theory were dominated
+by the analysis of individual consumer pre-
+ference: if gentrification defied the predic-
+tions of Alonso bid-rent curves, then
+obviously the explanation was a shift in the
+‘indifference curves’ of wealthy and middle-
+class households re-evaluating the tradeoffs
+of time, space and accessibility (Schill and
+Nathan, 1983; Stegman, 1969; Wheaton,
+1977).9 These tautological pivots became the
+targets for the new revolution in urban the-
+ory when Harvey (1973: 135) sardonically
+observed, ‘All this actually means is that the
+rich group can always enforce its preferences
+over a poor group because it has more
+resources’ to exploit all the dimensions of
+competitive bid-rents. Similarly, Neil
+Smith’s first analysis of the transformation
+of Philadelphia’s Society Hill was aimed
+squarely at Urbanism, Incorporated: ‘The
+Chicago School’s latter-day followers have
+bequeathed to urban geography an empiri-
+cist and ecological quagmire in which sub-
+stantive theory nearly drowned’, Smith
+(1977: 7) wrote in the opening pages of his
+undergraduate honours thesis. This was the
+first salvo of a lifetime project of politics
+and research devoted to challenging the
+friendly, market-tested violence of the ‘con-
+sumer sovereignty’ logics that built the foun-
+dations of aggressive, state-driven neoliberal
+urbanism and populist middle-class support
+for revanchist wars on the poor and home-
+less. Nevertheless, despite the incisive rigour
+and political integrity of a generation of crit-
+ical perspectives on gentrification, an impor-
+tant genealogical insight has been neglected:
+the entanglement of gentrification with the
+suppressed memories of social Darwinism.
+We have forgotten how explicit Glass was in
+making this connection. Only a few lines
+after describing how ‘modest mews and cot-
+tages’ became ‘elegant, expensive residences’
+in an ‘invasion’ spreading from Hampstead
+and Chelsea to Islington, Paddington, North
+Kensington and even the ‘shady’ parts of
+
+Notting Hill, Glass reminded readers of the
+‘neomalthusian’ Depression-era assumptions
+of the Greater London Plan of 1944. The
+Plan had been amended in 1947 to imple-
+ment what we would now recognise as neoli-
+beralism: ‘development rights have been
+de-nationalized; development values have
+been ‘‘liberated’’’ (Glass, 1964: xx). Along
+with the weakening of rent controls, these
+measures quickly accelerated the polarisa-
+tion of the metropolis:
+
+In such circumstances, any district in or near
+London, however dingy or unfashionable
+before, is likely to become expensive; and
+London may quite soon be a city which illus-
+trates the principle of the survival of the fittest
+– the financially fittest, who can still afford to
+
+work and live there. (Not long ago, the then
+Housing Minister advised those who cannot
+pay the price to move out.) (Glass, 1964: xx)
+
+Decolonising the new urban
+colonialism?
+
+The second part of our story involves a para-
+dox of politics, theory and discourse in the
+half-century since Ruth Glass wrote these
+words. Can anyone deny that London is a
+city that illustrates the survival of the finan-
+cially fittest? From all over the world, the
+financially fittest capitalists are bidding the
+top end of the residential market above the
+US$100 million mark in London and New
+York (New York Times, 2015), as the ‘uber-
+rich’ buy homes as ‘safe-deposit boxes’ for
+cash (Rees, 2015). We are now at half that
+level in Vancouver, where a one-time CEO
+of the San Francisco social media game-
+maker Zynga recently sold a 25,000 square-
+foot home for $51.8 million Canadian dol-
+lars; the buyer heads a conglomerate with
+interests in property development, pharma-
+ceuticals, hotel management and textiles.
+The buyer grew up in poverty and did not
+finish high school, and he failed at his first
+
+2526 Urban Studies 52(14)
+
+
+
+business venture – a duck farm (Lee-Young,
+2015: A6). But Chen Mailin persevered and
+succeeded; he has worked his way to the top,
+just as Rockefeller in a previous century,
+and he is a hot trending topic in Hong
+Kong, Singapore and Taiwan. But represent-
+ing a city – even a big city such as Nanjing –
+in the PRC’s People’s Political Consultative
+Committee is not as secure as it once was.
+Things could change.10
+
+All around the world, the ‘financially fit-
+test’ who have survived and thrived in the
+creative destruction of capitalism’s ecosys-
+tem (especially in those growth frontiers of
+savage competition that ‘pair capitalism
+with authoritarianism’, Dorfmann, 2015) are
+bidding up real-estate prices in a planet-wide
+search for what the Vancouver urban plan-
+ner Andy Yan calls ‘hedge cities’ – safe
+places to store capital in real estate as insur-
+ance for an uncertain future.11 These circuits
+– what Tom Slater (2015) has carefully
+theorised as ‘planetary rent gaps’ – are now
+the subject once again of evolutionary social
+physics models and frontier metaphors that
+would be all too familiar to Robert Park
+and Frederick Jackson Turner. The prolific
+science writer Philip Ball – an editor at
+Nature and contributor to the Financial
+Times who has chronicled the new field of
+‘econophysics’ (Ball, 2006) – writes a story
+in the Guardian making the case that
+‘Gentrification is a natural evolution’, based
+on a paper published in the journal Physics
+and Society. Those authors, Ball (2014) tells
+us, ‘are studying city evolution much as biol-
+ogists study natural evolution – almost as if
+the city itself were a natural organism’ –
+what Jane Jacobs called ‘the spontaneous
+self-organization of urban environments’.
+Mark Buchanan, another Nature editor,
+chronicles the ‘quantum revolution’ of
+‘social physics’ in the example of Thomas
+Schelling’s ‘atomic physics’ interpretation of
+the ‘social cascades’ that took place at the
+‘fringe between civilization and lawlessness’:
+
+Times Square (all quotes from Buchanan,
+2007: x, 102, 22). The pioneers in this lawless
+urban fringe included Viacom, Bertelsmann,
+Morgan Stanley and the Walt Disney
+Company. Similarly, Ed Glaeser – a 21st
+century Richard Ely who has become the
+celebrity intellectual du jour among the
+world’s leading capitalists, praises cities –
+but only those dynamic, entrepreneurial
+free-market cities that ‘speed innovation by
+connecting their smart inhabitants to each
+other’, serve as ‘gateways between cultures
+and markets’ or as ‘gateway[s] to ideas’
+(Glaeser, 2011: 7). For Glaeser, the city, col-
+lective humanity’s greatest invention, ‘makes
+us richer, smarter, greener, healthier, and
+happier’, and it makes us an ‘urban species’.
+But we are also a gentrifying species, and a
+gregarious, networked species. Tom Slater
+(2014) strikes up an email correspondence
+with Ball, and publishes an eloquent
+response: ‘There is Nothing Natural About
+Gentrification’. The apparent sophistication
+of complexity theory used to predict where
+gentrification will happen next should not
+confuse us, Slater warns; this is ‘a dangerous
+diversion towards social Darwinism’, ignor-
+ing ‘structural forces of power, politics, pol-
+icy, and privilege’. Not long after Spike Lee
+is heard on an audio recording at a Pratt
+Institute lecture honouring African
+American History Month calling the gentri-
+fication of Fort Greene ‘Motherfuckin’
+Christopher Columbus syndrome’, a New
+York Times editorial manager sends a note
+to the newsroom asking reporters to please
+stop describing neighbourhoods in every city
+from Beijing to Cape Town in terms of how
+much they resemble hipster Brooklyn
+(Nguyen, 2014). But it was already too late.
+The ‘#Christophercolumbussyndrome’ hash-
+tag entered the twittersphere and was care-
+fully dissected in an article in the daily
+online Spanish finance and politics site El
+Confidential – ‘Es el puto sı́ndrome do
+Christóbal Colón’ (Garcı́a-Ajofrin, 2014) –
+
+Wyly 2527
+
+
+
+amidst powerful structural imperatives. In
+the early 1970s when Harvey and Smith
+were first refining Lefebvre’s theory of the
+capital-switching dynamics of the produc-
+tion of urban space, global capital had to
+find profitable investment opportunities for
+about US$6 billion of annual surplus value;
+now that figure is more than US$2 trillion
+every year (Harvey, 2014: 228). Most of that
+is going into cities. And almost a century
+after Robert Park declared the city a prod-
+uct of human nature and Patrick Geddes
+foresaw a ‘neotechnic order’, the technolo-
+gies of unprecedented planetary connectivity
+are accelerating the evolution of accumula-
+tion away from the old industrial capital of
+the Global North towards the new informa-
+tional empires as well as cosmopolitan capi-
+tal of all kinds from the Global South. John
+D Rockefeller and Andrew Carnegie are
+replaced by Bill Gates, Tim Cooke, Mark
+Zuckerberg and Rupert Murdoch, but also
+by Chen Mailin, Jack Ma, Carlos Slim and
+Mukesh Ambani. Planetary connectivity is
+also allowing the kinds of communication
+that Park and Dewey first theorised at the
+scale of the city to now reach the scale of
+Lefebvre’s planetary urbanisation. Woven
+from contextual blends of indigenous local
+processes and fast-moving policy innova-
+tions, gentrification has gone global.
+
+Let me be clear on this point. When I
+argue that gentrification has gone global, I
+am not suggesting that the phenomenon
+Ruth Glass identified in London in the
+1960s – and that many researchers have
+investigated and discussed in subsequent
+years – began in the Global North and has
+now been simply copied or applied in cities
+of the Global South. Gentrification (as a
+process, not a word) has a deeper history
+and a wider geographical lineage than is usu-
+ally recognised (Lees et al., 2015a, 2015b).
+Rather, I contend that the varied forms of
+the competitive class reshaping of urban
+space that have always defined urban
+
+modernity are sufficiently pervasive and
+transnationally connected through flows of
+ideas, money and aspirations to be reason-
+ably considered part of something ‘global’ in
+reach and influence.
+
+As gentrification has gone global, so have
+Frederick Jackson Turner’s frontier meta-
+phors. They are on the ground and in the
+cloud, in the streets and in the tweets, as the
+frontier as ‘a moving section’, a ‘form of
+society’ (Turner in 1914, quoted in Bowman,
+1932: 499) replaces Charles Galton Darwin’s
+(1956) ‘genetic surgeon’ with an emergent
+transnational social field of escalating multi-
+cultural competitions in education, employ-
+ment and housing. One future of
+gentrification is clear from Ley’s (2010: 82)
+analysis of Vancouver’s position at the
+nexus of ‘a dispersed social and spatial field’
+of ‘trans-pacific life-lines’ for competitive,
+entrepreneurial middle-class and elite fami-
+lies that incorporate ‘the capital-generating
+station of East Asia with the family-
+nurturing station of Canada into a single
+life-world’. Such transnational fields are
+now apparent across a growing number of
+cities, and fortunes are being made by those
+entrepreneurial pioneers of the noösphere
+who move quickest to adapt and exploit the
+new ‘science of collective behavior’ (Park,
+1921) on the frontiers of transnational spa-
+tial fixes of informational capital. The pro-
+cesses Harvey (1989: chapter 8) diagnosed a
+generation ago as the ‘urbanization of con-
+sciousness’ are now operating through a glo-
+bal noösphere in an interconnected,
+evolutionary and variegated planetary
+urbanisation.
+
+As situated, embodied and urbanising
+individuals, each of us can see, understand
+or experience particular empirical facets of
+this latest urban revolution – and now bil-
+lions of us are also able to talk, learn and
+fight about it in real time, in the evolution-
+ary algorithmic ecosystems of social media.
+No wonder John Sexton, with that doctorate
+
+2528 Urban Studies 52(14)
+
+
+
+in religion from the Jesuits, thinks in
+Teilhardian terms. He is in the noöspheric
+administration of one of the most exclusive
+private universities in one of the world’s
+most widely recognised epicentres of gentri-
+fication, where admission requires a ‘super-
+stage of consciousness’ of grades, test scores
+and extracurricular achievements – along
+with ever-escalating tuition payments and a
+Hunger Games survival of the financially fit-
+test competition in the City’s housing mar-
+ket. NYU’s ‘real-estate footprint’ in
+Greenwich Village and Brooklyn has grown
+by more than 2 million square feet in the
+past decade, while Sexton responds to critics
+of the ‘globalization of the university’ by
+contextualising the competition: ‘I live in a
+city where the people with all the choices, all
+the money, all the information, kill to get
+their kids into $35,000 kindergartens’
+(quoted in Carapezza and Noe-Payne,
+2014). He is right, and so is Spike Lee when
+he describes the cutthroat competition of
+White parents to get their kids into private
+schools,12 and when he describes the next
+generation of pioneers in Harlem: ‘When
+you see White mothers pushing their babies
+in strollers, three o’clock in the morning on
+125th Street, that must tell you something’
+(quoted in Coscarelli, 2014). Meanwhile, the
+acceptance rate for NYU Abu Dhabi’s sec-
+ond entering class stood at 2.6% – a group
+of slackers compared to the previous year’s
+1.2% – and NYU Shanghai’s recruitment
+criteria have been fully integrated with
+China’s informational intravenous drip13
+
+gaokao National College Entrance
+Examination. Even so, Sexton’s Teihardian
+new frontier of ‘idea capitals’ cannot always
+evade the Limits to Capital (Harvey, 1982):
+NYU’s Tisch Asia biz-school gamble in
+Singapore failed after a cascade of embar-
+rassing financial and management crises.
+
+This is the new urban frontier, half a cen-
+tury after Ruth Glass established the link
+between gentrification and the survival of
+
+the financially fittest in the global city.
+Unfortunately, critical perspectives on pla-
+netary gentrification have been distorted by
+a new paradox of theory, politics and prac-
+tice. A half-century of theory and discourse
+built to analyse the causes and consequences
+of the systemic socio-spatial inequalities of
+gentrification – what Atkinson and Bridge
+(2005) call the ‘new urban colonialism’ – is
+now itself under scrutiny as a colonial impo-
+sition. Considering the catastrophic history
+of evolutionary hierarchies and developmen-
+tal teleologies that continue to define the
+colonial present, this new challenge can be
+seen as a cosmopolitan, emancipatory evolu-
+tion beyond the narrow view from Anglo-
+America – what Jim Blaut (1993) famously
+called the ‘colonizer’s model of the world’
+(see also Baptista, 2013; Harris, 2008; Lees
+et al., 2015a, 2015b; McCann et al., 2013;
+Ren, 2015).
+
+The cosmopolitan decolonisation of
+gentrification
+
+Three recent landmarks in the gentrification
+literature offer lucid expressions of this new
+critical view. First, Thomas Maloutas (2011)
+offers an eloquent and strident challenge to
+the contemporary geographical and theoreti-
+cal expansion of gentrification research.
+Gentrification, Maloutas argues, is ‘highly
+dependent on contextual causality’, and no
+amount of conceptual reconstruction can
+‘remove its original contextual attachment to
+the Anglo-American metropolis’ (p. 34). For
+Maloutas, the ‘spatiotemporal stretching’ of
+definitions of gentrification is not only a
+‘regression in conceptual clarity and hence
+theoretical rigor’ (p. 36), but has itself
+become a part of the established Anglo-
+American hegemony of academic knowledge
+production; ‘there are authors from far less
+commensurable contexts that are increas-
+ingly compelled to label changes within
+urban centres as gentrification’ (p. 37), even
+
+Wyly 2529
+
+
+
+when the conclusion is analytically inap-
+propriate. ‘It is somewhat ironic that radical
+thinkers like Saskia Sassen and Neil Smith
+contribute indirectly to this effect’, Maloutas
+(2011: 42) argues, ‘by reinforcing the image
+of neoliberal omnipotence through their cri-
+tique of a regulation model that bursts out
+of its contextual confines due to the Anglo-
+American domination in the discipline’.
+Maloutas is deeply concerned with the simul-
+taneous, mutually reinforcing disempower-
+ment of researchers and theoretical concepts
+from the Global South, and the ‘contextual
+blindness’ of researchers in the Anglo-
+American core – and thus he concurs with
+Butler’s (2007: 163) response to Atkinson
+and Bridge’s (2005) diagnosis of a ‘new
+urban colonialism’: ‘the issue of ‘‘neocoloni-
+alism’’ is as much with the use and definition
+of the term as with its consequences’.
+
+Second, Loretta Lees (2012: 156) has
+recently challenged us to move ‘away from
+an ‘‘imitative urbanism’’ (from the idea that
+gentrification in the Global North has tra-
+velled to and been copied in the Global
+South) towards a ‘‘cosmopolitan urbanism’’
+(where gentrification in the Global South
+has a more expanded imagination)’. Lees
+(2012: 158) gives us a clear warning: ‘We
+should not read gentrification in the Global
+South as simply the recreation of the periph-
+ery (the urban South) in the image of the
+supposed centre (London or New York)’.
+Lees calls for postcolonial comparative
+urbanist analysis of the ‘hybridity of neoli-
+beralism’, and ‘new, indigenous, and cosmo-
+politan theorizations’ of gentrification in the
+Global South as well as the Global North.
+
+Third, in a valuable, deeply contextua-
+lised analysis of the curious absence of gen-
+trification discourse amidst the dramatic
+urban transformations of Hong Kong,
+David Ley and Sin Yih Teo (2013) explore
+the intricate ambiguities between epistemol-
+ogy and ontology. Drawing on Aihwa Ong’s
+(1999) concept of ‘alternative Asian
+
+modernities’, Ley and Teo document a
+chorus of voices from the Asia-Pacific that
+challenge the dominant Anglo-American
+narratives of neoliberalisation – emphasising
+instead the distinctive built forms and politi-
+cal processes that culminate in the synthesis
+of market and state power in the constitu-
+tion of a ‘joint urban project’ (p. 14). Urban
+renewal is fused with national developmen-
+tal imperatives. Crucially, this alternative
+Asian modernity holds out the promise, Ley
+and Teo (2013: 1) write, ‘most surprising
+from a Western perspective’, of ‘a poten-
+tially progressive dimension for some
+impacted residents’ through systems of
+negotiated compensation and broad
+improvements in housing conditions. ‘[T]he
+cultural hegemony of property in Hong
+Kong and other parts of East Asia makes
+redevelopment of some low-income districts
+a more ambivalent process’, Ley and Teo
+conclude, ‘for locked within the displace-
+ment of redevelopment is the hope of a
+negotiated settlement with the state leading
+to improved housing’.
+
+This emergent movement for a ‘cosmopo-
+litan decolonisation’ of gentrification
+research expresses the best of intentions –
+and, in crucial ways, the very best achieve-
+ments of cutting-edge idealist innovation in
+critical theories that have become deeply
+reflexive, sensitive to context and committed
+to emancipatory possibilities in the ‘pro-
+cesses of ascendence, emergence, and con-
+testation that defy the grid of postcolonial
+world systems’ (Roy, 2011: 308; cf. Ong,
+2011). It challenges those of us who write
+from and about gentrification in the Global
+North to look beyond the narrow confiness
+of Northern cities, while also realising, as
+Maloutas (2011: 43) reminds us, that only a
+tiny fraction of the world’s urbanites live in
+‘the core cities that set the ways of seeing
+and understanding socio-spatial change that
+often become the deforming lenses through
+which we examine what happens in the rest’.
+
+2530 Urban Studies 52(14)
+
+
+
+Yet our deferential reverence to the analyti-
+cal sophistication of cosmopolitan contin-
+gency intensifies a striking paradox: today’s
+postcolonial theory has achieved what
+Global North growth-machine operatives
+have been trying to do ever since the Real
+Estate Board of New York took out expen-
+sive ads on the editorial page of the New
+York Times, asking ‘Is Gentrification a
+Dirty Word?’ (Smith, 1996). ‘Oh, we don’t
+have any gentrification here’, an ‘eminent
+researcher of the rise of the Taiwanese mid-
+dle class’ tells Eric Clark (2015: 453) on a
+research visit to Taipei, in a confident asser-
+tion of the kind repeated at every opportu-
+nity, in every language, by developers, state
+officials and professionals in every city that
+is being remade, rebuilt, regenerated,
+renewed or revitalised. Alternative urban
+modernities that defy the contextual specifi-
+cities of Anglo-American gentrification
+while showcasing how ‘diverse actors and
+institutions invent and aspire to new ways of
+being global’ (Ong, 2011: 23) nevertheless
+involve the displacement of nearly a tenth of
+Shanghai’s population in a single decade
+(Iossifova, 2009), 720,000 for the Seoul
+Olympics (Centre on Housing Rights and
+Evictions (COHRE), 2007), 3.45 million
+across the Asia-Pacific between 2003 and
+2006 (COHRE, 2006), and at least 1.5 mil-
+lion for the Beijing Olympics (Shin, 2012).
+Along with the uncounted millions displaced
+by the kinder, gentler violence of market
+forces, these are the costs for which the cos-
+mopolitan turn provides no vocabulary, no
+language of questions or resistance. There is
+a world of difference between a politics that
+challenges gentrification as the new urban
+colonialism (Atkinson and Bridge, 2005)
+and one that attacks the terminology, theory
+and politics of the critical analysis of gentrifi-
+cation as an apparatus of colonial domina-
+tion. This would not be the first time that
+critical sensibilities of an inclusive, progres-
+sive poststructuralism were hijacked to serve
+
+the purposes of deeply retrograde authori-
+tarian alliances (compare Smith, 2009 with
+The Editors, Urban Geography, 2015 for per-
+spectives on ‘Western’ and ‘Eastern’ variants
+of authoritarian state coercion).
+
+At precisely the moment when gentrifica-
+tion is becoming truly transnational and
+powerfully planetary, we are asked to liqui-
+date the intellectual and political invest-
+ments of generations of critical inquiry in
+favour of evolving theories of ‘globalized
+contingency’ that have now even attacked
+postcolonial theory itself as ‘hegemonic’
+(Ong, 2011: 3, 8).
+
+There can be no doubt that we need an
+‘expanded geographical imagination’ (Lees,
+2012) to understand the varied and cosmo-
+politan causes, textures and consequences of
+the class transformation of urban space in
+different circumstances. Yet for three
+decades now, gentrification researchers have
+undertaken comparative inquiry with a deep
+sensitivity to the ‘contingency and complex-
+ity, set within the structural dimensions of
+advanced capitalism’ that Beauregard (1986:
+35) called for; Lees et al. (2015b: 6) review
+the ‘significant debate in the 1990s about the
+contextual nature of gentrification’, and cite
+a wide range of contextual and/or compara-
+tive gentrification studies beyond the ‘usual
+suspects’. Today, however, as the ‘advanced
+capitalism’ once synonymous with the
+Global North shifts to the urban growth
+frontiers of the Global South, the ‘cosmopo-
+litan decolonisation’ of gentrification theory
+abandons the analytical and political poten-
+tial of all of this work. Lees et al. (2015b: 7)
+highlight the stakes when introducing their
+new edited collection of genuinely cosmopo-
+litan and pluralist analyses of ‘global
+gentrifications’:
+
+Without a gentrification theory that serves as
+an ‘umbrella’. the debate we are holding now
+in this book would probably not exist, neither
+would most of the gentrification debates held
+
+Wyly 2531
+
+
+
+hitherto by scholars in different contexts, and
+nor would urban activists around the world be
+able to identify the different types of
+redevelopment-led displacement that are in
+many ways part of the same repertoire of class
+restructuring in global capitalism.
+
+Moreover, the central features of an alleg-
+edly distinctive Asian urban paradigm –
+aggressive and comprehensive state plan-
+ning, contested yet significant systems of
+relocation and compensation, and what
+Maloutas calls the ‘cross-class national
+pride’ of urban modernisation – only present
+a contradiction of gentrification theory if we
+retreat to the most narrow, obsolete and
+rigid definitions tied to ‘classical’ Glass-style
+spontaneous invasion-and-succession of par-
+ticular inner-city neighbourhoods, thus
+ignoring the vast, interdisciplinary and con-
+textual literatures on urban renewal, state-
+driven gentrification and intensified capitali-
+sations of home and urban life involved in
+far-flung transnational networks of real-
+estate securitisation, development and specu-
+lation (Harris, 2008; Lees et al., 2010; Shao,
+2013; Slater, 2015; Smith, 2002, 2010).
+Indeed, it is far more meaningful to suggest
+that the contextual, indigenous fusion of the
+‘process of value extraction from the built
+environment’ (Lees et al., 2015a: 441) with
+consolidated Asian nation-state power and
+popular consent in the assemblage of devel-
+opment models and tactics from ‘parts of
+elsewhere’ (Allen and Cochrane, 2007: 1171)
+in the ‘nodes of an emergent global order
+marked by the ascendancy of Asian power-
+houses, from the Gulf States to India and
+China’ (McCann et al., 2013: 585) – all of
+this constitutes the refined achievement of a
+gentrification project that is far more effec-
+tive than anything ever accomplished in the
+Anglo-American world. It is testament to
+the success of gentrification in developmen-
+tal states that the word ‘gentrification’ is so
+rarely used: a pre-emptive eviction of the
+term helps delay and suppress the politics of
+
+resistance (Slater, 2009), and in any event,
+resistance is always a marginalised minority
+against the discursive and material popular-
+ity of the ‘spatialised production of new
+middle-class urban identities’ (this is Harris’s
+(2008: 2415) memorable phrase inspired by
+Fernandes’ (2006) analysis of India’s new
+middle class). Ley and Teo (2013), however,
+document a recent ‘ontological awakening’
+amidst worsening inequality in Hong Kong,
+while there are other indications of instabil-
+ity in the 21st century’s dialectical response
+to the Chicago School – the ‘Chinese excep-
+tionalism’ urban paradigm (Ren, 2015;
+cf. The Editors, Urban Geography, 2015).
+No matter what it is called – urban renewal,
+regeneration, development, modernisation,
+the cultural hegemony of property, the spa-
+tialised production of new middle-class
+urban identities, the ‘often invisible, unquan-
+tifiable’ ‘human wreckage’ of a domicide
+translated as chaiqian (demolition + reloca-
+tion) (Shao, 2013: 2), or the 2010 Shanghai
+World Exposition’s unbridled optimism of
+‘Better City, Better Life!’ – this is the
+nationalisation of gentrification within the
+transnational interconnections of planetary
+urbanisation. This is the essence of gentrifi-
+cation, not its Other.
+
+Gentrification and the noösphere
+
+My third claim is the most provocative,
+because it puts me in the position of attack-
+ing the emancipatory narratives of multicul-
+tural meritocracies of competition in
+technology, creativity and education.
+Contemporary gentrification is a recombi-
+nant urbanism of old and new, defined by
+competitive processes accelerated through
+the algorithmic transformation of market
+relations in housing, labour and education.
+Silicon Valley’s noösphere involves an
+unprecedented and unapologetic planetary
+colonisation by the West: Facebook’s plans
+for a fleet of a thousand high-altitude drones
+
+2532 Urban Studies 52(14)
+
+
+
+flying over 4G LTE terra incognitae to con-
+nect the unnetworked savages is code-named
+Aquila, for the classical-mythology eagle
+carrying Jupiter’s thunderbolts to the sky.
+Algorithmic imperialism is reproducing dan-
+gerous new frontiers of Turner’s evolution-
+ary logics in dynamic transnational urban
+networks of class competition. In an essay
+written not long before his ‘Evolution of
+Gentrification’ chapter, Neil Smith (2009:
+54) challenged the idealism of poststructur-
+alism for ‘engender[ing] the implicit assump-
+tion that to change the world it is necessary
+first and foremost to change the discourse’,
+as against the structured material inequal-
+ities of class in the capitalist mode of pro-
+duction. Yet this distinction has quickly
+blurred in the years since the global financial
+crisis, as the most dynamic frontiers of capi-
+tal accumulation are now pursuing the com-
+modification and monetisation of discourse
+itself on a planetary scale. Apple first sur-
+passed Exxon in August of 2011 to become
+the world’s most valuable company in terms
+of market capitalisation, and is now valued
+at US$719 billion; Facebook’s market cap,
+at US$232 billion, recently surpassed JP
+Morgan; Google posted revenues of US$66
+billion last year (2014), 89% from advertis-
+ing. If we take a broad view of the old and
+new names in cognitive-cultural capitalism
+(Scott, 2007, 2011a, 2011b) ranked by mar-
+ket capitalisation, we see Apple, Google,
+Microsoft, China Mobile, Facebook,
+Verizon, Oracle, Disney, Amazon, AT&T,
+IBM, Comcast, Intel, Cisco, Taiwan
+Semiconductor and Qualcomm; this is a
+combined market capitalisation of US$3.66
+trillion devoted to an informational mode of
+production in which the human attention
+span is being assembled into a transnational
+resource to be dynamically measured, man-
+aged and mined. Poststructuralism is the
+new retail frontier14 for Wall Street finance,
+Silicon Valley venture capital and technolo-
+gical innovation, and a remarkably
+
+cosmopolitan global alliance of emergent
+middle classes, political elites, and energetic,
+idealistic students in a variegated planetary
+urbanisation of cognitive capitalism.
+
+In this context, a wider array of individu-
+als, firms, public and private institutions in
+cities – even the most ‘ordinary’ cities
+(Robinson, 2006) – are forced to compete
+and adapt across an increasingly dynamic,
+insecure and expanding networked noö-
+sphere of accelerating measurement and
+marketisation in housing, employment and
+education. Urban assets – their real-estate
+markets, their educational institutions, their
+‘human capital’ – are all being mobilised
+more aggressively, more creatively and more
+rapidly in the pursuit of endless compound
+growth and capital accumulation (Harvey,
+2014; Smith, 2002). Cognitive capital accu-
+mulation, however, is much more agile
+compared with the old growth-machine
+urbanism of the industrial age – and it offers
+alluring images of inclusion, opportunity
+and diversity in Richard Florida’s globally
+circulating ‘3T’ formula for urban success:
+technology, talent and tolerance. ‘In the
+Creative Age’, Florida (2003: 17) empha-
+sises, ‘the mind itself becomes the mode of
+production, so to speak’, and the shift from
+an economy based on material inputs to one
+driven by intellectual resources elevates the
+importance of meritocracies – measurable
+and quickly adaptive meritocracies – in
+workplace divisions of labour and in the col-
+leges and universities that function as ‘talent
+machines’ in the ‘new global competition for
+talent’ (Florida, 2006). Together, all of the
+interdependent processes by which the ‘basic
+cognitive-cultural system of production’ is
+‘transforming the economic foundations of
+many large metropolitan areas all over the
+world’ (Scott, 2011b: 289) are dissolving the
+relevance of the sharp categorical distinc-
+tions and polarising binaries of the gentrifi-
+cation debates: demand-side and supply-side
+causal explanations (Hamnett, 1991; Ley,
+
+Wyly 2533
+
+
+
+1987; Smith, 1987), the role of ethnoracial
+and cultural lifeworlds as opposed to the cal-
+culative rationalities of profit and loss
+(Knopp, 1997; Rose, 1984; Taylor, 2003),
+and the fine-grained morphological differ-
+ences among residential, retail, and indus-
+trial redevelopment, or ‘classical’ versus
+‘new-build’ reinvestment (Davidson and
+Lees, 2010; Lambert and Boddy, 2002).
+Each of these lineages of theoretical and
+political debate is important so long as gen-
+trification is understood as a spatially
+bounded process that happens in specific,
+localised city neighbourhoods with distinc-
+tive histories and built-environment charac-
+teristics. These issues matter less when
+gentrification is understood as a dimension of
+planetary urbanisation, as Merrifield (2013:
+916) frames it: ‘The urban brings everything
+together, and transforms everything in that
+coming together: capital and goods, people
+and information, activity and conflict, confron-
+tation and cooperation’. If we take Lefebvre
+(2003[1970]: 118–119) seriously, the urban is
+pure process: ‘a place of encounter, assembly,
+simultaneity’, but a non-place, a:
+
+concrete abstraction, associated with practice.
+. the urban accumulates all content. But it is
+more than accumulation. Its content (things,
+objects, people, situations) are mutually exclu-
+
+sive because they are diverse, but inclusive
+because they are brought together and imply
+their mutual presence. The urban is both form
+and receptacle, void and plentitude, superob-
+ject and nonobject, superconsciousness and
+the totality of consciousness.
+
+What does this mean for the evolution of
+gentrification? When understood as a dimen-
+sion of planetary urbanisation, gentrification
+is no longer confined to a false choice
+between the chaos and complexity of loca-
+lised geographical contingency as opposed
+to the order and simplicity of land, property
+and class (compare Beauregard, 1986, with
+Clark, 2005). Gentrification is, as ever, the
+
+upward class transformation of urban space.
+Just as planetary urbanisation redefines the
+ontology of ‘urban’, however, ‘class’ can and
+does take on altered meanings in cognitive
+capitalism. The axes of class analysis are rea-
+ligned both for Marxian conceptualisations
+in relation to the means of production of
+surplus value, and for Weberian orders of
+class, status and power – as well as the inter-
+relations of ‘class and its others’ (Gibson-
+Graham et al., 2000) of race, ethnicity, gen-
+der and sexual identity, age and other axes
+of difference. Class inequalities are deeper
+than ever, but these multiple dimensions are
+subject to reconfiguration amidst the rising
+informational content and increasingly algo-
+rithmic nature of production, consumption,
+governance, education and social reproduc-
+tion in cognitive capitalism. The accelerating
+scope and pace of these reconfigurations –
+experienced and threatened shifts in market
+demands, for instance, and the Silicon
+Valley ‘disruption’ of various occupations
+and industries – are returning the concept of
+‘class’ to more of the original meanings
+intended by Galton and Pearson: any system
+of social ranking, categorisation or classifi-
+cation used to determine hierarchical
+difference.
+
+It should now be clear that understanding
+the upward class transformation of urban
+space requires that we expand our imagina-
+tion of gentrification (Lees, 2012; Lees et al.,
+2015a, 2015b) – not to provincialise it to par-
+ticular neighbourhoods, cities or regions
+(Maloutas, 2011). The upward class trans-
+formation of urban space is manifest in any
+empirical situation where individual or
+group differences result in a more powerful
+group coming to dominate any urban ‘place
+of encounter’.15 In market systems for hous-
+ing, labour and education, hierarchies of
+power involve economic competition for
+urban locations, but of course all societies
+are also constituted by other inequalities
+of identity, difference and power. These
+
+2534 Urban Studies 52(14)
+
+
+
+inequalities come together in varied ways in
+different cities, but the recognition of post-
+colonial pluralities, contingent causes and
+consequences, and de-centred ‘sites of episte-
+mological production’ (Baptista, 2013: 590)
+should not blind us to the generic power
+(Clark, 2015: 454) of two universals: (1)
+competition, and (2) classification systems
+that distinguish individuals and/or groups.
+While in capitalism money provides the ulti-
+mate classification system, cognitive-cultural
+capitalism is defined by increasingly diverse
+pathways from cultural identity and creativ-
+ity to the valorisation of success through
+competition. This competition is increasingly
+mediated through socially networked infor-
+mation technologies and other changes in
+the infrastructures of observation, measure-
+ment and classification that govern the
+development and certification of human cap-
+ital, the management of the creative powers
+of cognitive labour, and the advertising-
+driven monetisation of human social rela-
+tions, attention and learning.
+
+The gentrification literature has, for
+entirely understandable reasons, focused
+heavily on real-estate and land-market
+dynamics: the rhythms of real-estate capital
+investment and disinvestment are crucial
+moments and measures of class transforma-
+tion. But today’s cognitive capital inter-
+weaves real estate capital flows with media
+and educational discourses and communica-
+tions circuits in ever more powerful and crea-
+tive ways. We need to take LinkedIn CEO
+Jeffrey Weiner very seriously, then, when he
+outlines the goals of the company’s recent
+acquisition of the online learning enterprise
+lynda.com, as part of an effort to expand the
+‘addressable market by $30 billion’: ‘We
+want to digitally map the global economy,
+identifying the connections between people,
+companies, jobs, skills, higher educational
+organizations and professional knowledge
+and allow all forms of capital, intellectual
+
+capital, financial capital, and human capital
+to flow to where [they] can best be leveraged’
+(quoted in MarketWatch, 2015). We also
+need to take seriously the rapidly changing
+relations among informational innovation,
+the accumulation and circulation of capital,
+and the legal rules of state and corporate sur-
+veillance. We know that there is a bizarre,
+retroviral sort of transnational regeneration
+underway when Mark Zuckerberg pays
+US$100 million for a 750-acre parcel on the
+North Shore of Kauai that includes a former
+sugarcane plantation (Stone, 2015), while
+requiring the carpenters and labourers reno-
+vating his house in San Francisco to sign
+detailed non-disclosure agreements (Richtel,
+2015), while ostentatiously staging a copy of
+Xi Jinping: The Governance of China on his
+desk at Facebook headquarters so that Lu
+Wei can pause and smile as a photographer
+captures the moment: ‘One photo taken of
+the Facebook visit and posted on a site asso-
+ciated with China’s State Council
+Information Office shows Mr. Lu smiling as
+he looks down at the book’ (Mozur, 2014).
+Lu Wei is described in the West as ‘China’s
+Internet Czar’, but that is a little out of date
+in an age when Zuckerberg can say with a
+straight face that he bought Lu Wei’s book
+so that he and his coworkers ‘understood
+socialism with Chinese characteristics’
+(Mozur, 2014) by carefully studying the wis-
+dom of the Minister of Cyberspace
+Administration who has worked so hard and
+so skillfully to measure, monitor and manage
+(i.e. suppress) online discussion of social
+movements resisting demolition and reloca-
+tion in China’s domicide (Shao, 2013; also
+see Mozur and Perlez, 201416). We have
+come a long way from John Sexton’s appeal
+to JFK’s anticommunist ‘new frontier’ as he
+works to build the Global Network
+University.
+
+In the age of the ‘stretch-limo optimism’
+of the Reagan years, Neil Smith mused:
+
+Wyly 2535
+
+
+
+No one has yet seriously proposed that we
+view James Rouse – the developer responsible
+for such maverick downtown tourist arcades
+as Baltimore’s Inner Harbor, South Street
+Seaport in New York, or Boston’s Faneuil
+Hall – as the John Wayne of gentrification,
+but insofar as such projects serve to anchor
+the gentrification of many downtowns, the
+proposal would be quite in keeping with the
+frontier discourse. (Smith, 1996: xv)
+
+Today, no one has yet seriously proposed
+that we view Lu Wei or Mark Zuckerberg as
+the agents of Spike Lee’s Christopher
+Columbus syndrome. But the proposal
+would be quite in keeping with a Silicon
+Valley frontier discourse in which Obama
+tells a cybersecurity conference at Stanford,
+‘This cyberworld is sort of the Wild West’,
+not long after the PRC’s image of Lu Wei
+and Zuckerberg scored a photo-op nearly as
+prominent as the famous February, 2011
+White House image of a private dinner in
+San Francisco where Obama raises a toast
+to Zuckerberg, Steve Jobs, and the CEOs of
+Google, Yahoo!, Twitter, Oracle, Netflix
+and Cisco Systems. LinkedIn wants to allow
+all forms of capital – intellectual, financial
+and human – to flow where they can best be
+leveraged, but has agreed to censor some of
+its content in order to gain access to the
+unprecedented growth frontier of the pla-
+net’s largest stock of urbanising human capi-
+tal (Mozur, 2014).
+
+Turner’s noösphere
+
+Now we can begin to see the full implica-
+tions of the Global Network University as a
+cyborg MOOCification17 of Chicago School
+urbanism, the cosmopolitan patriots as post-
+Galton-esque, non-hereditary genius descen-
+dants of Frederick Jackson Turner, and
+John Sexton’s ‘tremendous opportunity in
+the process of global evolution’ in the
+Teilhardian noösphere mutating into a ruth-
+lessly competitive capitalist colonisation of
+
+Dewey’s cognitive Darwinism. ‘We began to
+create a new industrial revolution inside peo-
+ple’s heads’, Richard Florida proclaimed in
+a community summit – ‘Innovation: The
+Shock of the Possible’ – in the Queen
+Elizabeth Theatre in Vancouver in the
+Autumn of 2014, in the same month Pope
+Francis spoke at the Pontifical Academy of
+Sciences and ‘appeared to endorse two
+major scientific concepts that have given
+religious believers big trouble: the Big Bang
+and evolution’ (Mooney, 2015). Richard
+Florida’s creative-class capitalists embody
+the new industrial revolutions going on
+inside their heads, in the survival-of-the-fit-
+test competition of urban entrepreneurialism
+in the age of planetary urbanisation. The
+cognitive revolutions that inspire Florida are
+also the focus of neoclassical, neoliberal eco-
+nomics18 at the nexus with neurobiology,
+behavioural psychology, Big Data and the
+thriving ‘neuromarketing’ literature that
+gives us articles with titles such as
+‘Evolutionary Neuromarketing: Darwinizing
+the Neuroimaging Paradigm for Consumer
+Behavior’ (Garcia and Saad, 2008).19 To
+really understand the frontiers of accumula-
+tion by information, however, Florida’s
+boosterism – he praises Vancouver as ‘the
+most beautiful city on the planet’ – was just
+a warmup act for the main event: Ray
+Kurzweil. Kurzweil is ‘one of the world’s
+leading inventors, thinkers, and futurists’,
+and Forbes has called him ‘the ultimate
+thinking machine’ (SFU Public Square,
+2014). Kurzweil is a cartographer of the new
+evolutionary frontier of exponential
+advances in information processing, biotech-
+nology, communications and neuroscience
+in the ‘law of accelerating returns’–‘the
+inherent acceleration of the rate of evolu-
+tion, with technological evolution as a conti-
+nuation of biological evolution’ (Kurzweil,
+2005: 7). Technological advances are speed-
+ing up our evolution so fast that we are on
+the verge of extending life expectancy by
+
+2536 Urban Studies 52(14)
+
+
+
+more than a year each year – so if you can
+just hold on a bit longer, he reassures us, we
+will get to a technologically enabled immor-
+tality – the Singularity. ‘Ultimately, every-
+thing is going to be information’, Kurzweil
+emphasises, including our consciousness.
+Today’s genetic engineering successes on a
+few of the 23,000 software programs inside
+us will be ‘a million times more powerful
+twenty years from now’. The latest genera-
+tion of Parkinson’s treatments have implants
+in the brain with software updates delivered
+from outside the patient’s body, and soon
+we will ‘basically put our brain on the
+cloud’. ‘We will be a hybrid of biological
+and nonbiological thinking’, Kurweil
+explains. When he is asked a question about
+education, he answers with an insistent opti-
+mism: ‘Nanobots in the neocortex will com-
+municate with the cloud’, and ‘nanobots
+communicating with neurons’ will serve as
+‘brain extenders’ that will become available
+to more and more people – not just the rich.
+‘We are already integrated with our brain
+extenders’, he observes, and at one point
+Kurzweil holds out his cell phone and tells
+the audience, ‘It’s a gateway from my brain
+to the cloud’. Kurzweil is only the most affa-
+ble and mainstream ambassador of a diverse
+‘transhumanism’ movement that ranges all
+the way from corporate singulatarians (such
+as Peter Thiel, co-founder and former CEO
+of PayPal, Google’s Larry Page and Sergey
+Brin, and Sun Microsystems founder Bill
+Joy) to ‘anarcho-capitalist’ libertarians and
+DIY biohackers in communes with names
+such as Cyberpunk Apocalypse (Flatley,
+2015). The movement also includes techno-
+eugenics advocates such as Zoltan Istvan,
+whose manifesto ‘It’s Time to Consider
+Restricting Human Breeding’ combines
+admiration for China’s one-child policy with
+praise for ‘a new transhuman-inspired birth
+control device’ developed at MIT and now
+funded by Bill Gates. It’s an implanted
+birth-control microchip that lasts 16 years
+
+and ‘can deliver hormones into the body via
+an on-off switch on your mobile phone’,
+Istvan (2014) explains; ‘It’s not a huge jump
+to imagine governments seeing opportunity
+in using this. Many children born into pov-
+erty end up costing governments billions. .
+a high percentage of those same kids will
+end up on the streets, in gangs, or in prison
+after they become adults’ (Istvan, 2014).20
+
+This is what the new urban frontier looks
+like when today’s informational capitalists
+undertake a leveraged buyout of the revolu-
+tionary urban theories of the 1960s and
+1970s. The social movements of Castells’
+(1983) City and the Grassroots are now the
+Networks of Outrage and Hope of ‘connec-
+tions between networks of neural networks
+from human brains stimulated by signals
+from a communications environment
+through communication networks’ (Castells,
+2012: 219). Kurzweil studies brain extenders
+and the evolutionary hybrid of neocortex
+and the cloud as director of Engineering at
+Google, and as co-founder, with Larry Page,
+of an institution called Singularity
+University.
+
+Universities, and their ecosystemic posi-
+tion in global city-regions, play very special
+roles in the evolving interface between loca-
+lised urban encounters (in a Lefebvrian
+sense) and the ‘massive communications sys-
+tems’ (Webber, 1964) that now shape con-
+temporary class competition on a planetary
+scale. University towns always seem to pres-
+ent themselves as places of equity, diversity,
+inclusion and the limitless frontiers of ideal-
+ism of students working to build new
+futures; but they are also sites of the exclu-
+sivity, instrumental rationality and hamster-
+wheel competitions for credentials and the
+narrowing paths towards economic security
+that reflect and reinforce the inequalities of
+wider societies. Globally, the ‘tertiary enroll-
+ment ratio’ – the ‘proportion of the respec-
+tive age cohort enrolled in university’ –
+jumped from 14% to 32% in the two
+
+Wyly 2537
+
+
+
+decades up to 2012 (Duncan, 2015: 4). ‘The
+World is Going to University’, the cover
+story of The Economist proclaims, and this
+is where we can see furthest into the future
+frontiers of how gentrification is evolving,
+and how evolution is being gentrified.
+University towns and cities – and indeed all
+places from which people are aspiring and
+striving to gain access to the cultural and
+economic capital symbolised by the idea of
+‘University’ – constitute a crucial transna-
+tional institutional interface between loca-
+lised spaces of encounter and competitive
+processes that are speeding up and becoming
+more geographically expansive and dynamic.
+Sexton’s Global Network University is only
+one of the more explicit brand names for a
+wider intensification of educational competi-
+tion driven by a universalising moral discur-
+sive momentum: who can oppose the latest
+strategic plan for a school to be ‘world
+class’? Who doesn’t want their children to do
+their best, to get the best opportunities? Not
+long ago, the publisher James Atlas (2011)
+read a brochure announcing the year’s win-
+ners of a prestigious study-abroad fellow-
+ship, and was astonished at the level of
+achievement: ‘Let’s call this species Super
+Person’, he suggests, and asks, ‘Do we have
+some anomalous cohort here? Achievement
+freaks on a scale we haven’t seen before?
+Perhaps there’s an evolutionary cause .’.
+William Deresiewicz, a former English pro-
+fessor at Yale, describes the students of the
+Ivy League as an ‘alien species’ of ‘bionic
+hamsters’ (quoted in Heller, 2014: 68). At
+the University of British Columbia, one of
+the recently admitted students is a 15-year-
+old who completed high school in two years;
+along the way, he invented an environmen-
+tally friendly soap made from waste oil and
+created a handwriting recognition software
+application, before winning a nationwide
+competition for a lucrative scholarship
+(Chan, 2014). At the same time, one of my
+students too ‘ordinary’ to win a lucrative
+
+scholarship struggled while searching for an
+apartment in Vancouver’s turbocharged
+rental housing market; she arrived to one
+viewing only to find 15 other students, all
+studying application forms pre-printed with
+a question that transformed the advertised
+monthly rent into a bidding war: ‘How
+much more are you willing to pay per
+month?’. Vancouver has more supercars per
+capita than any other metropolis in North
+America, and has the planet’s second-
+highest home-price-to-income ratio (behind
+only Hong Kong) (Ian Young, speaking on
+Brown, 2015). Another student tells me of
+her narrowly missed traffic accident after
+being cut off by a young UBC student at the
+wheel of a Rolls Royce – the kind of
+encounter that has become sufficiently fre-
+quent to inspire an anonymous blogger to
+create a Tumblr page with crowdsourced
+images of Ferraris, Maseratis and other tro-
+phies at the ‘University of Beautiful Cars’.21
+
+Elsewhere in the city, one of the restaurants
+in the rapidly gentrifying epicentre of pov-
+erty and disinvestment sells tokens that can
+be given to the local homeless and panhand-
+lers to redeem for a free sandwich; the ‘idea-
+listic’ entrepreneur’s ‘quest to make an
+impact on the neighbourhood’ is chronicled
+in a ‘docu-reality’ series featured on the
+Oprah Winfrey Network (see Aiello, 2014).
+Another restaurant scrambling to survive in
+a ruthlessly competitive landscape of ‘ethical
+entrepreneurialism’ that carefully negotiates
+the moral rent gap that mediates the rela-
+tions between ‘culinary authenticity’ and
+hard-edged poverty (Hyde, 2014; cf. Aiello,
+2014; Burnett, 2014) features a Cdn$0.50
+menu item with a promise to donate half the
+proceeds to local charities: ‘misfortune
+cookies’. On the other side of a downtown
+transformed by multiple generations of
+urban renewal, the latest celebrity-architect
+trophy-tower – Vancouver’s first entry into
+the world-city club of the ‘super-prime’
+building classification – includes today’s
+
+2538 Urban Studies 52(14)
+
+
+
+trending accessory for the socially conscious
+condo buyer:
+
+Vancouver House residents will also be con-
+nected to the global community through
+World Housing, which helps build houses for
+Third World families living in garbage dumps.
+
+For every suite purchased at Vancouver
+House, a new home will be donated to a fam-
+ily in Cambodia. Strengthening the connec-
+tion, each Vancouver House resident will be
+able to meet the family it assisted, either on
+paper or online. (Stone, 2014: G6)
+
+The ‘one-for-one real estate gifting model’ of
+World Housing connects Vancouver’s ever-
+escalating property market – as well as its
+growing community of professionals com-
+mitted to the ‘social sustainability’ and ‘ethi-
+cal architecture’ movements – to a garbage
+dump outside Phnom Penh through the phi-
+lanthropist Scott Neeson, a former president
+at Twentieth Century Fox International
+involved in more than 200 films over a
+decade (Bellett, 2014). Bjarke Ingels, the
+young starchitect of Vancouver House who
+has advised that his profession should be
+properly understood as ‘Worldcraft’ – turn-
+ing ‘surreal dreams into inhabitable space’ –
+has gone on to submit one of the designs
+under consideration for Google’s new head-
+quarters campus in Mountain View,
+California. The plan would replace an exist-
+ing patchwork of 7.5 million square feet of
+leased office space with a new landscape for
+which Google will be its own developer, cre-
+ating the equivalent of four Empire State
+Buildings’ worth of office space in large,
+transparent canopies that will be movable,
+‘like furniture’ (Dougherty, 2015).
+
+Google’s furniture future provides a
+unique perspective on the ‘furniture of the
+mind’ that so fascinated Dewey in the
+Darwinian revolution a century ago. The
+Googleplex is just across the highway from
+the old NASA Ames Research Park, where
+we now find Singularity University. Part of
+
+the Singularity – that wonderful convergence
+of people, creativity and code that reminds
+John Sexton of Teilhard’s noösphere –
+involves what Marc Andreesen (2011) has
+described as ‘software eating the world’, as
+code replaces conscious, embodied human
+labour. ‘Technology changes, and it changes
+more quickly than human beings change’,
+Nick Carr (2014: 40) warns. ‘Where comput-
+ers spring forward at the pace of Moore’s
+law, our own innate abilities creep ahead
+with the tortoise-like tread of Darwin’s law’.
+Carr’s (2014) review of the history makes it
+clear that those words could have been spo-
+ken by the pioneers of cybernetics (such as
+the child prodigy who entered Tufts
+University at age 11 and earned a PhD from
+Harvard at age 18, Norbert Wiener); but
+read those words again, and consider how
+each of these figures might respond: Herbert
+Spencer, John D Rockefeller, Patrick
+Geddes, John Dewey, Robert Park,
+Frederick Jackson Turner, Charles Galton,
+Ed Glaeser, John Sexton, Richard Florida
+and Ray Kurzweil. Kurzweil’s ‘brain exten-
+ders’ and ‘nanobots’ connecting individual
+brains to the cloud promise to resolve the
+speed differential between Moore’s law and
+Darwin’s law – like the ‘genetic surgeon’
+described by Sir Charles Galton Darwin
+back in 1955 – creating a new cognitive
+Darwinism that adapts to the stepped-up
+pace of competition in today’s survival-of-
+the-fittest worlds of social Darwinism. This
+is the future. For only US$12,000 (US$1,000
+down) you can take the week-long Executive
+Program at Singularity University to learn
+how to adapt, compete and survive in an
+urbanising world where Silicon Valley’s
+update of Geddes’ ‘neotechnic order’ has
+intensified the urbanisation of social-
+Darwinist competitive evolution: the new
+planetary urban frontier.
+
+Or you could try to get into Stanford, or
+Berkeley, or Harvard or MIT, or perhaps
+NYU’s Global Network University.
+
+Wyly 2539
+
+
+
+Compete with the best. As we consider the
+accelerating race between technology and
+education – as humans compete on ever
+more planetary scales with other humans,
+with robots and with code – we get a glimpse
+of the future of measurement, classification
+and the competitive transformation of the
+urban. The view from Silicon Valley is clear.
+There is no need to put on the Google Glass
+headset to see Turner’s noösphere. You see
+it in the rage over the tech industry’s turbo-
+charged gentrification of San Francisco, and
+the protests over the private Google Buses
+taking tech workers out from the San
+Francisco neighbourhoods they have
+invaded to the suburban Valley. You see it
+in the recombinant innovations of capital,
+property, creativity and information
+amongst entrepreneurs, developers and
+homebuyers racing to survive in their partic-
+ular ecosystemic urban niches in cities
+around the world. You see it in every year’s
+class of hopeful students around the world
+struggling to get into the very best universi-
+ties, even as those universities scramble fur-
+iously to work their way up in all the
+various rankings. You see it in the multi-
+tudes who apply to institutions such as the
+Global Network University, Singularity U,
+or a growing number of elite university divi-
+sions and franchises that all, taken together,
+bear a striking resemblance to Galton’s
+(1910) final fantasy – the cosmopolitan
+patriots of his utopian novel The Eugenic
+College of Kantsaywhere. Look at the cos-
+mopolitan pioneers of the noösphere on the
+Singularity frontier. You can see the evolu-
+tion of gentrification, and the gentrification
+of evolution.
+
+Acknowledgements
+
+I am grateful to the Editors of Urban Studies, and
+to SAGE, for the opportunity to present a ver-
+sion of this paper to the Annual Conference of
+the Association of American Geographers in
+Chicago, April 2015. Thanks to Tony O’Sullivan,
+
+Ronan Paddison, Andrew Cumbers, Jon
+Bannister, Robert Lake, Emily Rosenman and
+Pablo Mendez for valuable comments and recom-
+mendations on previous versions. I also apologise
+to the prominent ecological modelling specialist
+David P Turner at Oregon State University,
+whose contemporary analysis of the noösphere
+(Turner, 2005) should not be confused with the
+target of my title – the evolutionary
+environmental-determinist historian Frederick
+Jackson Turner; thanks to Tony O’Sullivan for
+the reference.
+
+Funding
+
+This research received no specific grant from any
+funding agency in the public, commercial, or not-
+for-profit sectors.
+
+Notes
+
+1. Sexton’s vision for cosmopolitan patriots
+and citizens of global society also includes
+superstar faculty recruitment. NYU Abu
+Dhabi has led to ‘an extraordinary elevation
+of brand’, he explains to a correspondent
+from The Economist; ‘For 15 years I had
+been trying to get Anthony Appiah to come
+to NYU. One Trip to Abu Dhabi, and he
+came’ (Duncan, 2015: 11).
+
+2. Appiah (1997: 617) begins his essay thus:
+‘My father was a Ghanaian patriot. He once
+published a column in the Pioneer, our local
+newspaper in Kumasi, under the headline,
+
+‘‘Is Ghana Worth Dying For?’’ and I know
+that his heart’s answer was yes .’. But
+when his father died, Appiah and his sisters
+found an unfinished note of ‘last words and
+wisdom’ for his children, including this
+advice: ‘Remember that you are citizens of
+the world’ (Appiah, 1997: 618).
+
+3. Indeed, part of Dewey’s brilliance was in
+applying evolutionary logics to individual
+theories and theorists themselves. Dewey
+saw Spencer’s enormous popularity in
+laissez-faire America as the historically evo-
+lutionary culmination of English liberalism:
+‘he is not one creator with many others of
+the theory of evolution, but its own concrete
+incarnation’ (Dewey, 1904: 53).
+
+2540 Urban Studies 52(14)
+
+
+
+4. ‘The concept of knowledge as a tool for sur-
+vival – cognitive Darwinism – is as old as
+biological Darwinism’, Rescher (1977: 126)
+emphasises. Rescher’s (1977) ‘evolutionary
+epistemology’ places cognitive Darwinism at
+the centre of pragmatism much as Harvey
+(2011) places ‘mental conceptions of the
+world’ at the core of his contemporary
+understanding of a ‘coevolutionary’ histori-
+cal materialism. Rescher (1977: 307) makes
+the case that ‘European Marxists’ and
+‘American pragmatists’ share the fundamen-
+
+tal ‘tendency of thought – the idea of the
+controlling role of the demands of practical
+life as the ultimate arbiter of cognitive ade-
+quacy’. Rescher’s (2005: x) subsequent
+inquiry has focused on a critical realist prag-
+matism devoted to ‘how we can manage our
+cognitive affairs sensibly in situations of
+imperfect information’.
+
+5. Friedman’s appeal to ‘natural selection’ had
+an ‘enduring influence’ in the field’s hege-
+mony, but the early post-war ‘brief flurry’ of
+‘biological thinking in economics had less
+impact than its successors. Its much dimin-
+ished effect is explicable, given its immediacy
+after the Nazi holocaust, and the prior reac-
+tion against biological thinking in the social
+sciences in the 1920s and 1930s’ (Hodgson,
+2009: xxi). In a foreshadowing of the dog-
+whistle discourses that would later become
+so effective in the ruthless politics of neoli-
+beralism, Friedman (1953: 22) includes scare
+quotes in his brief engagement with evolu-
+tionary theory: ‘The process of ‘‘natural
+selection’’ thus helps to validate the hypoth-
+esis – or, rather, given natural selection,
+acceptance of the hypothesis can be based
+largely on the judgment that it summarizes
+appropriately the conditions for survival’.
+Friedman (1953) manages to cite Veblen as
+well as Armen Alchian’s (1950) famous and
+explicitly Darwinian analysis of uncertainty
+without ever once mentioning ‘Darwin’ or
+‘evolution’ in the text or the index.
+
+6. When Darwin’s ‘first note-book was
+opened’, he ‘worked on true Baconian prin-
+ciples & without any theory collected facts
+on a wholesale scale’, but ‘how selection
+could be applied to organisms living in a
+
+state of nature remained for some time a
+mystery to me. In October 1838, that is fif-
+teen months after I had begun my systematic
+enquiry, I happened to read for amusement
+‘‘Malthus on Population’’, & being well pre-
+pared to appreciate the struggle for existence
+which everywhere goes on from long-
+continued observation of the habits of ani-
+mals & plants, it at once struck me that
+under these circumstances variations would
+tend to be preserved & unfavorable ones to
+be destroyed. The result of this would be the
+
+formation of new species. Here then I had at
+last got a theory by which to work;’
+(Darwin, 1876: 410, 411).
+
+7. The ‘mathematical theory of evolution’ of
+Galton, Weldon and Pearson intersected (or
+nearly so) in Princeton in other ways.
+Charles Galton Darwin directed the UK’s
+National Physical Laboratory in the years
+Alan Turing developed the analysis culmi-
+nating in a 1948 research report on
+Intelligent Machinery, and Darwin arrived
+for the Man’s Role conference during the
+months when the Williams vacuum tube
+amplifiers of the new computer at the
+nearby Institute for Advanced Study were
+working the night shift on a numerical evo-
+lution algorithm. The Norwegian mathemat-
+ical physicist Nils Barricelli was writing and
+testing sequences of computer code ‘able to
+reproduce, undergo mutations, and associ-
+ate symbiotically within the 40,960-bit mem-
+ory of the new machine’ (Dyson, 2012: 227).
+Ironically enough, Barricelli developed his
+self-replicating digital ‘symbioorganisms’ to
+demonstrate that mutual cooperation was
+more important than the atomised natural
+selection and random variation components
+of neo-Darwinian evolution that had been
+hijacked by neo-Malthusian social
+Darwinists.
+
+8. In a later chapter, Hoyt (1933: 355–356)
+describes the inner-city ‘blight’ that shaped
+US urban renewal policy and that Neil
+
+Smith (1979) would later theorise as the rent
+gap: ‘a low level of rents and a high percent-
+age of loss in collecting that small amount, a
+heavy rate of physical deterioration of prop-
+erty caused by waste, neglect, and acts of
+
+Wyly 2541
+
+
+
+vandalism, reduce land values in these sec-
+tions occupied by ‘‘hobos,’’ seasonal work-
+ers, and criminals of Native American stock
+and by the lowest classes of Mexicans,
+negroes, and South Italians to a very low
+point. There is now a valley in the land-
+value curve between the Loop and the other
+residential areas .’.
+
+9. The crystallising cognitive calculus of late-
+1960s planning theory was best expressed by
+a young urban planning scholar who would
+later go on to serve in the US Department of
+
+Housing and Urban Development in the sur-
+real Clinton years of a partially revivified
+urban policy seen through the parallax view
+of neoliberal economic de-regulation and a
+seemingly relentless electoral conservative
+suburbanisation of American politics.
+Michael Stegman (1969) responded to the
+runaway popularity of transportation models
+of urban structure inspired by the Alonso–
+Muth approach by emphasising the impor-
+tance of housing and neighbourhood aspects
+of consumer choice: ‘It is conceivable that
+while location rents are high near the core
+because of the concentration of nonresiden-
+tial activities and the relatively large number
+of particular consumers who find it either
+necessary or desirable to live near their
+places of work, these rents would be even
+steeper if the available housing were of higher
+
+quality and the environment more amenable.
+[emphasis added] What might accompany
+such a positive change in housing conditions
+and environment is a complete reversal of
+income groups – the wealthy would occupy
+the accessible and desirable inner rings, for-
+cing the poor to live on the fringes.’
+
+10. Ian Young, a seasoned and transnational
+journalist who writes a column titled ‘The
+Hongcouver’ for the South China Morning
+Post, cites estimates that between 2005 to
+2012, about 45,000 millionaire migrants
+arrived in Vancouver under two immigrant
+investor programmes – compared with fewer
+
+than 30,000 for the entire USA. ‘So,
+Vancouver has recently received more wealth-
+determined migration than any other city in
+the world, by a long stretch. This, in a city
+
+with some of the lowest incomes in Canada’
+(Young, 2015). See also Ley (2010: 56–64).
+
+11. Yan’s real-estate analyses have been covered
+extensively in the local press for several
+years, and were then featured in a short
+piece in the New Yorker (Surowiecki, 2014)
+– a degree of attention from above on the
+urban hierarchy that was in turn noted by a
+local writer frustrated with life in the ghost-
+town blocks of investor-owned properties in
+one of Vancouver’s epicentres of transna-
+tional super-gentrification (Saddy, 2015).
+
+Yan’s work was subsequently featured in the
+Harvard International Review (Dorfmann,
+2015). An alternative formulation of the
+‘hedge city’ idea was offered by Lawrence D
+Fink, head of the world’s largest hedge fund
+(BlackRock), at a conference in Singapore:
+‘Historically, gold was a great instrument
+for storing wealth’, but now, ‘the two great-
+est stores of wealth internationally today
+[are] contemporary art . and, two, the
+other store of wealth today is apartments in
+Manhattan, apartments in Vancouver, in
+London’ (cited in Yaffe, 2015: D2). Still
+another formulation was offered by Albert
+Lo, a realtor and head of the Canadian
+Race Relations Foundation, describing
+immigrants who ‘park large amounts of
+money’ in Canadian real estate and then ‘go
+back to work in China’ or elsewhere (quoted
+in Todd, 2015: A5).
+
+12. ‘. There’s a business now where people –
+you pay – people don’t even have kids yet
+and they’re taking this course on how to get
+your kid into private school. I’m not lying!’
+(quoted in Coscarelli, 2014).
+
+13. A widely circulated image from news reports
+in May, 2012 showed students in a high
+school in Hubei Province hooked up to
+intravenous drips of amino acids to help
+them study for the upcoming gaokao. The
+brutally competitive high-stakes exam ‘has
+become the target of criticism and national
+reform because it is considered the root
+
+cause of all education ills in China: from the
+lack of innovation and creative citizens to
+deteriorating health among children, from
+widespread cheating and fraud to student
+
+2542 Urban Studies 52(14)
+
+
+
+suicides, and from massive inequality in edu-
+cation opportunities to unbearable academic
+pressure on students’ (Zhao, 2009: 49).
+
+14. The wholesale frontier includes the less visi-
+ble but more lucrative circulatory infrastruc-
+ture of corporate capitalism. Amazon
+Supply is a B2B (business-to-business)
+e-commerce site targeting wholesale distri-
+bution – initially, among the 35,000 separate
+enterprises in the USA. Amazon booked
+US$74 billion in revenues in 2013, but
+aspires to the US$8 trillion distribution mar-
+
+ket in the USA and then beyond. As Prentis
+Wilson, head of Amazon Supply, explains:
+‘Our goal is to supply everything needed to
+rebuild civilization’ (quoted in O’Connor,
+2014: 89).
+
+15. Contemporary literatures on gentrification
+are enriched by theoretical and empirical
+innovations tracking the evolution of
+difference, class and the multiply scaled cir-
+culation of meanings and discourses in
+cognitive-cultural capitalist urbanism. For
+examples focusing on the local politics and
+competitive marketing on the ‘culinary fron-
+tier’ of restaurants in Vancouver, see Aiello
+(2014) and Burnett (2014); on the ‘ideologi-
+cal lineage’ from eugenics to contemporary
+psychopathology at the nexus of gentrifica-
+tion, homelessness and severe mental illness,
+see Durgan (2013); on the cultural politics of
+neighbourhood representation and the cor-
+rosive effects of gentrification on the mean-
+ings of local cultural practices, see Alfasi
+and Ganan (2015) on Jerusalem, Parekh
+(2015) on New Orleans, Chang (2015) on
+‘aesthetic regulation’ in Singapore, and
+Scott (2011b) on ‘aestheticized land-use
+intensification’ in a variety of cities of the
+cognitive-capitalist ‘third wave’.
+
+16. Mazur and Perlez (2014) provide an account
+of Lu Wei’s ‘well-publicized dinners at fancy
+Beijing restaurants’ with China’s ‘Big V’s,
+referring to the ‘verified account’ social
+media icons with ‘millions of online fol-
+
+lowers’ who ‘had already shown how they
+could turn sensitive subjects – like forced
+relocations and environmental problems –
+into national debates that upset the
+Communist Party’. Robert Moses worked
+
+the media when he was taking a ‘meataxe’
+to the Bronx, but his tools and informa-
+tional skills appear quaint and primitive
+when compared with Snowden’s NSA and
+Lu Wei’s Ministry of Cyberspace
+Administration.
+
+17. MOOCs are Massive Open Online Courses,
+an intensely hyped development at the inter-
+section of information technology, educa-
+tion and globalisation. The potential scale
+was most clearly demonstrated in 2011,
+when the former head of Google X and
+
+online learning firm Udacity, Sebastian
+Thrun, offered an online course on artificial
+intelligence at Stanford. Some 160,000 from
+more than 190 countries signed up for the
+MOOC, and approximately 14% obtained a
+Certificate of Completion.
+
+18. Recent economics literature highlights dra-
+matic mutations of the consumer sover-
+eignty, demand-side theories that Neil Smith
+fought against for decades. The ‘exponential
+rise’ (Hodgson, 2009: xxii) of Darwinism in
+economics has paralleled and reinforced the
+neoliberalisation of space, of urban theory
+and policy (Peck and Tickell, 2002). Edward
+Wilson’s ‘sociobiology’ has coalesced with
+Gary Becker’s (1976) suggestion of a
+‘genetic determination of . human beha-
+vior modelled along neoclassical lines’,
+Arthur Robson’s (2002) attempt to ‘show
+how Darwinian evolution would lead to
+utility-maximizing behavior consistent with
+the standard axioms of rationality’, and
+Kenneth Binmore’s (2005) use of game the-
+ory to build an ‘evolutionary theory of mor-
+ality and natural justice, while retaining
+utility-maximizing agents’ (all quotes from
+Hodgson, 2009: xxiii, xxv, xxv). The ‘explo-
+sion of research in economics inspired by
+evolutionary thinking’ (Dopfer, 2005: 3) has
+been so intoxicating for the possibility of
+hacking the source code of homo sapiens
+oeconomicus (HSO) as ‘the basic unit of an
+evolutionary’ paradigm that economists
+
+have become uncharacteristically reflexive
+on the secrets of their success: ‘What are the
+factors that may conceivably account for the
+present dynamism of evolutionary econom-
+ics? We get a first hint when we consider
+
+Wyly 2543
+
+
+
+that, in their field of study, orthodox econo-
+mists encounter decreasing marginal returns
+with respect to new theoretical findings per
+additional unit of research effort or research
+time. Linking this with the conjecture that
+creative minds are attracted by new oppor-
+tunities for developing their theory enables
+us to obtain a hypothesis that accounts for
+the phenomenon that outstanding neoclassi-
+cal economists are increasingly turning to
+research areas that can be linked to evolu-
+tionary ideas’ (Dopfer, 2005: 3).
+
+19. The ‘neurological’ turn is only the most
+extreme case of a wider quest to develop a
+science to understand the innovative genius
+of homo urbanus and homo creativitus
+(Florida, 2014: 8). Florida’s recent creative-
+class work fuses psychology, geography and
+urban economics in a new human-ecology
+‘psychogeography’ to understand the role of
+‘geographic clusters of openness to experi-
+ence’ on the pace of ‘regional economic and
+cultural development’ (Florida and
+Mellander, 2014: 261).
+
+20. Not long ago, New York City’s Human
+Resources Administration plastered subway
+cars with ads designed to drive down teen
+pregnancy rates – one shows a Black baby
+girl asking, ‘Honestly Mom . chances are
+he won’t stay with you. What happens to
+me?’ Overall city birthrates, however, have
+fallen to their lowest levels since the Great
+Depression – with notable exceptions in
+TriBeca, the Upper East Side and Brooklyn
+Heights, where ‘stroller gridlock in gentrify-
+ing areas’ and ‘car services that cater to 5-
+year-olds’ proliferate along with frustration
+‘about overcrowding in affluent school dis-
+tricts and rising numbers of children attend-
+ing private school, making admission even
+more impossible’ (Bellafonte, 2015).
+
+21. Responding to the site’s tagline for UBC,
+‘Where some students drive Maseratis to
+school while others commute for hours’,
+Vivien Chang (2014) provides a vivid
+
+account of the overcrowded bus route
+(along with a Jacob Riis update) for readers
+of the national news magazine Maclean’s:
+‘The buses to UBC are frequently operating
+over capacity, especially during peak hours,
+
+leaving students on the street corners as they
+pass by. Getting off the bus wet, tardy and
+irritable, I have often been struck by the
+irony of coming face to face with a luxury
+car and its gawking driver, and thinking,
+‘‘So this is how the other half lives’’.’
+
+References
+
+Aiello D (2014) Vancouver’s downtown Eastside:
+
+An ethnography of restaurateurs and neighbor-
+
+hood change. MA Thesis. Burnaby, BC:
+
+Department of Geography, Simon Fraser
+
+University.
+Alchian AA (1950) Uncertainty, evolution, and
+
+economic theory. Journal of Political Economy
+
+58(2): 211–222.
+Alfasi N and Ganan E (2015) Jerusalem of (for-
+
+eign) gold: Entrepreneurship and pattern-
+
+driven policy in a historic city. Urban Geogra-
+
+phy 36(2): 157–180.
+Allen J and Cochrane A (2007) Beyond the terri-
+
+torial fix: Regional assemblages, politics, and
+
+power. Regional Studies 42: 1161–1175.
+Alonso W (1964) Location and Land Use. Cam-
+
+bridge, MA: Harvard University Press.
+Andreesen M (2011) Why software is eating the
+
+world. Wall Street Journal, 20 August.
+Appiah KA (1997) Cosmopolitan patriots. Criti-
+
+cal Inquiry 23(3): 617–639.
+Atkinson R and Bridge G (eds) (2005) Gentrifica-
+
+tion in a Global Context: The New Urban Colo-
+
+nialism? New York: Routledge.
+Atlantic Monthly (1864) Review, illustrations of
+
+progress: A series of discussions with Herbert
+
+Spencer, with a notice of Spencer’s ‘New Sys-
+
+tem of Philosophy,’ New York: D. Appleton
+
+& Co. Atlantic Monthly 13(80): 775–777.
+Atlas J (2011) Super people. New York Times, 1
+
+October.
+Aviv R (2013) The imperial presidency. The New
+
+Yorker, 9 September.
+Ball P (2006) Econophysics: Culture crash. Nature
+
+441: 686–688.
+Ball P (2014) Gentrification is a natural evolution.
+
+The Guardian, 19 November.
+Baptista I (2013) The travels of critiques of neoli-
+
+beralism: Urban experiences from the ‘Border-
+
+lands’. Urban Geography 34(5): 590–611.
+
+2544 Urban Studies 52(14)
+
+
+
+Barnes TJ (1998) A history of regression: Actors,
+
+networks, machines, and numbers. Environ-
+
+ment & Planning A 30: 203–223.
+
+Beauregard RA (1986) The chaos and complexity
+
+of gentrification. In: Smith N and Williams P
+
+(eds) Gentrification of the City. Boston, MA:
+
+Allen & Unwin, pp. 35–55.
+Becker GS (1976) Altruism, egoism, and genetic
+
+fitness: Economics and sociobiology. Journal
+
+of Economic Literature 14(2): 817–826.
+Bellafonte G (2015) Baby boom among New
+
+York’s affluent. New York Times, 30 April,
+
+MB1.
+Bellett G (2014) Ex-film mogul finds fulfillment in
+
+dump. Vancouver Sun, 5 November, A9.
+Berry BJL (1978) Geographical theories of social
+
+change. In: Berry BJL (ed.) Perspectives in
+
+Geography 3: The Nature of Change in Geogra-
+
+phical Ideas. DeKalb, IL: Northern Illinois
+
+Press, pp. 17–35.
+Berry BJL (1980) Creating future geographies.
+
+Annals of the Association of American Geogra-
+
+phers 70(4): 449–458.
+Big Think (2014) We are big idea hunters. Available
+
+at: http://bigthink.com (accessed 16 August 2014).
+Binmore K (2005) Natural Justice. Oxford:
+
+Oxford University Press.
+Blaut J (1993) The Colonizer’s Model of the
+
+World. New York: Guilford Press.
+Block RH (1980) Frederick Jackson Turner and
+
+American geography. Annals of the Association
+
+of American Geographers 70(1): 31–42.
+Bowman I (1932) Obituary: Frederick Jackson
+
+Turner. Geographical Review 22: 499.
+Brown J (2015) CanadaLand: Episode 86, Hon-
+
+gcouver. Available at: http://canadalandshow.-
+
+com/podcast/hongcouver.
+
+Buchanan M (2007) The Social Atom: Why the
+
+Rich Get Richer, Cheaters Get Caught, and
+
+Your Neighbor Usually Looks Like You. New
+
+York: Bloomsbury.
+Burnett K (2014) Commodifying poverty: Gentri-
+
+fication and consumption in Vancouver’s
+
+downtown Eastside. Urban Geography 35(2):
+
+157–176.
+Butler T (2007) For gentrification? Environment
+
+and Planning A 39(1): 162–181.
+Buttimer A (1971) Society and Milieu in the French
+
+Geographic Tradition. Chicago, IL: Rand
+
+McNally/Association of American Geographers.
+
+Carapezza K and Noe-Payne M (2014) NYU’s
+
+John Sexton: Higher education costs. On Cam-
+
+pus: WGBH News Higher Education Blog, 17
+
+October. Boston, MA: WGBH Public Broad-
+
+casting System.
+Carr N (2014) The Glass Cage: Automation and
+
+Us. New York: Norton.
+Castells M (1983) The City and the Grassroots.
+
+Berkeley, CA: University of California Press.
+Castells M (2012) Networks of Outrage and Hope:
+
+Social Movements in the Internet Age. Cam-
+
+bridge: Polity Press.
+Cavell R (2002)McLuhan in Space: A Cultural Geo-
+
+graphy. Toronto: University of Toronto Press.
+Cayne BS (ed.) (1990) The New Lexicon Webster’s
+
+Encyclopedic Dictionary. New York: Lexicon
+
+Publications.
+Centre on Housing Rights and Evictions (2006)
+
+Forced Evictions: Violations of Human Rights.
+
+Tenth Global Survey of Forced Evictions. Gen-
+
+eva: Centre on Housing Rights and Evictions.
+Centre on Housing Rights and Evictions (2007)
+
+Mega-Events, Olympic Games, and Housing
+
+Rights. Geneva: UN Habitat/Centre on Hous-
+
+ing Rights and Evictions.
+Chan C (2014) Scholarship boosts 15-year-old at
+
+UBC. The Province, 19 August, A4.
+Chang TC (2015) New uses need old buildings:
+
+Gentrification aesthetics and the arts in Singa-
+
+pore.Urban Studies. Published Online FirstMarch
+
+18 2014. DOI: 10.1177/0042098014527482.
+Chang V (2014) What’s behind the University of
+
+Beautiful Cars? Maclean’s, 6 March.
+Clark E (1987) The Rent Gap and Urban Change:
+
+Case Studies in Malmö, 1860–1985. Lund:
+
+Lund University Press.
+Clark E (2005) The order and simplicity of gentri-
+
+fication: A political challenge. In: Atkinson R
+
+and Bridge G (eds) Gentrification in a Global
+
+Context: The New Urban Colonialism. Lon-
+
+don: Routledge, pp. 256–264.
+Clark E (2015) Afterword: The adventure of gen-
+
+eric gentrification. In: Lees L, Bang Shin H
+
+and López-Morales E (eds) Global Gentrifica-
+
+tions: Uneven Development and Displacement.
+
+Bristol: Policy Press, pp. 453–456.
+Clark TL and Clark E (2012) Participation in
+
+evolution and sustainability. Transactions of
+
+the Institute of British Geographers NS37:
+
+563–577.
+
+Wyly 2545
+
+
+
+Comte A (1842) Social Physics. Book VI, Course
+
+in Positive Philosophy. Reprinted in Lenzer G
+
+(ed.) (1998) Auguste Comte and Positivism:
+
+The Essential Writings. New Brunswick, NJ:
+
+Transaction Publishers, pp. 195–297.
+Coscarelli J (2014) Spike Lee’s amazing rant
+
+against gentrification: ‘We Been Here!’. New
+
+York Magazine, 25 February.
+Darwin C (1876) Recollections of the Develop-
+
+ment of My Mind and Character. In: Secord
+
+JA (ed.) Charles Darwin: Evolutionary Writ-
+
+ings. Oxford: Oxford University Press, pp.
+
+355–425.
+Darwin Sir CG (1956) The time scale in human
+
+affairs. In: Thomas WL (ed.) Man’s Role in
+
+Changing the Face of the Earth. Chicago, IL:
+
+University of Chicago Press, pp. 963–969.
+Davidson M and Lees L (2010) New-build gentri-
+
+fication: Its histories, trajectories, and critical
+
+geographies. Population, Space, and Place 16:
+
+395–411.
+Dewey J (1904) The philosophical work of Her-
+
+bert Spencer. The Philosophical Review, rep-
+
+rinted in Ratner J (ed.) (1929) Characters and
+
+Events: Popular Essays in Social and Political
+
+Philosophy by John Dewey. New York: Henry
+
+Holt & Company, pp. 45–62.
+Dewey J (1909) The influence of Darwin on
+
+philosophy. Popular Science Monthly 75: 90–98.
+Dewey J (1918) Internal social reorganization
+
+after the war. Journal of Race Development,
+
+April, reprinted in Dewey J (1939) Intelligence
+
+in the Modern World. New York: Random
+
+House/Modern Library, pp. 405–433.
+Dewey J (1920) Reconstruction in Philosophy.
+
+New York: Henry Holt.
+Dewey J (1939) Socializing intelligence. Excerpts
+
+from Liberalism and Social Action (1929) and
+
+Individualism Old and New (1930), reprinted in
+
+Dewey J (1939) Intelligence in the Modern
+
+World. New York: Random House/Modern
+
+Library, pp. 455–466.
+Dopfer K (2005) Evolutionary economics: A the-
+
+oretical framework. In: Dopfer K (ed.) The
+
+Evolutionary Foundations of Economics. Cam-
+
+bridge: Cambridge University Press, pp. 3–55.
+Dorfmann J (2015) New wealth seeks a ‘home’:
+
+The rise of the hedge city. Harvard Interna-
+
+tional Review 36(3). Available at: http://hir.
+
+harvard.edu/archives/10888.
+
+Dougherty C (2015) Google unveils plan for new
+
+corporate campus. New York Times, 27
+
+February.
+
+Duncan E (2015) Excellence v. equity: Special
+
+report on universities. The Economist, 28
+
+March, 19 pp.
+Durgan E (2013) Resistance and complexity: Solu-
+
+tions to urban crises of homelessness and psy-
+
+chopathology through psychiatry, architecture,
+
+and philosophy. Ph.D. Thesis, Vancouver:
+
+Interdisciplinary Studies, The University of
+
+British Columbia.
+Dyson G (2012) Turing’s Cathedral: The Origins
+
+of the Digital Universe. New York: Vintage.
+Ely RT (1884) The Past and the Present of Politi-
+
+cal Economy. Johns Hopkins University Stud-
+
+ies in Historical and Political Science, Vol. II.
+
+Baltimore, MD: Johns Hopkins University.
+Entrikin JN (1980) Robert Park’s human ecology
+
+and human geography. Annals of the Associa-
+
+tion of American Geographers 70(1): 43–58.
+Fernandes L (2006) India’s New Middle Class:
+
+Democratic Politics in an Era of Economic
+
+Reform. Minneapolis, MN: University of Min-
+
+nesota Press.
+Flatley JL (2015) In the basement with transhu-
+
+manism’s DIY cyberpunks. The Daily Dot, 26
+
+April.
+Florida R (2003) Cities and the creative class. City
+
+& Community 2(1): 3–19.
+Florida R (2006) The flight of the creative class:
+
+The new global competition for talent. Liberal
+
+Education 92(3): 22–29.
+Florida R (2014) Foreword. In: Knox PL (ed.)
+
+Atlas of Cities. Princeton, NJ: Princeton Uni-
+
+versity Press, pp. 8–9.
+Florida R and Mellander C (2014) Geographical
+
+Psychology: Exploring the Interaction of Envi-
+
+ronment and Behavior. Washington, DC: Amer-
+
+ican Psychological Association, pp. 261–274.
+Friedman M (1953) Essays in Positive Economics.
+
+Chicago, IL: University of Chicago Press.
+Galton F (1869) Hereditary Genius: An Inquiry
+
+Into Its Laws and Consequences. London:
+
+Richard Clay and Sons.
+Galton Sir F (1910) The Eugenic College of Kant-
+
+saywhere. London: University College
+
+London.
+Garcia JR and Saad G (2008) Evolutionary neu-
+
+romarketing: Darwinizing the neuroimaging
+
+2546 Urban Studies 52(14)
+
+http://hir.harvard.edu/archives/10888
+http://hir.harvard.edu/archives/10888
+
+
+paradigm for consumer research. Journal of
+
+Consumer Behavior 7: 397–414.
+Garcı́a-Ajofrin L (2014) Es el puto sı́ndrome de
+
+Christóbal Colón. Nosotros hicimos Harlem,
+
+ahora nosechan. El Confidential, 20 June.
+Geddes P (1915) Cities in Evolution. London: Wil-
+
+liams & Norgate.
+Ghent WJ (1902) Our Benevolent Feudalism. New
+
+York: MacMillan.
+Gibson-Graham JK, Resnick SA and Wolff RD
+
+(eds) (2000). Class and its Others. Minneapolis,
+
+MN: University of Minnesota Press.
+Glaeser E (2011) Triumph of the City: How Our
+
+Greatest Invention Makes Us Richer, Smarter,
+
+Greener, Healthier, and Happier. New York:
+
+Penguin.
+Glass R (1964) Introduction. In: Centre for Urban
+
+Studies (ed.) London: Aspects of Change. Lon-
+
+don: MacGibbon & Kee, pp. xii–xlii.
+Hamnett C (1991) The blind men and the ele-
+
+phant: The explanation of gentrification.
+
+Transactions of the Institute of British Geogra-
+
+phers NS 16(2): 173–189.
+Harris A (2008) From London to Mumbai and
+
+back again: Gentrification and public policy in
+
+comparative perspective. Urban Studies 45(12):
+
+2407–2428.
+Harvey D (1973) Social Justice and the City. Lon-
+
+don: Edward Arnold.
+Harvey D (1978) On countering the Marxian
+
+myth – Chicago-style. Comparative Urban
+
+Research, reprinted in Harvey D (ed.) (2001)
+
+Spaces of Capital: Towards a Critical Geogra-
+
+phy. New York: Routledge, pp. 68–89.
+Harvey D (1982) The Limits to Capital. Chicago,
+
+IL: University of Chicago Press.
+Harvey D (1989) The Urban Experience. Balti-
+
+more, MD: Johns Hopkins University Press.
+Harvey D (2014) Seventeen Contradictions and the
+
+End of Capitalism. Oxford: Oxford University
+
+Press.
+Heller N (2014) Poison ivy: Are elite colleges bad
+
+for the soul? The New Yorker, 1 September,
+
+pp. 68–72.
+Hodgson G (2003a) Darwinism and institutional
+
+economics. Journal of Economic Issues 37(1):
+
+85–97.
+Hodgson G (2003b) Preface. In: Laurent J (ed.)
+
+Evolutionary Economics and Human Nature.
+
+Cheltenham: Edward Elgar, pp. ix–xiii.
+
+Hodgson GM (2009) Introduction. In: Hodgson
+
+GM (ed.) Darwinism and Economics. Chelten-
+
+ham: Edward Elgar, pp. xi–xxxvi.
+
+Hofstadter R (1944) Social Darwinism in Ameri-
+
+can Thought, 1860–1915. Philadelphia, PA:
+
+University of Pennsylvania Press.
+Hoyt H (1933) One Hundred Years of Land Values
+
+in Chicago: The Relationship of the Growth of
+
+Chicago to the Rise in its Land Values, 1830–
+
+1933. Chicago, IL: University of Chicago
+
+Press.
+Hyde Z (2014) Omnivorous gentrification: Res-
+
+taurant reviews and neighborhood change in
+
+the downtown Eastside of Vancouver. City &
+
+Community 13(4): 341–359.
+Iossifova D (2009) Negotiating livelihoods in a
+
+city of difference: Narratives of gentrification
+
+in Shanghai. Critical Planning 16(2): 99–116.
+Istvan Z (2014) It’s time to consider restricting
+
+human breeding. Wired UK, 14 August.
+Keynes JM (1926) The End of Laissez-Faire. Lon-
+
+don: L.&V. Woolf.
+Knopp L (1997) Gentrification and gay neighbor-
+
+hood formation in New Orleans: A case study.
+
+In: Gluckman A and Reed B (eds) Homo Eco-
+
+nomics: Capitalism, Community, and Lesbian
+
+and Gay Life. New York: Routledge, pp. 45–
+
+63.
+Krueckeberg DA (1995) The difficult character of
+
+property: To whom do things belong? Journal
+
+of the American Planning Association 61(3):
+
+301–309.
+Kurzweil R (2005) The Singularity is Near: When
+
+Humans Transcend Biology. London: Penguin.
+Lambert C and Boddy M (2002) Transforming
+
+the City: Post-Recession Gentrification and Re-
+
+urbanisation. ESRC Centre for Neighbour-
+
+hood Research, Glasgow.
+Lanier J (2010) You Are Not a Gadget: A Mani-
+
+festo. New York: Knopf.
+Lanier J (2013)Who Owns the Future? New York:
+
+Norton.
+Lee-Young J (2015) Buyer of $51.8M home was a
+
+duck farmer. Vancouver Sun, 18 March, A6.
+Lees L (2012) The geography of gentrification:
+
+Thinking through comparative urbanism.
+
+Progress in Human Geography 36(2): 155–171.
+Lees L, Shin HB and López-Morales E (2015a)
+
+Conclusion: Global gentrification. In: Lees L,
+
+Shin HB and López-Morales E (eds) Global
+
+Wyly 2547
+
+
+
+Gentrifications: Uneven Development and Dis-
+
+placement. Bristol: Policy Press, pp. 441–452.
+Lees L, Shin HB and López-Morales E (2015b)
+
+Introduction: ‘Gentrification’ – A global
+
+urban process? In: Lees L, Shin HB and
+
+López-Morales E (eds) Global Gentrifications:
+
+Uneven Development and Displacement. Bris-
+
+tol: Policy Press, pp. 1–18.
+Lees L, Slater T andWyly E (eds) (2010) The Gen-
+
+trification Reader. London: Routledge.
+Lefebvre H (1970) The Urban Revolution. 2003
+
+Translation, Robert Bononno. Minneapolis,
+
+MN: University of Minnesota Press.
+Ley D (1987) Reply: The rent gap revisited.
+
+Annals of the Association of American Geogra-
+
+phers 77(3): 465–468.
+Ley D (1996) The New Middle Class and the
+
+Remaking of the Central City. Oxford: Oxford
+
+University Press.
+Ley D (2010) Millionaire Migrants: Trans-Pacific
+
+Life Lines. Chichester: Wiley.
+Ley D and Teo SY (2013) Gentrification in Hong
+
+Kong? Epistemology vs. ontology. Interna-
+
+tional Journal of Urban and Regional Research
+
+38(4): 1286–1303.
+Lowry IS (1960) Filtering and housing standards:
+
+A conceptual analysis. Land Economics 36(4):
+
+362–370.
+McCann E, Roy A and Ward K (2013) Urban
+
+pulse: Assembling/worlding cities. Urban Geo-
+
+graphy 34(5): 581–589.
+MacKenzie D (1976) Eugenics in Britain. Social
+
+Studies of Science 6(3/4): 499–532.
+Maloutas T (2011) Contextual diversity in gentrifi-
+
+cation research. Critical Sociology 38(1): 33–48.
+Maloutas T (2011) Contextual diversity in gentri-
+
+fication research. Critical Sociology 38(1):
+
+33–48.
+Malthus TR (1798) An Essay on the Principle of
+
+Population. London: J. Johnson, in St. Paul’s
+
+Church-yard.
+MarketWatch (2015) LinkedIn wants to map the
+
+global economy. MarketWatch, 9 April.
+Martindale D (1958) Prefatory remarks: The the-
+
+ory of the city. In: Martindale D and Neuwirth
+
+G (eds, trans.) Max Weber, The City. Glencoe,
+
+IL: The Free Press, pp. 9–60.
+Mazur P and Perlez J (2014) Gregarious and
+
+direct: China’s web doorkeeper. New York
+
+Times, 1 December.
+
+Merrifield A (2013) The urban question under
+
+planetary urbanization. International Journal
+
+of Urban and Regional Research 37(3):
+
+909–922.
+Metzger JT (2000) Planned abandonment: The
+
+neighborhood life-cycle theory and national
+
+urban policy.Housing Policy Debate 11(1): 7–40.
+Mirowski P (2005) How positivism made a pact
+
+with the postwar social sciences in the United
+
+States. In: Steinmetz G (ed.) The Politics of
+
+Method in the Human Sciences: Positivism and
+
+its Epistemological Others. Durham, NC:
+
+Duke University Press, pp. 142–172.
+
+Mooney C (2015) Pope dares to side with science.
+
+Washington Post, 3 January, B5.
+Moulier-Boutang Y (2012) Cognitive Capitalism.
+
+Cambridge: Polity.
+Mozur P (2014) Warm West Coast reception for
+
+China’s web czar (chillier in Washington). New
+
+York Times, 8 December.
+Muth R (1969) Cities and Housing. Chicago, IL:
+
+University of Chicago Press.
+New York Times (2015) $100.4 million sale at
+
+One67. New York Times, 23 January.
+Nguyen T (2014) NY Times to reporters: Please
+
+stop comparing everything to Brooklyn. Med-
+
+iaite.com, 18 November. Available at: http://
+
+www.mediaite.com/online/ny-times-to-reporte
+
+rs-please-stop-comparing-everything-to-brook
+
+lyn/.
+Norton BJ (1978) Karl Pearson and statistics: The
+
+social origins of scientific innovation. Social
+
+Studies of Science 8(1): 3–35.
+O’Connor C (2014) Amazon’s wholesale slaugh-
+
+ter. Forbes, 26 May, pp. 88–94.
+Ong A (1999) Flexible Citizenship: The Cultural
+
+Logics of Transnationality. Durham, NC:
+
+Duke University Press.
+Ong A (2011) Worlding cities, or the art of being
+
+global. In: Roy A and Ong A (eds) Worlding
+
+Cities: Asian Experiments and the Art of Being
+
+Global. Chichester: Wiley-Blackwell, pp. 1–26.
+Parekh T (2015) They want to live in the Tremé,
+
+but they want it for their ways of living. Urban
+
+Geography 36(2): 201–220.
+Park RE (1921) The social organism and the col-
+
+lective mind. American Journal of Sociology
+
+27(1): 1–21.
+Park RE (1925) The city: Suggestions for the
+
+investigation of human behavior in the urban
+
+2548 Urban Studies 52(14)
+
+http://www.mediaite.com/online/ny-times-to-reporters-please-stop-comparing-everything-to-brooklyn/
+http://www.mediaite.com/online/ny-times-to-reporters-please-stop-comparing-everything-to-brooklyn/
+http://www.mediaite.com/online/ny-times-to-reporters-please-stop-comparing-everything-to-brooklyn/
+http://www.mediaite.com/online/ny-times-to-reporters-please-stop-comparing-everything-to-brooklyn/
+
+
+environment. In: Park RE, Burgess EW and
+
+McKenzie RD (eds) The City. Chicago, IL:
+
+University of Chicago Press, pp. 1–46.
+
+Peck J and Tickell A (2002) Neoliberalizing
+
+space. Antipode 34(3): 380–404.
+Rees PW (2015) London needs homes, not towers of
+
+‘safe-deposit boxes’. The Guardian, 25 January.
+Ren J (2015) Gentrification in China? In: Lees L,
+
+Bang Shin H and López-Morales E (eds) Glo-
+
+bal Gentrifications: Uneven Development and
+
+Displacement. Bristol: Policy Press, pp. 329–
+
+347.
+Rescher N (1977) Methodological Pragmatism: A
+
+Systems-Theoretic Approach to the Theory of
+
+Knowledge. Oxford: Basil Blackwell.
+Rescher N (2005) Realism and Pragmatic Episte-
+
+mology. Pittsburgh, PA: University of Pitts-
+
+burgh Press.
+Richtel M (2015) For tech titans, sharing has its
+
+limits. New York Times, 14 March.
+Robinson J (2006) Ordinary Cities: Between Mod-
+
+ernity and Development. New York: Oxford.
+Robson A (2002) Evolution and human nature.
+
+Journal of Economic Perspectives 16(2): 89–106.
+Rose D (1984) Rethinking gentrification: Beyond
+
+the uneven development of Marxist urban the-
+
+ory. Environment and Planning D, Society and
+
+Space 1: 47–74.
+Roy A (2011) Postcolonial urbanism: Speed, hys-
+
+teria, mass dreams. In: Roy A and Ong A
+
+(eds) Worlding Cities: Asian Experiments and
+
+the Art of Being Global. Chichester: Wiley-
+
+Blackwell, pp. 307–335.
+Saddy G (2015) If this is our new urban dream, is
+
+the West Side sleeping through it? Vancouver
+
+Magazine April, pp. 46–53.
+Schill M and Nathan R (1983) Revitalizing Amer-
+
+ica’s Cities: Neighborhood Reinvestment and
+
+Displacement. Albany, NY: State University
+
+of New York Press.
+
+Scott AJ (2007) Capitalism and urbanization in a
+
+new key? The cognitive-cultural dimension.
+
+Social Forces 85(4): 1465–1482.
+Scott AJ (2011a) A world in emergence: Notes
+
+toward a resynthesis of urban-economic geo-
+
+graphy for the 21st century. Urban Geography
+
+32(6): 845–870.
+Scott AJ (2011b) Emerging cities of the third
+
+wave. City 15(3/4): 289–321.
+
+Scott AJ (2014) Beyond the creative city: Cogni-
+
+tive-cultural capitalism and the new urbanism.
+
+Regional Studies 48(4): 565–578.
+
+Secord JA (2008) Introduction. In: Secord JA (ed.)
+
+Charles Darwin: Evolutionary Writings. Oxford:
+
+Oxford University Press, pp. vii–xxxvii.
+Sexton J (2008) NYU’s global future. Speech dis-
+
+tributed on Big Think. Available at: http://
+
+bigthink.com (recorded 29 May).
+Sexton J (2010) Global Network University Reflec-
+
+tion. 21 December. New York: Office of the
+
+President, New York University.
+SFU Public Square (2014) Innovation: The Shock
+
+of the Possible. Vancouver/Burnaby: Simon
+
+Fraser University.
+Shao Q (2013) Shanghai Gone: Domicide and Defi-
+
+ance in a Chinese Megacity. Lanham, MD:
+
+Rowman & Littlefield.
+Shin HB (2012). Looking Back and Ahead: Les-
+
+sons from the 2008 Beijing Olympic Games.
+
+London: London School of Economics.
+Slater T (2009) The eviction of critical perspec-
+
+tives from gentrification research. International
+
+Journal of Urban and Regional Research 30(4):
+
+737–757.
+Slater T (2014) There is nothing natural about gen-
+
+trification. New Left Project, 24 November.
+Slater T (2015) Planetary rent gaps. Antipode,
+
+forthcoming. Available at: http://www.geo
+
+sciences.ed.ac.uk/homes/tslater/planetaryrentg
+
+aps.pdf.
+Smith N (1977) The Return from the Suburbs and
+
+the Structuring of Urban Space: State Involve-
+
+ment in Society Hill, Philadelphia. St. Andrews:
+
+Department of Geography, University of St.
+
+Andrews.
+Smith N (1979) Toward a theory of gentrification:
+
+A back to the city movement by capital, not
+
+people. Journal of the American Planning Asso-
+
+ciation 45(4): 538–548.
+Smith N (1987) Commentary: Gentrification and
+
+the rent gap. Annals of the Association of
+
+American Geographers 77(3): 462–465.
+
+Smith N (1996) The New Urban Frontier: Gentri-
+
+fication and the Revanchist City. New York:
+
+Routledge.
+Smith N (2002) New globalism, new urbanism:
+
+Gentrification as global urban strategy. Anti-
+
+pode 34(3): 427–450.
+
+Wyly 2549
+
+http://www.geosciences.ed.ac.uk/homes/tslater/planetaryrentgaps.pdf
+http://www.geosciences.ed.ac.uk/homes/tslater/planetaryrentgaps.pdf
+http://www.geosciences.ed.ac.uk/homes/tslater/planetaryrentgaps.pdf
+
+
+Smith N (2003) American Empire: Roosevelt’s
+Geographer and the Prelude to Globalization.
+Berkeley, CA: University of California Press.
+
+Smith N (2009) The revolutionary imperative.
+Antipode 41(S1): 50–65.
+
+Smith N (2011) The evolution of gentrification.
+In: Berg J, Kaminer T, Schoonderbeek M and
+et al. (eds) Houses in Transformation: Interven-
+tions in European Gentrification. Rotterdam:
+NAi Publishers, pp. 15–26.
+
+Stegman MA (1969) Accessibility and models of
+residential location. Journal of the American
+
+Institute of Planners 35(1): 22–29.
+Stone F (2014) Vancouver house tower a ‘living
+
+sculpture’. Vancouver Sun, 13 September, G4,
+G6.
+
+Stone M (2015) Silicon Valley CEOs just want a
+little privacy. $100 million and 750 acres of it.
+Business Insider, via Slate, 18 May.
+
+Surowiecki J (2014) Real estate goes global. New
+Yorker, 26 May.
+
+Taylor M (2003) Harlem: Between Heaven and
+Hell. Minneapolis, MN: University of Minne-
+sota Press.
+
+Teilhard de Chardin P (1947) The formation of
+the noosphere. In: Denny N (trans.) The
+Future of Man. New York: Doubleday, pp.
+149–178.
+
+Teilhard de Chardin P (1956) The antiquity and
+world expansion of human culture. In: Tho-
+mas WL (ed.)Man’s Role in Changing the Face
+of the Earth. Chicago, IL: University of Chi-
+cago Press, pp. 103–112.
+
+Teilhard de Chardin P (1964) The Future of Man.
+
+Denny N (trans.). New York: Doubleday.
+The Editors (2015) Editorial: New urban geogra-
+
+phies. Urban Geography 36(3): 327–339.
+Todd D (2015) Ritzy neighborhood where many
+
+are ‘poor’. Vancouver Sun, 15 June, A1, A5.
+Turner DP (2005) Thinking at the global scale.
+
+Global Ecology and Biogeography 14: 505–508.
+Turner FJ (1893) The significance of the frontier
+
+in American history. Annual Report of the
+
+American Historical Association, pp. 199–227.
+Webber MM (1964) The urban place and the non-
+
+place urban realm. In: Webber MM, Dyckman
+
+JW, Foley DL and et al. (eds) Explorations
+
+into Urban Structure. Philadelphia, PA: Uni-
+
+versity of Pennsylvania Press, pp. 79–153.
+Wheaton W (1977) Income and urban residence:
+
+An analysis of consumer demand for location.
+
+American Economic Review 67: 620–631.
+White M and White L (1962) The Intellectual Ver-
+
+sus the City: From Thomas Jefferson to Frank
+
+Lloyd Wright. Cambridge: Harvard University
+
+Press/MIT Press.
+Yaffe B (2015) Real estate pandemonium. Van-
+
+couver Sun, 26 May, D2.
+Young I (2015) Something is grotesquely wrong
+
+with Vancouver’s housing market, and the
+
+time for denialism is over. South China Morn-
+
+ing Post, 21 May.
+Zhao Y (2009) Comments on the Common Core
+
+Standards Initiative. AASA Journal of Scho-
+
+larship and Practice 6(3): 46–54.
+
+2550 Urban Studies 52(14)
+
+
+
