@@ -9,6 +9,22 @@ from tika import unpack
 import codecs
 import requests
 import bs4
+from selenium import webdriver  # for testing web app
+# ~ from selenium.webdriver.support.ui import Select
+import time
+
+def read_pdf_with_re(key):
+    filename = f'{key}.pdf'
+    parsed = unpack.from_file(filename)
+
+    # ~ # parsed = parser.from_file(filename)
+
+    # ~ # use regular expressions to pick lines that have a year in brackets in them, then search on Google Scholar...
+    # ~ # https://docs.python.org/3/library/re.html
+    print(parsed['content'])
+    with codecs.open(f"pdf2txt_{key}.txt", 'w', "utf-8") as file:
+        file.write(parsed['content'])
+
 
 def read_pdf(key):
     filename = f'{key}.pdf'
@@ -30,13 +46,14 @@ def extract_references(key):
     # ~ print(extracted_text)
     # ~ \n[\w]+\((19|20)[\d][\d]\)[\w]+\n
     # this could be helpful: https://pythex.org/
+    # ~ [A-Z].+[,][\w][A-Z][.].+[(][1]|[2][9]|[0][0-9][0-9][)].+
     references = re.findall(r"[\n][A-Z].+[(][\d][\d][\d][\d][)].+", extracted_text)
     with codecs.open(f"{key}_refs.txt", 'w', "utf-8") as file:
         for ref in references:
             file.write(ref)
             file.write('\n')
             print(ref)
-            scrape_scholar(ref)
+            # ~ scrape_scholar(ref)
     print(len(references))
     # ~ for ref in references: 
         # ~ print(ref.replace('\n',''))
@@ -46,13 +63,41 @@ def extract_references(key):
             # ~ print(re.search(r'*\(\)*',line))
 
 def scrape_scholar(reference):
-    scraped_page = requests.get(f'https://scholar.google.com/scholar?q={reference}')
-    content = scraped_page.text
-    citation_score = re.findall(r"Cited by [\d]+", content)
-    try:
-        print(citation_score[0])
-    except:
-        pass
+    # ~ query = "https://scholar.google.com/scholar?q="
+    query = "https://academic.microsoft.com/search?q="
+    # ~ scraped_page = requests.get(f'{query}{reference}')
+    # ~ content = scraped_page.text
+    
+    driver = webdriver.Chrome()
+    driver.get(f'{query}{reference}')
+    content = driver.page_source
+    time.sleep(10)
+    
+    ## find link with text matching first (say) 20 characters of {reference} *after* the closing bracket of the year, ie. the title of the paper, and click on that link.
+    ## https://selenium-python.readthedocs.io/locating-elements.html
+    
+    # ~ cut_reference_after_year_published = re.findall(r'[)].+',reference)
+    # ~ reference_title = re.findall(r'[A-Z][A-Za-z\s]{15}', cut_reference_after_year_published[0])
+	# ~ continue_link = driver.find_element_by_link_text(reference_title[0])
+    # ~ driver.get(continue_link)
+    # ~ time.sleep(10)
+    
+    
+    content = driver.find_element_by_tag_name('body').text
+    ## ~ findelement(By.tagName("body")).getText()
+    print(content)
+    with codecs.open(f"save.txt", 'r', "utf-8") as file:
+        file.write(content)
+    # ~ ## ~ more_content = driver.find_element_by_name('body').text
+
+    ## ~ print(more_content)
+    
+    # ~ citation_score = re.findall(r"Cited by [\d]+", content)
+    # ~ try:
+        # ~ print(citation_score[0])
+    # ~ except:
+        # ~ print(content)
+        # ~ pass
 
     # use bs4 (https://www.crummy.com/software/BeautifulSoup/bs4/doc/) ...
     # to parse the page
@@ -80,12 +125,15 @@ def scrape_scholar(reference):
 # ~ Wyly, E. (2015) 'Gentrification on the Planetary Urban Frontier: The Evolution of Turner's
 
 # there are 210+ refs in RWebberBurrows -- how many can we get?
-extract_references('RWebberBurrows2018')
+# ~ extract_references('RWebberBurrows2018')
 
 # ~ read_pdf('EWily2015')
 # ~ extract_references('EWily2015')
 
-# ~ scrape_scholar("Teilhard de Chardin P (1964) The Future of Man.")
+scrape_scholar("Barker, F. and Aldous, T. (2009) Guardians of the Heath. London: Blackheath Society.")
 
 # ~ .replace('','')
+
+# https://academic.microsoft.com/search?q=
+
 

@@ -70,6 +70,14 @@ Okay, for tomorrow:
 - use pyzotero and scrape Google Scholar
 - integrate literature.Text class into Flask API.
 
+Another day, what have we done?
+- we can easily make it so that you can drag a circle, and the data emerges in a nearby text box.
+- we have managed to scrape pdfs, and we are beginning to learn regular expressions to identify at least the first line of the references.
+- we thought that we could use this to scrape lots of useful information from google scholar and microsoft academic...
+- but they both make it very difficult to automate this...
+- though [some](https://mystudentvoices.com/scraping-google-scholar-to-write-your-phd-literature-chapter-2ea35f8f4fa1) [people](http://thebiobucket.blogspot.com/2011/11/visually-examine-google-scholar-search.html) seem to have done it...
+- might be able to use selenium to make the mouse click on the link...
+
 
 ## Software (that will be) used:
 - Zotero
@@ -82,3 +90,9 @@ Okay, for tomorrow:
 - Sphinx (& ReadTheDocs) -- using Napoleon Extension & m2r
 - Git (& GitHub)
 
+
+## Also...
+
+- [Open Citations](https://opencitations.wordpress.com/2018/02/25/citations-as-first-class-data-entities-the-opencitations-data-model/) would be a great thing...
+- http://opencitations.net/index
+- http://opencitations.net/index/coci/api/v1
