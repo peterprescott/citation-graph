@@ -2,13 +2,14 @@ import os
 # from tika import parser
 # tika requires Java to be installed on your system: https://java.com/en/download/manual.jsp
 import re
+
 # import tika
 from tika import unpack
 # for some reason to make this work in Windows 7 I had to comment out line 546 in the tika.py file, to stop it throwing an error.
 # in my case, this file was here: C:\Users\User\.virtualenvs\citation-graph-IlHssx7R\lib\site-packages\tika\tika.py
 import codecs
 import requests
-import bs4
+# ~ import bs4
 from selenium import webdriver  # for testing web app
 # ~ from selenium.webdriver.support.ui import Select
 import time
@@ -21,8 +22,8 @@ def read_pdf_with_re(key):
 
     # ~ # use regular expressions to pick lines that have a year in brackets in them, then search on Google Scholar...
     # ~ # https://docs.python.org/3/library/re.html
-    print(parsed['content'])
-    with codecs.open(f"pdf2txt_{key}.txt", 'w', "utf-8") as file:
+    # ~ print(parsed['content'])
+    with open(f"pdf2txt_{key}.txt", 'w') as file:
         file.write(parsed['content'])
 
 
@@ -34,8 +35,8 @@ def read_pdf(key):
 
     # ~ # use regular expressions to pick lines that have a year in brackets in them, then search on Google Scholar...
     # ~ # https://docs.python.org/3/library/re.html
-    print(parsed['content'])
-    with codecs.open(f"pdf2txt_{key}.txt", 'w', "utf-8") as file:
+    # ~ print(parsed['content'])
+    with open(f"pdf2txt_{key}.txt", 'w') as file:
         file.write(parsed['content'])
 
 def extract_references(key):
@@ -47,7 +48,7 @@ def extract_references(key):
     # ~ \n[\w]+\((19|20)[\d][\d]\)[\w]+\n
     # this could be helpful: https://pythex.org/
     # ~ [A-Z].+[,][\w][A-Z][.].+[(][1]|[2][9]|[0][0-9][0-9][)].+
-    references = re.findall(r"[\n][A-Z].+[(][\d][\d][\d][\d][)].+", extracted_text)
+    references = re.findall(r"[\n][A-Z].+[(][\d][\d][\d][\d][)](?:[\n]|.)+?[.][\n]", extracted_text)
     with codecs.open(f"{key}_refs.txt", 'w', "utf-8") as file:
         for ref in references:
             file.write(ref)
@@ -121,16 +122,16 @@ def scrape_scholar(reference):
 
 
 
-# ~ read_pdf('RWebberBurrows2018')
+read_pdf('RWebberBurrows2018')
 # ~ Wyly, E. (2015) 'Gentrification on the Planetary Urban Frontier: The Evolution of Turner's
 
 # there are 210+ refs in RWebberBurrows -- how many can we get?
-# ~ extract_references('RWebberBurrows2018')
+extract_references('RWebberBurrows2018')
 
 # ~ read_pdf('EWily2015')
 # ~ extract_references('EWily2015')
 
-scrape_scholar("Barker, F. and Aldous, T. (2009) Guardians of the Heath. London: Blackheath Society.")
+# ~ scrape_scholar("Barker, F. and Aldous, T. (2009) Guardians of the Heath. London: Blackheath Society.")
 
 # ~ .replace('','')
 
