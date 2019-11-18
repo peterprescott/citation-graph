@@ -92,7 +92,9 @@ class Text(object):
             return []
 
 
-        
+
+
+
 # ~ class Author(object)
 
 if __name__ == '__main__':
@@ -103,3 +105,20 @@ if __name__ == '__main__':
     print(type(e), e.key, e.references, e.citations)
     # ~ for ref in e.references:
         # ~ print(type(ref))
+
+
+# consider standard API JSON notation for texts and citations...
+# [{"itemType":"book","creators":[{"creatorType":"author","firstName":"","lastName":"Timms, Duncan."}],"date":"1971","publisher":"University Press","title":"The urban mosaic : towards a theory of residential differentiation","ISBN":"0521079640, 9780521079648","place":"Cambridge [England]","numPages":"viii, 277 pages","oclc":"132648","url":"https://www.worldcat.org/oclc/132648","accessDate":"2019-11-18"}]
+# http://opencitations.net/index/coci/api/v1
+# ~ # [
+    # ~ {
+        # ~ "oci": "02001010806360107050663080702026306630509-0200101080636102704000806",
+        # ~ "citing": "10.1186/1756-8722-6-59",
+        # ~ "cited": "10.1186/ar4086",
+        # ~ "creation": "2013",
+        # ~ "timespan": "P1Y",
+        # ~ "journal_sc": "no",
+        # ~ "author_sc": "no"
+    # ~ }
+# ~ ]
+
