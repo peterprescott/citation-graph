@@ -36,7 +36,7 @@ def read_pdf(key):
     # ~ # use regular expressions to pick lines that have a year in brackets in them, then search on Google Scholar...
     # ~ # https://docs.python.org/3/library/re.html
     # ~ print(parsed['content'])
-    with open(f"pdf2txt_{key}.txt", 'w') as file:
+    with codecs.open(f"pdf2txt_{key}.txt", 'w', 'utf-8') as file:
         file.write(parsed['content'])
 
 def extract_references(key):
@@ -48,20 +48,104 @@ def extract_references(key):
     # ~ \n[\w]+\((19|20)[\d][\d]\)[\w]+\n
     # this could be helpful: https://pythex.org/
     # ~ [A-Z].+[,][\w][A-Z][.].+[(][1]|[2][9]|[0][0-9][0-9][)].+
-    references = re.findall(r"[\n][A-Z].+[(][\d][\d][\d][\d][)](?:[\n]|.)+?[.][\n]", extracted_text)
+    references = re.findall(r"[A-Z].+[(](?:19|20)[\d][\d].*[)](?:[\n]|.)+?[.][\n]", extracted_text)
+    
     with codecs.open(f"{key}_refs.txt", 'w', "utf-8") as file:
         for ref in references:
+            ref = ref.replace('\n',' ')
+            ref = ref.replace('  ','')
             file.write(ref)
             file.write('\n')
-            print(ref)
+            # ~ print(ref)
             # ~ scrape_scholar(ref)
+    print(references)
     print(len(references))
+    
     # ~ for ref in references: 
         # ~ print(ref.replace('\n',''))
         # ~ print('\n...\n')
 
         # ~ for line in file:
             # ~ print(re.search(r'*\(\)*',line))
+
+def convert_references(key):
+	with codecs.open(f"{key}_refs.txt", 'r', "utf-8") as file:
+		i = 0
+		for line in file:
+			# get creator(s) data
+			creators = line.split('(')
+			creator_names = creators[0].split(' ')
+			while '' in creator_names: creator_names.remove('')
+			while 'and' in creator_names: creator_names.remove('and')
+			# ~ print(creator_names)
+			creator_count = len(creator_names)//2
+			print(f"{creator_count} creators")
+			# get initials (not working for both WebberBurrows and Wily
+			for i in range(creator_count):
+				initial = creator_names[i+1]
+				print(initial)
+				surname = creator_names[i]
+				print(surname)
+
+			# ~ print(creators)
+			
+			# are these editors?
+			editors = creators[1].split(')')[0]
+			if editors[0] == 'e': creator_type = 'editor'
+			else: creator_type = 'author'
+			print(creator_type)
+			
+			# get publication_year
+			if creator_type == 'editor':
+				publication_year = creators[2].split(')')[0]
+			else:
+				publication_year = creators[1].split(')')[0]
+			print(publication_year)
+			
+			# get item_type, publisher, and pages
+			if re.search('[:]',line):
+				last_bit = line.split(':')[-1]
+				
+				if re.search(r"\d\d", last_bit)==None:
+					item_type = "book"
+					publisher = last_bit
+
+					print(f"publisher = {publisher}")
+					
+				elif creator_type == 'author':
+					item_type = "journal article"
+					pages = publisher # it's not actually a publisher, it's a list of pages.
+					pages = re.findall(r"[\d].*[\d]", last_bit)[0]
+					print(f"pages = {pages}")
+
+				else:
+					item_type = "chapter"
+					[publisher, pages] = last_bit.split(',')[0], last_bit.split(',')[1]
+					print(f"publisher = {publisher}")
+					print(f"pages = {pages}")
+				# get title
+				## if it's a journal, it's in 'quotes'.
+				# ~ article_title = line.split("")
+				# ~ article_title = article_title[1]
+				# ~ print(article_title[1])
+			else: item_type = 'unknown'
+
+			print(f"item = {item_type}")
+
+
+			# get title
+			if item_type == "book" and creator_type == "author":
+				first_cut = line.split(')')[1]
+				second_cut = first_cut.split(':')[-2]
+				print(f' second_cut = {second_cut}')
+				title = re.findall(r'.+[.]', second_cut)[0]
+				print(f'title = {title}')
+			
+			
+			
+			print(line)
+
+		
 
 def scrape_scholar(reference):
     # ~ query = "https://scholar.google.com/scholar?q="
@@ -79,7 +163,7 @@ def scrape_scholar(reference):
     
     # ~ cut_reference_after_year_published = re.findall(r'[)].+',reference)
     # ~ reference_title = re.findall(r'[A-Z][A-Za-z\s]{15}', cut_reference_after_year_published[0])
-	# ~ continue_link = driver.find_element_by_link_text(reference_title[0])
+    # ~ continue_link = driver.find_element_by_link_text(reference_title[0])
     # ~ driver.get(continue_link)
     # ~ time.sleep(10)
     
@@ -127,6 +211,9 @@ read_pdf('RWebberBurrows2018')
 
 # there are 210+ refs in RWebberBurrows -- how many can we get?
 extract_references('RWebberBurrows2018')
+convert_references('RWebberBurrows2018')
+
+# ~ convert_references('EWily2015')
 
 # ~ read_pdf('EWily2015')
 # ~ extract_references('EWily2015')
