@@ -1,4 +1,4 @@
-from supersqlite import sqlite3
+import sqlite3
 
 db = 'citation_graph.db'
 
@@ -23,14 +23,16 @@ def create_table(name, columns, db=db):
     Args:
         name (string)
         columns (tuple of strings)
+        db (string): name of the database file 
+                    -- if none, it will create it.
     """
     print('creating table')
     c.execute(f'''CREATE TABLE {name}
              {columns}''')
     print('created table')
 
-           
-def save_row_to_db(row, db=db):
+@connect(db)
+def save_row_to_table(row, table):
     """
     Saves row of data to table.
     
@@ -38,13 +40,15 @@ def save_row_to_db(row, db=db):
         data (list)
     """
 
+    
     try:
         c.executemany("INSERT INTO ? VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);", 
-            (row,))
+            (table, row,))
         print(f"Row saved to database: {row}")
     except:
         print(f"Row NOT saved to database: {row}")
 
+@connect(db)
 def search(table, column, value):
 	pass
 	
@@ -57,16 +61,18 @@ if __name__ == '__main__':
     conn = sqlite3.connect('citation_graph.db')
     c = conn.cursor()
     
-    text_columns = ('Key', 'Type')
-    book_columns = ('Key', 'Year')
-    chapter_columns = ('Key', ...)
-    article_columns = ('Key', ...)
-    person_columns = ('Surname', 'Initial')
-    text_creators = ('Key', 'PersonKey', 'Person_Ordinal')
+    text_columns = ('key', 'type')
+    book_columns = ('key', 'publication_year', 'title', 'publisher', 'location', 'number_of_pages')
+    chapter_columns = ('key', 'title', 'pages', 'book_key')
+    article_columns = ('key', 'publication_year', 'title', 'journal', 'volume', 'edition', 'pages')
+    creator_columns = ('surname', 'initial', 'year_of_birth', 'year_of_death')
+    text_creator_columns = ('key', 'creator_key', 'creator_ordinal')
     
-    
-    create_table('Books', book_columns)
-    
+    # ~ create_table('texts', text_columns)
+    # ~ create_table('books', book_columns)
+    # ~ create_table('chapters', chapter_columns)
+    # ~ create_table('articles', article_columns)
+    # ~ create_table('creators', creator_columns)
+    # ~ create_table('text_creator', text_creator_columns)
 
-    conn.commit()
-    conn.close()
+    save_row_to_table('texts', ('RWebberBurrows2018', 'book'))

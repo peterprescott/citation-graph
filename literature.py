@@ -107,7 +107,7 @@ class Article(Text):
 					publication_year='unknown', 
 					title='unknown',
 					journal = 'unknown',
-					volume = 'unknown',
+					# volume = 'unknown',
 					edition = 'unknown',
 					pages = 'unknown'):
 		
