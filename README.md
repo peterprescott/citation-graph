@@ -96,3 +96,4 @@ Another day, what have we done?
 - [Open Citations](https://opencitations.wordpress.com/2018/02/25/citations-as-first-class-data-entities-the-opencitations-data-model/) would be a great thing...
 - http://opencitations.net/index
 - http://opencitations.net/index/coci/api/v1
+- https://figshare.com/articles/Open_Citation_Identifier_Definition/7127816
