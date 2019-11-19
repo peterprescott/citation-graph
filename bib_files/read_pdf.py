@@ -136,7 +136,10 @@ def convert_references(key):
 			# get title
 			if item_type == "book" and creator_type == "author":
 				first_cut = line.split(')')[1]
-				second_cut = first_cut.split(':')[-2]
+				try:
+					second_cut = first_cut.split(':')[-2]
+				except:
+					print('ERROR')
 				print(f' second_cut = {second_cut}')
 				title = re.findall(r'.+[.]', second_cut)[0]
 				print(f'title = {title}')
