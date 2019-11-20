@@ -11,6 +11,7 @@ def connect(db):
             process = func(*args, **kwargs)
             conn.commit()
             conn.close()
+            print('connection closed')
             return process
         return connected_function
     return wrapper
@@ -32,21 +33,17 @@ def create_table(name, columns, db=db):
     print('created table')
 
 @connect(db)
-def save_row_to_table(row, table):
+def save_row_to_table(table, row):
     """
     Saves row of data to table.
     
     Args:
         data (list)
     """
+    question_marks = ('?,' * len(row))[0:-1] # slice to remove trailing comma
+    c.executemany(f"INSERT INTO {table} VALUES ({question_marks});", (row,))
+    print(f"Row saved to table '{table}' in database '{db}': {row}")
 
-    
-    try:
-        c.executemany("INSERT INTO ? VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);", 
-            (table, row,))
-        print(f"Row saved to database: {row}")
-    except:
-        print(f"Row NOT saved to database: {row}")
 
 @connect(db)
 def search(table, column, value):
@@ -76,3 +73,4 @@ if __name__ == '__main__':
     # ~ create_table('text_creator', text_creator_columns)
 
     save_row_to_table('texts', ('RWebberBurrows2018', 'book'))
+    save_row_to_table('chapters', ('Key', 'A Title', '13-15', 'RWebberBurrows2018'))
