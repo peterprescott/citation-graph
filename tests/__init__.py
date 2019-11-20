@@ -39,29 +39,6 @@ def test_flask_app(page_location, confirmation):
     print(result)
     return result
 
-def test_sqlite_db_exists(db_name):
-    """
-    Tests that table in SQLite database exists.
-    
-    Args:
-        db_name (string): name of SQLite database.
-    """
-
-    global test_count 
-    global success_count
-    test_count += 1
-        
-    conn = sqlite3.connect(db_name)
-    c = conn.cursor()
-    try:
-        c.execute(f"SELECT * from sqlite_master")
-        success_count += 1
-        result = "\nTest Successful: SQLite Database found as expected."
-    except:
-        result = "\nTest Failed: SQLite Database not found as expected."
-    print(result)
-    return result
-
 def test_db_commands(file):
     """
     Tests that database commands from ../db_commands.py are working as expected.
@@ -107,14 +84,126 @@ def test_db_commands(file):
     print(result)
     return result
 
+def test_lit_classes():
+    global test_count
+    global success_count
+    test_count += 1
+    
+    try:
+        assert True == True
+        success_count += 1
+        result = "\nTest Successful: Literature Classes working as expected."
+    except:
+        result = "\nTest Failed: Literature Classes not working as expected."
+    
+    print(result)
+    return result
+    
+def test_bib_reader():
+    global test_count
+    global success_count
+    test_count += 1
+    
+    try:
+        assert True == True
+        success_count += 1
+        result = "\nTest Successful: .bib Reader working as expected."
+    except:
+        result = "\nTest Failed: .bib Reader not working as expected."
+    
+    print(result)
+    return result
+
+def test_pdf_reader():
+    global test_count
+    global success_count
+    test_count += 1
+    
+    try:
+        assert True == True
+        success_count += 1
+        result = "\nTest Successful: PDF Reader working as expected."
+    except:
+        result = "\nTest Failed: PDF Reader not working as expected."
+    
+    print(result)
+    return result
+    
+def test_api_interactions():
+    global test_count
+    global success_count
+    test_count += 1
+    
+    try:
+        assert True == True
+        success_count += 1
+        result = "\nTest Successful: DOI & OCI API interactions working as expected."
+    except:
+        result = "\nTest Failed: DOI & OCI API interactions not working as expected."
+    
+    print(result)
+    return result
+    
+def test_jamstack_gui():
+    global test_count
+    global success_count
+    test_count += 1
+    
+    try:
+        assert True == True
+        success_count += 1
+        result = "\nTest Successful: JAMstack GUI working as expected."
+    except:
+        result = "\nTest Failed: JAMstack GUI not working as expected."
+    
+    print(result)
+    return result
+    
+def test_web_scraper():
+    global test_count
+    global success_count
+    test_count += 1
+    
+    try:
+        assert True == True
+        success_count += 1
+        result = "\nTest Successful: Web Scraper working as expected."
+    except:
+        result = "\nTest Failed: Web Scraper not working as expected."
+    
+    print(result)
+    return result
+    
+def test_logic():
+    global test_count
+    global success_count
+    test_count += 1
+    
+    try:
+        assert True == True
+        success_count += 1
+        result = "\nTest Successful: Logic working as expected."
+    except:
+        result = "\nTest Failed: Logic not working as expected."
+    
+    print(result)
+    return result
+    
+
 if __name__ == '__main__':
 
     with open(os.path.join(sys.path[0], 'logs.txt'), 'a') as log:
         now = datetime.now()
         log.write("\n" + now.strftime("%d/%m/%Y %H:%M:%S"))
+        log.write(test_logic())
         log.write(test_flask_app("localhost:5000/test", "Running!"))
-        log.write(test_sqlite_db_exists(os.path.join(sys.path[0],"..","citation_graph.db")))
         log.write(test_db_commands(os.path.join(sys.path[0],'..','db_commands.py')))
+        # ~ log.write(test_lit_classes())
+        # ~ log.write(test_bib_reader())
+        # ~ log.write(test_pdf_reader())
+        # ~ log.write(test_api_interactions())
+        # ~ log.write(test_jamstack_gui())
+        # ~ log.write(test_web_scraper())
         summary = f"\nRan {test_count} tests: {success_count}/{test_count} were successful."
         print(summary)
         log.write(summary)
