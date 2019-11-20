@@ -1,0 +1,261 @@
+
+20/11/2019 12:54:08
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+Ran 1 tests: 0/1 were successful.
+
+20/11/2019 12:54:31
+Test Successful: Flask App running as expected.
+Ran 1 tests: 1/1 were successful.
+
+20/11/2019 12:55:40
+Test Successful: Flask App running as expected.
+Ran 1 tests: 1/1 were successful.
+
+20/11/2019 13:19:05
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Ran 2 tests: 2/2 were successful.
+
+20/11/2019 13:22:05
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Ran 2 tests: 2/2 were successful.
+
+20/11/2019 14:49:28
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:37:17
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 1/3 were successful.
+
+20/11/2019 15:37:39
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:40:50
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:45:43
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 15:46:41
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:47:14
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:48:13
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:48:46
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:49:28
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:49:52
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 15:50:07
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 15:50:39
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:51:42
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:52:03
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 15:52:12
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 15:52:58
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:53:43
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 15:57:44
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:58:34
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 15:59:38
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:01:19
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:02:44
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:03:14
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:03:44
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:04:22
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:06:53
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:08:07
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:09:19
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:09:59
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:13:02
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+20/11/2019 16:13:30
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 16:14:01
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 16:14:35
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 16:17:52
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 16:19:26
+Test Successful: Flask App running as expected.
+Test Successful: SQLite database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 16:28:25
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 16:29:01
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 16:29:48
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 16:35:03
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
