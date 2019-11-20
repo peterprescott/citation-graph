@@ -1,0 +1,7 @@
+sphinx
+selenium
+flask
+pybtex
+flask-cors
+tika
+sphinx-rtd-theme
