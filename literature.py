@@ -1,3 +1,7 @@
+"""
+Class frameworks for: Text, Book, Chapter, Article, Person, Author, Editor,	Citation.
+"""
+
 import os.path
 from pybtex.database import parse_file  # for parsing .bib files
 import inspect
@@ -76,22 +80,21 @@ class Chapter(Text):
 					title='unknown',
 					publisher = 'unknown',
 					location = 'unknown',
-					pages = 'unknown'
-					book_key = 'unknown'
+					pages = 'unknown',
+					book_key = 'unknown',
 					book_creators = [1,
 								{"creator_type":"unknown",
 								"surname":"unknown",
-								"initial":"unknown"}], 
-					book_title = 'unknown',
-					book = None)
-):
+								"initial":"unknown"}],
+					book_title = 'unknown'):
 		
 		Text.__init__(self, key, creators, publication_year, title)
 		self.publisher = publisher
 		self.location = location
 		self.pages = pages
 		if book == None: 
-			self.book = Book(book_key, book_creators, publication_year, book_title, publisher, location)
+			self.book = Book(book_key, book_creators, publication_year, 
+										book_title, publisher, location)
 		self.book_key = self.book.key
 		self.book_creators = self.book.creators
 		self.book_title = self.book.title
@@ -133,7 +136,7 @@ class Author(Person):
 		Person.__init__(self, surname, initial)
 		self.type = "author"
 		
-class Editor(Person)
+class Editor(Person):
 
 	def __init__(self, surname = "unknown", initial = "unknown"):
 		
