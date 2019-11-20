@@ -139,6 +139,7 @@ if __name__ == '__main__':
     article_columns = ('key', 'publication_year', 'title', 'journal', 'volume', 'edition', 'pages')
     creator_columns = ('key', 'surname', 'initial', 'year_of_birth', 'year_of_death')
     text_creator_columns = ('key', 'creator_key', 'creator_ordinal')
+    citation_columns = ('key', 'citing_key', 'cited_key')
     
     # ~ create_table('texts', text_columns)
     # ~ create_table('books', book_columns)
