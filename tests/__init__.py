@@ -138,11 +138,8 @@ class Test():
         self.tests += 1
         
         try:
-            get = reader.Bib('RWebberBurrows2018')
-            get.citations()
-            get.references()
-            data = get.json_graph()
-            # ~ print(data)
+            db_file = os.path.join(sys.path[0], '..', 'citation_graph.db')
+            start = reader.Bib(db_file, 'RWebberBurrows2018')
             self.success += 1
             result = "\nTest Successful: .bib Reader working as expected."
         except:
@@ -150,7 +147,7 @@ class Test():
             print(f"\n\n\nERROR: {e}")
             result = """\nTest Failed: .bib Reader not working as expected.
                         (Check that the _references.bib and _citations.bib files
-                        for @RWebberBurrows 2018 are still in the bib_files folder)"""
+                        for @RWebberBurrows2018 are still in the bib_files folder)"""
         
         print(result)
         return result

@@ -10,6 +10,7 @@ import re       # for using regular expressions to descripe reference patterns
 import requests # for fetching API JSON
 
 import literature as lit
+import db_commands as db
 
 class Bib():
     """Uses pybtex to read .bib files (generated, at least in my case, by Zotero)."""
@@ -21,8 +22,10 @@ class Bib():
         self.key = key
         if os.path.isfile(os.path.join('bib_files',f'{self.key}_citations.bib')):
             self.citations = parse_file(os.path.join('bib_files',f'{self.key}_citations.bib'))
+        else: self.citations = None
         if os.path.isfile(os.path.join('bib_files',f'{self.key}_references.bib')):
             self.references = parse_file(os.path.join('bib_files',f'{self.key}_references.bib'))
+        else: self.citations = None
         self._citations()
         self._text_data()
 
@@ -32,72 +35,77 @@ class Bib():
         both = ['citations','references']
         for either in both:
             data = getattr(self, either)
-            if data: refs = data.entries
-            self.citation_list = []
-            texts = []
-            for entry in refs:
-                ref_key = str(entry)
-                if self.key != ref_key:
-                    self.citation_list.append(lit.Citation(self.db_file, 
-                                                            citing=self.key, 
-                                                            cited=ref_key))
+            if data: 
+                refs = data.entries
+                self.citation_list = []
+                texts = []
+                for entry in refs:
+                    ref_key = str(entry)
+                    if self.key != ref_key:
+                        self.citation_list.append(lit.Citation(self.db_file, 
+                                                                citing=self.key, 
+                                                                cited=ref_key))
 
     def _text_data(self):
         """ """
         both = ['citations','references']
         for either in both:
             data = getattr(self, either)
-            if data: refs = data.entries
-            texts = []
-            for entry in refs:
-                ref_key = str(entry)
-                # get publication_year
-                try:
-                    publication_year = str(refs[entry].fields['year']).replace('}','').replace('{','')
-                except KeyError:
-                    publication_year = '?'
-                
-                # get title
-                title = str(refs[entry].fields['title']).replace('}','').replace('{','')
-                
-                # get text_type
-                text_type = refs[entry].type
-                
-                # try and get doi
-                try:
-                    doi = refs.fields['doi']
-                    print(doi)
-                except:
-                    print('no doi')
-                    doi = '?'
-
-                # get creators' data
-                creators_list = []
-                creators = refs[entry].persons
-                for creator_type in creators:
-                    for creator in creators[creator_type]:
-                        surname = creator.last_names[0]
-                        initial = creator.first_names[0][0]
-                        creators_list.append({"surname" : surname, 
-                                            "initial" : initial, 
-                                            "role" : creator_type})
-                        
-                text_data = (ref_key, publication_year, title, text_type, doi, creators_list)
-                
-                if text_type == "book":
-                    publisher, location, number_of_pages, isbn = self._book_details(refs, entry)
-                    lit.Book(
-                            db_file, ref_key, publication_year, title, text_type, 
-                            location, number_of_pages, doi, isbn, creators_list)
-                            
-                if text_type == "chapter":
-                    pass
+            if data: 
+                refs = data.entries
+                texts = []
+                for entry in refs:
+                    ref_key = str(entry)
+                    # get publication_year
+                    try:
+                        publication_year = str(refs[entry].fields['year']).replace('}','').replace('{','')
+                    except KeyError:
+                        publication_year = '?'
                     
-                if text_type == "article":
-                    pass
+                    # get title
+                    title = str(refs[entry].fields['title']).replace('}','').replace('{','')
+                    
+                    # get text_type
+                    text_type = refs[entry].type
+                    
+                    # try and get doi
+                    try:
+                        doi = refs.fields['doi']
+                        print(doi)
+                    except:
+                        print('no doi')
+                        doi = '?'
 
-                
-                
+                    # get creators' data
+                    creators_list = []
+                    creators = refs[entry].persons
+                    for creator_type in creators:
+                        for creator in creators[creator_type]:
+                            surname = creator.last_names[0]
+                            initial = creator.first_names[0][0]
+                            creators_list.append({"surname" : surname, 
+                                                "initial" : initial, 
+                                                "role" : creator_type})
+                            
+                    text_data = (ref_key, publication_year, title, text_type, doi, creators_list)
+                    
+                    if text_type == "book":
+                        publisher, location, number_of_pages, isbn = self._book_details(refs, entry)
+                        lit.Book(
+                                self.db_file, ref_key, publication_year, title, publisher, 
+                                location, number_of_pages, doi, isbn, creators=creators_list)
+                                
+                    if text_type == "incollection":
+                        pages, book_key, publisher, location = self._chapter_details(refs, entry)
+                        lit.Chapter(
+                                    self.db_file, ref_key, publication_year, title, publisher,
+                                    location, pages, doi, creators=creators_list, book_key=book_key)
+                        
+                    if text_type == "article":
+                        journal, volume, edition, pages = self._article_details(refs, entry)
+                        lit.Article(self.db_file, ref_key, publication_year, title,
+                                    journal, volume, edition, pages, doi,
+                                    creators=creators_list)
         
     def _book_details(self, refs, entry):
 
@@ -112,102 +120,61 @@ class Bib():
         number_of_pages = "unknown"
         isbn = refs[entry].fields['isbn']
         return (publisher, location, number_of_pages, isbn)
-         
-
         
-    def _chapter_details(self, pybtex_entry):
-        pass
+    def _chapter_details(self, refs, entry):
         
-    def _article_details(self, pybtex_entry):
-        pass
-
-    def save(self, cits=True, refs=True):
-        """Extract data and use appropriate literature class to save to db.
+        # get chapter details
+        try:
+            pages = refs[entry].fields['pages']
+        except KeyError:
+            pages = '?'
         
-        Args:
-            citations (Boolean): Extract citation data unless False.
-            references (Boolean): Extract reference data unless False.
-        """
+        # get details for book containing chapter
+        try:
+            book_title = refs[entry].fields['booktitle']
+        except KeyError:
+            book_title = None
+        try:
+            publisher = refs[entry].fields['publisher']
+        except KeyError:
+            publisher = '?'
+        try:
+            location = refs[entry].fields['address']
+        except KeyError:
+            location = "?"
+        
+        # try to match details for book containing chapter to known book
+        if book_title:
+            q = db.Query(self.db_file)
+            match = q.search("texts", "title", book_title)
+            if match: book_key = match[0][0]
+            else: book_key = str(entry)+"<BOOK"
+        else: book_key = str(entry)+"<BOOK"
+        
+        return (pages, book_key, publisher, location)
+        
+    def _article_details(self, refs, entry):
+        """ """
 
-        refs = self.references.entries
-        # ~ print(ref_data.entries)
-        db_file=os.path.join(sys.path[0], 'citation_graph.db')
-        citations = []
-        texts = []
-        for entry in refs:
-            ref_key = str(entry)
-            if self.key != ref_key:
-                citations.append(lit.Citation(db_file, citing=self.key, cited=ref_key))
-            
-            # get publication_year
-            publication_year = str(refs[entry].fields['year']).replace('}','').replace('{','')
-            
-            # get title
-            title = str(refs[entry].fields['title']).replace('}','').replace('{','')
-            
-            # get text_type
-            text_type = refs[entry].type
-            
-            # try and get doi
-            try:
-                doi = refs.fields['doi']
-                print(doi)
-            except:
-                print('no doi')
-                doi = '?'
-
-            # get creators' data
-            creators_list = []
-            creators = refs[entry].persons
-            for creator_type in creators:
-                for creator in creators[creator_type]:
-                    surname = creator.last_names[0]
-                    initial = creator.first_names[0][0]
-                    creators_list.append({"surname" : surname, 
-                                        "initial" : initial, 
-                                        "role" : creator_type})
-                    
-            text_data = (ref_key, publication_year, title, text_type, doi, creators_list)
-            texts.append(text_data)
-            
-            if text_type == "book":
-                try:
-                    publisher = refs[entry].fields['publisher']
-                except KeyError:
-                    publisher = '?'
-                try:
-                    location = refs[entry].fields['address']
-                except KeyError:
-                    location = "?"
-                number_of_pages = "unknown"
-                isbn = refs[entry].fields['isbn']
-                book_data = (publisher, location, number_of_pages, isbn)
-                lit.Book(db_file, ref_key, publication_year, title, text_type, 
-                            location, number_of_pages, doi, isbn, creators_list)
-                            
-            if text_type == "incollection":
-                print(refs[entry])
-                title = refs[entry].fields['title']
-                pages = refs[entry].fields['pages']
-                chapter_data = (title, pages)
-                
-                publication_year = refs[entry].fields['year']
-                book_title = refs[entry].fields['booktitle']
-                publisher = refs[entry].fields['publisher']
-                # ~ chapter_book_data = (
-                                    # ~ book_key, publication_year, book_title, 
-                                    # ~ publisher, location, creators=book_creators)
-                        
-            if text_type == "article":
-                journal = refs[entry].fields['journal']
-                volume = refs[entry].fields['volume']
-                try:
-                    edition = refs[entry].fields['number']
-                except:
-                    edition = None
-                pages = refs[entry].fields['pages']
-                article_data = (journal, volume, edition, pages)
-                print(article_data)
+        try:
+            journal = refs[entry].fields['journal']
+        except KeyError:
+            journal = '?'
+        try:
+            volume = refs[entry].fields['volume']
+        except KeyError:
+            volume = '?'
+        try:
+            edition = refs[entry].fields['number']
+        except KeyError:
+            edition = None
+        try:
+            pages = refs[entry].fields['pages']
+        except KeyError:
+            pages = '?'
+        
+        return (journal, volume, edition, pages)
+        
 
     def json_graph(self):
 
@@ -331,5 +298,5 @@ if __name__ == '__main__':
     print('hello reader')
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
     start = Bib(db_file, 'RWebberBurrows2018')
-    # ~ start=Bib('chapter')
+    # ~ start=Bib(db_file, 'chapter')
     # ~ start.save()

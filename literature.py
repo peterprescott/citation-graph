@@ -152,7 +152,7 @@ class Chapter(Text):
         """Saves chapter to SQLite database: to 'texts' and 'chapters' tables."""
         
         Text.save(self)
-        row = (self.key, self.title, self.pages, self.book_key)
+        row = (self.key, self.pages, self.book_key)
         self.q.save_row_to_table("chapters", row)
 
     def remove(self, remove_book=True):
