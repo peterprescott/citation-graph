@@ -259,3 +259,461 @@ Test Successful: Flask App running as expected.
 Test Successful: SQLite Database found as expected.
 Test Successful: Database Commands working as expected.
 Ran 3 tests: 3/3 were successful.
+
+20/11/2019 17:05:05
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 17:59:26
+Test Successful: Flask App running as expected.
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 3/3 were successful.
+
+20/11/2019 20:18:05
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 21:57:02
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+Test Successful: SQLite Database found as expected.
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 22:05:34
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+20/11/2019 22:05:53
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+Test Successful: Database Commands working as expected.
+Test Successful: Logic working as expected.
+Ran 3 tests: 2/3 were successful.
+
+20/11/2019 22:32:06
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+20/11/2019 22:33:56
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                (It may not be broken -- you need to run it explicitly.)
+20/11/2019 22:46:47
+20/11/2019 22:47:38
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+20/11/2019 22:49:22
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+20/11/2019 22:49:53
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 22:52:13
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:05:16
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+20/11/2019 23:07:24
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 1/3 were successful.
+
+20/11/2019 23:09:28
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Test Failed: Database Commands not working as expected.
+Ran 3 tests: 1/3 were successful.
+
+20/11/2019 23:10:49
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:11:07
+Test Successful: Logic working as expected.
+20/11/2019 23:11:48
+Test Successful: Logic working as expected.
+20/11/2019 23:11:59
+Test Successful: Logic working as expected.
+20/11/2019 23:12:53
+Test Successful: Logic working as expected.
+20/11/2019 23:20:08
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:20:58
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:22:11
+Test Successful: Logic working as expected.
+20/11/2019 23:22:27
+Test Successful: Logic working as expected.
+20/11/2019 23:23:21
+Test Successful: Logic working as expected.
+20/11/2019 23:23:50
+Test Successful: Logic working as expected.
+20/11/2019 23:28:02
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:28:28
+Test Successful: Logic working as expected.
+20/11/2019 23:29:00
+Test Successful: Logic working as expected.
+20/11/2019 23:29:39
+Test Successful: Logic working as expected.
+20/11/2019 23:32:02
+Test Successful: Logic working as expected.
+20/11/2019 23:32:15
+Test Successful: Logic working as expected.
+20/11/2019 23:32:59
+Test Successful: Logic working as expected.
+20/11/2019 23:34:33
+Test Successful: Logic working as expected.
+20/11/2019 23:37:38
+Test Successful: Logic working as expected.
+20/11/2019 23:39:22
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:40:08
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>create_table() working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:40:22
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>create_table() working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:40:52
+Test Successful: Logic working as expected.
+20/11/2019 23:43:30
+Test Successful: Logic working as expected.
+20/11/2019 23:47:15
+Test Successful: Logic working as expected.
+20/11/2019 23:47:38
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>create_table() working
+>>>save_row_to_table() working
+>>>search() working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:47:59
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>create_table() working
+>>>save_row_to_table() working
+>>>search() working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:48:15
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>create_table() working
+>>>save_row_to_table() working
+>>>search() working
+>>>remove_row() working
+>>>testing remove_duplicate_rows()
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:49:10
+Test Successful: Logic working as expected.
+20/11/2019 23:49:26
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>create_table() working
+>>>save_row_to_table() working
+>>>search() working
+>>>remove_row() working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:49:45
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>create_table() working
+>>>save_row_to_table() working
+>>>search() working
+>>>remove_row() working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:50:18
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>drop_table() working
+>>>create_table() working
+>>>save_row_to_table() working
+>>>search() working
+>>>remove_row() working
+>>>testing remove_duplicate_rows()
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:51:19
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+>>>drop_table() working
+>>>create_table() working
+>>>save_row_to_table() working
+>>>search() working
+>>>remove_row() working
+>>>testing remove_duplicate_rows()
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:51:45
+Test Successful: Logic working as expected.
+20/11/2019 23:52:05
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Ran 2 tests: 2/2 were successful.
+
+20/11/2019 23:53:45
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:55:02
+Test Successful: Logic working as expected.
+Test Failed: Database Commands not working as expected.
+>>>Connection working
+Ran 2 tests: 1/2 were successful.
+
+20/11/2019 23:56:08
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Test Successful: Database Commands working as expected.
+Ran 3 tests: 2/3 were successful.
+
+21/11/2019 00:55:35
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Ran 4 tests: 3/4 were successful.
+
+21/11/2019 00:56:44
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Ran 4 tests: 3/4 were successful.
+
+21/11/2019 00:57:05
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Ran 4 tests: 3/4 were successful.
+
+21/11/2019 00:59:10
+Test Successful: Logic working as expected.
+Test Failed: Flask App not running as expected. 
+                    (It may not be broken -- you need to run it explicitly.)
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Ran 4 tests: 3/4 were successful.
+
+21/11/2019 01:00:14
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Ran 3 tests: 3/3 were successful.
+
+21/11/2019 01:02:39
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Ran 3 tests: 3/3 were successful.
+
+21/11/2019 01:20:54
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Failed: PDF Reader not working as expected.
+Ran 4 tests: 3/4 were successful.
+
+21/11/2019 01:21:59
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Failed: PDF Reader not working as expected.
+Ran 4 tests: 3/4 were successful.
+
+21/11/2019 01:22:34
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Failed: PDF Reader not working as expected.
+Ran 4 tests: 3/4 were successful.
+
+21/11/2019 01:23:06
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+21/11/2019 01:23:48
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+21/11/2019 01:24:21
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+21/11/2019 01:25:44
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+21/11/2019 01:26:23
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+21/11/2019 01:26:47
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+21/11/2019 01:27:24
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+21/11/2019 01:27:41
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Ran 4 tests: 4/4 were successful.
+
+21/11/2019 01:31:32
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Ran 4 tests: 4/4 were successful.
+
+21/11/2019 01:32:20
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Ran 4 tests: 4/4 were successful.
+
+21/11/2019 01:33:42
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Ran 4 tests: 4/4 were successful.
+
+21/11/2019 02:13:37
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Ran 4 tests: 4/4 were successful.
+
+21/11/2019 02:14:04
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Successful: DOI & OCI API interactions working as expected.
+Ran 5 tests: 5/5 were successful.
+
+21/11/2019 02:15:25
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Failed: DOI & OCI API interactions not working as expected.
+Ran 5 tests: 4/5 were successful.
+
+21/11/2019 02:16:18
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+21/11/2019 02:16:46
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Successful: DOI & OCI API interactions working as expected.
+Ran 5 tests: 5/5 were successful.
+
+21/11/2019 02:22:28
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Failed: DOI & OCI API interactions not working as expected.
+Ran 5 tests: 4/5 were successful.
+
+21/11/2019 02:23:47
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Successful: DOI & OCI API interactions working as expected.
+Ran 5 tests: 5/5 were successful.
+
+21/11/2019 02:28:10
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Successful: DOI & OCI API interactions working as expected.
+Test Failed: Literature Classes not working as expected.
+Ran 6 tests: 5/6 were successful.
+
+21/11/2019 02:29:10
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+21/11/2019 02:30:31
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.

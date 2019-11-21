@@ -10,6 +10,8 @@ sys.path.append(os.path.dirname(os.path.expanduser(os.path.join(sys.path[0],'..'
 import db_commands as db
 sys.path.append(os.path.dirname(os.path.expanduser(os.path.join(sys.path[0],'..','reader.py'))))
 import reader
+sys.path.append(os.path.dirname(os.path.expanduser(os.path.join(sys.path[0],'..','literature.py'))))
+import literature
 
 
 class Test():
@@ -25,8 +27,8 @@ class Test():
             log.write(self.db_commands())
             log.write(self.bib_reader())
             log.write(self.pdf_reader())
-            # ~ log.write(self.lit_classes())
             # ~ log.write(self.api_interactions())
+            log.write(self.lit_classes())
             # ~ log.write(self.jamstack_gui())
             # ~ log.write(self.web_scraper())
             summary = f"\nRan {self.tests} tests: {self.success}/{self.tests} were successful."
@@ -35,6 +37,9 @@ class Test():
             log.write("\n")
         
     def logic(self):
+        """
+        Shows that the basic logic of my Test framework works.
+        """
         
         self.tests += 1
         
@@ -154,26 +159,14 @@ class Test():
         print(result)
         return result
                 
-    def lit_classes(self):
-        
-        self.tests += 1
-        
-        try:
-            assert True == True
-            self.success += 1
-            result = "\nTest Successful: Literature Classes working as expected."
-        except:
-            result = "\nTest Failed: Literature Classes not working as expected."
-        
-        print(result)
-        return result
-
     def api_interactions(self):
         
         self.tests += 1
-        
+
         try:
-            assert True == True
+            get = reader.Api('10.1186/ar4086')
+            responses = get.data()
+            for r in responses: assert r.status_code == 200
             self.success += 1
             result = "\nTest Successful: DOI & OCI API interactions working as expected."
         except:
@@ -182,6 +175,21 @@ class Test():
         print(result)
         return result
         
+    def lit_classes(self):
+        
+        self.tests += 1
+
+        assert literature.Text('TEST')        
+        try:
+            assert literature.Text('TEST')
+            self.success += 1
+            result = "\nTest Successful: Literature Classes working as expected."
+        except:
+            result = "\nTest Failed: Literature Classes not working as expected."
+        
+        print(result)
+        return result
+
     def jamstack_gui(self):
         
         self.tests += 1

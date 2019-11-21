@@ -6,9 +6,10 @@ from tika import unpack                 # for parsing .pdf files
 # in my case, this file was here: C:\Users\User\.virtualenvs\citation-graph-IlHssx7R\lib\site-packages\tika\tika.py
 import codecs   # for reading utf-8 characters
 import re       # for using regular expressions to descripe reference patterns
+import requests # for fetching API JSON
 
 class Bib():
-    """Uses pybtex to read in data."""
+    """Uses pybtex to read .bib files (generated, at least in my case, by Zotero)."""
     
     def __init__(self, key):
         self.key = key
@@ -94,3 +95,38 @@ class Pdf():
                 tidied_refs.append(ref)
         self.references = tidied_refs
         return self.references
+
+class Api():
+    
+    def __init__(self, doi=None):
+        self.doi = doi
+        
+    def data(self, choose="all"):
+        """
+        Fetch DOI, citations and reference data from APIs.
+        """
+        doi_api = "https://en.wikipedia.org/api/rest_v1/data/citation/zotero"
+        citations_api = "http://opencitations.net/index/coci/api/v1/citations"
+        references_api = "http://opencitations.net/index/coci/api/v1/references"
+        
+        if choose == "doi" or choose == 0:
+            doi_without_slash = self.doi.replace('/','%2f')
+            self.doi_data = requests.get(f'{doi_api}/{doi_without_slash}')
+            # this API accepts ISBNs as well as DOIs, see documentation:
+            # https://en.wikipedia.org/api/rest_v1/#/Citation/getCitation
+            return self.doi_data
+        elif choose == "citations" or choose == 1:
+            self.citation_data = requests.get(f'{citations_api}/{self.doi}')
+            # see documentation: http://opencitations.net/index/coci/api/v1/
+            return self.citation_data
+        elif choose == "references" or choose == 2:
+            self.reference_data = requests.get(f'{references_api}/{self.doi}')
+            # see documentation: http://opencitations.net/index/coci/api/v1/
+            return self.reference_data
+        else:
+            doi_without_slash = self.doi.replace('/','%2f')
+            self.doi_data = requests.get(f'{doi_api}/{doi_without_slash}')
+            self.citation_data = requests.get(f'{citations_api}/{self.doi}')
+            self.reference_data = requests.get(f'{references_api}/{self.doi}')
+            return [self.doi_data, self.citation_data, self.reference_data]
+            

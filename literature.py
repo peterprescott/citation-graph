@@ -59,13 +59,13 @@ class Text(object):
 		"""Saves Text to SQLite database."""
 		
 		row = (self.key, self.text_type)
-		db.save_row_to_table("texts", row)
+		db.Query.save_row_to_table("texts", row)
 		
 	def remove(self, all_but=0):
 		"""Removes Text from SQLite database."""
 	
-		db.remove_duplicate_rows("texts", self.key, all_but=0)
-		db.remove_duplicate_rows(self.text_type+"s", self.key, all_but=0)
+		db.Query.remove_duplicate_rows("texts", self.key, all_but=0)
+		db.Query.remove_duplicate_rows(self.text_type+"s", self.key, all_but=0)
 	
 class Book(Text):
 	
@@ -92,7 +92,7 @@ class Book(Text):
 		"""Saves Book to SQLite database"""
 		
 		row = (self.key, self.publication_year, self.title, self.publisher, self.location, self.number_of_pages)
-		db.save_row_to_table("books", row)
+		db.Query.save_row_to_table("books", row)
 
 	def remove(self, all_but=0):
 		"""Removes Text from SQLite database."""
@@ -135,7 +135,7 @@ class Chapter(Text):
 		"""Saves chapter to SQLite database."""
 		
 		row = (self.key, self.title, self.pages, self.book_key)
-		db.save_row_to_table("chapters", row)
+		db.Query.save_row_to_table("chapters", row)
 
 
 		
@@ -166,7 +166,7 @@ class Article(Text):
 		"""Saves article to SQLite database."""
 		  
 		row = (self.key, self.publication_year, self.title, self.journal, self.edition, self.pages)
-		db.save_row_to_table("articles", row)
+		db.Query.save_row_to_table("articles", row)
 		
 
 class Creator(object):
@@ -209,7 +209,7 @@ class Citation(object):
 		
 		citation_columns = ('key', 'citing_key', 'cited_key')
 		row = (self.key, self.citing, self.cited)
-		db.save_row_to_table("citations", row)
+		db.Query.save_row_to_table("citations", row)
 
 # ~ class Text(object):
     
