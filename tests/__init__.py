@@ -11,7 +11,7 @@ import db_commands as db
 sys.path.append(os.path.dirname(os.path.expanduser(os.path.join(sys.path[0],'..','reader.py'))))
 import reader
 sys.path.append(os.path.dirname(os.path.expanduser(os.path.join(sys.path[0],'..','literature.py'))))
-import literature
+import literature as lit
 
 
 class Test():
@@ -48,6 +48,8 @@ class Test():
             self.success += 1
             result = "\nTest Successful: Logic working as expected."
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: Logic not working as expected."
         
         print(result)
@@ -75,8 +77,11 @@ class Test():
             self.success += 1
             result = "\nTest Successful: Flask App running as expected."
         else:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = """\nTest Failed: Flask App not running as expected. 
                     (It may not be broken -- you need to run it explicitly.)"""
+        
         print(result)
         return result
 
@@ -94,7 +99,7 @@ class Test():
 
         try:
             q = db.Query(os.path.join(sys.path[0], '..', 'citation_graph.db'))
-            assert q.test_connection() == "connected"
+            assert q.test() == "connected"
             details += '\n>>>Connection working'
             q.create_table('test_table', ('key', 'other_column'))
             details += '\n>>>create_table() working'
@@ -117,13 +122,18 @@ class Test():
             self.success += 1
             result = "\nTest Successful: Database Commands working as expected."
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: Database Commands not working as expected."
             result += details
         print(result)
         return result
         
     def bib_reader(self):
-        
+        """
+        Tests that reader.py is able to read in .bib files by running a check
+        on the _references.bib and _citations.bib files for @RWebberBurrows2018.
+        """
         
         self.tests += 1
         
@@ -136,14 +146,20 @@ class Test():
             self.success += 1
             result = "\nTest Successful: .bib Reader working as expected."
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = """\nTest Failed: .bib Reader not working as expected.
                         (Check that the _references.bib and _citations.bib files
-                        for RWebberBurrows 2018 are still in the bib_files folder)"""
+                        for @RWebberBurrows 2018 are still in the bib_files folder)"""
         
         print(result)
         return result
 
     def pdf_reader(self):
+        """
+        Tests that reader.py is able to read and interpret .pdf files by 
+        running a check on the pdf file of references for @RWebberBurrows2018.
+        """
         
         self.tests += 1
 
@@ -154,12 +170,17 @@ class Test():
             self.success += 1
             result = "\nTest Successful: PDF Reader working as expected."
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: PDF Reader not working as expected."
         
         print(result)
         return result
                 
     def api_interactions(self):
+        """
+        Tests that the DOI & OCI APIs are working by testing for doi='10.1186/ar4086'.
+        """
         
         self.tests += 1
 
@@ -170,22 +191,56 @@ class Test():
             self.success += 1
             result = "\nTest Successful: DOI & OCI API interactions working as expected."
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: DOI & OCI API interactions not working as expected."
         
         print(result)
         return result
         
     def lit_classes(self):
+        """
+        Tests that the literature.py classes are working.
+        """
         
         self.tests += 1
 
-        assert literature.Text('TEST')        
+        db_file=os.path.join(sys.path[0], '..', 'citation_graph.db')
+
+        details = ""
+
+        test_citation = lit.Citation(db_file, citing='TEST_CITATION', cited='TEST_REFERENCE')
+        test_citation.remove()
+
+
         try:
-            assert literature.Text('TEST')
+            test_text = lit.Text(db_file, key='TEST_TEXT')
+            test_text.remove()
+            details += "\n>>>lit.Text() class working"
+            test_book = lit.Book(db_file, key='TEST_BOOK')
+            test_book.remove()
+            details += "\n>>>lit.Book() class working"
+            test_chapter = lit.Chapter(db_file, key='TEST_CHAPTER')
+            test_chapter.remove()
+            details += "\n>>>lit.Chapter() class working"
+            test_article = lit.Article(db_file, key='TEST_ARTICLE')
+            test_article.remove()
+            details += "\n>>>lit.Article() class working"
+            test_creator = lit.Creator(db_file, surname='TEST_CREATOR')
+            test_creator.remove()
+            details += "\n>>>lit.Creator() class working"
+            test_citation = lit.Citation(db_file, citing='TEST_CITATION', cited='TEST_REFERENCE')
+            test_citation.remove()
+            details += "\n>>>lit.Citation() class working"
+            
             self.success += 1
             result = "\nTest Successful: Literature Classes working as expected."
+            
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: Literature Classes not working as expected."
+            result += details
         
         print(result)
         return result
@@ -199,6 +254,8 @@ class Test():
             self.success += 1
             result = "\nTest Successful: JAMstack GUI working as expected."
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: JAMstack GUI not working as expected."
         
         print(result)
@@ -213,6 +270,8 @@ class Test():
             self.success += 1
             result = "\nTest Successful: Web Scraper working as expected."
         except:
+            e = sys.exc_info()
+            print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: Web Scraper not working as expected."
         
         print(result)
