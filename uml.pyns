@@ -1,0 +1,20 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'Text', 'x':270, 'y':33, 'width':138, 'height':218, 'attrs': 'text_type|referals|creators|references|key|title|publication_year', 'meths': '__init__|save|remove'}
+{'type':'umlshape', 'id':'Book', 'x':265, 'y':317, 'width':130, 'height':154, 'attrs': 'publisher|location|number_of_pages', 'meths': '__init__|save|remove'}
+{'type':'umlshape', 'id':'Chapter', 'x':439, 'y':269, 'width':114, 'height':218, 'attrs': 'type|book_key|location|book|pages|book_title|publisher|book_creators', 'meths': '__init__|save'}
+{'type':'umlshape', 'id':'Article', 'x':111, 'y':322, 'width':80, 'height':138, 'attrs': 'journal|volume|pages', 'meths': '__init__|save'}
+{'type':'umlshape', 'id':'Creator', 'x':134, 'y':121, 'width':80, 'height':138, 'attrs': 'surname|works|initial', 'meths': '__init__|save'}
+{'type':'umlshape', 'id':'Citation', 'x':22, 'y':131, 'width':90, 'height':138, 'attrs': 'cited|citing|key', 'meths': '__init__|save'}
+{'type':'umlshape', 'id':'object', 'x':37, 'y':40, 'width':70, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'Test', 'x':797, 'y':114, 'width':138, 'height':250, 'attrs': 'tests|success', 'meths': '__init__|logic|flask_app|db_commands|lit_classes|bib_reader|pdf_reader|api_interactions|jamstack_gui|web_scraper'}
+{'type':'umlshape', 'id':'Query', 'x':577, 'y':141, 'width':178, 'height':266, 'attrs': 'db|conn|c', 'meths': 'open|close|remove_row|remove_duplicate_rows|save_row_to_table|create_table|drop_table|__init__|test_connection|search'}
+{'type':'umlshape', 'id':'sqlite3.connect', 'x':433, 'y':62, 'width':160, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'edge', 'id':'Creator_to_object', 'source':'Creator', 'target':'object', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Book_to_Text', 'source':'Book', 'target':'Text', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Text_to_object', 'source':'Text', 'target':'object', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Citation_to_object', 'source':'Citation', 'target':'object', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Article_to_Text', 'source':'Article', 'target':'Text', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Chapter_to_Text', 'source':'Chapter', 'target':'Text', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Book_to_Chapter', 'source':'Book', 'target':'Chapter', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'sqlite3.connect_to_Query', 'source':'sqlite3.connect', 'target':'Query', 'uml_edge_type': 'composition'}
