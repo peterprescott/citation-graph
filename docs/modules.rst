@@ -6,5 +6,7 @@ citation-graph
 
    db_commands
    literature
+   reader
    run
+   script
    tests

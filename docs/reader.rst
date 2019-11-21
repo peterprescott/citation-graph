@@ -1,10 +1,7 @@
-tests package
+reader module
 =============
 
-Module contents
----------------
-
-.. automodule:: tests
+.. automodule:: reader
    :members:
    :undoc-members:
    :show-inheritance:

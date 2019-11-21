@@ -69,6 +69,12 @@ class Bib():
 class Pdf():
     
     def __init__(self, key):
+        """Initializes PDF reader to extract and interpret references of text.
+        
+        Args:
+            key (string): in BetterBibTex format [authForeIni][authEtAl][year].
+            """
+        
         self.key = key
         self.pdf = f'{key}.pdf'
         self.txt = f"pdf2txt_{key}.txt"
@@ -77,6 +83,8 @@ class Pdf():
             file.write(parsed['content'])
             
     def refs(self, print_refs=False):
+        """ """
+        
         extracted_text = ''
         with codecs.open(os.path.join('bib_files', self.txt), 'r', "utf-8") as file:
             for line in file:
@@ -99,7 +107,11 @@ class Pdf():
 class Api():
     
     def __init__(self, doi=None):
-        self.doi = doi
+        """Initializes API reader.
+        
+        Args:
+            doi (string): Document Object Identifer; cf. https://www.doi.org/"""
+        if doi: self.doi = doi
         
     def data(self, choose="all"):
         """

@@ -209,9 +209,6 @@ class Test():
 
         details = ""
 
-        test_citation = lit.Citation(db_file, citing='TEST_CITATION', cited='TEST_REFERENCE')
-        test_citation.remove()
-
 
         try:
             test_text = lit.Text(db_file, key='TEST_TEXT')

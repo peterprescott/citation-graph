@@ -1,10 +1,7 @@
-tests package
+script module
 =============
 
-Module contents
----------------
-
-.. automodule:: tests
+.. automodule:: script
    :members:
    :undoc-members:
    :show-inheritance:
