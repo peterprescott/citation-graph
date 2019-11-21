@@ -1,5 +1,5 @@
 """
-Class frameworks for: Text, Book, Chapter, Article, Person, Author, Editor,	Citation.
+Class frameworks for: Text, Book, Chapter, Article, Creator, Citation.
 """
 
 import os.path
@@ -21,7 +21,7 @@ class Text(object):
 	"""A Text has a 'key' and a 'type'."""
 	
 	def __init__(	self, 
-					key,
+					key='unknown',
 					creators=[{"creator_type":"unknown",
 								"surname":"unknown",
 								"initial":"unknown"}], 
@@ -56,10 +56,16 @@ class Text(object):
 		self.save()
 		
 	def save(self):
-		"""Saves Text to SQLite database"""
+		"""Saves Text to SQLite database."""
 		
 		row = (self.key, self.text_type)
 		db.save_row_to_table("texts", row)
+		
+	def remove(self, all_but=0):
+		"""Removes Text from SQLite database."""
+	
+		db.remove_duplicate_rows("texts", self.key, all_but=0)
+		db.remove_duplicate_rows(self.text_type+"s", self.key, all_but=0)
 	
 class Book(Text):
 	
@@ -75,7 +81,7 @@ class Book(Text):
 					number_of_pages = 'unknown'):
 		"""Initialize Book as child Text object."""
 		
-		Text.__init__(key, creators, publication_year, title, text_type = "book")
+		Text.__init__(key, text_type = "book")
 
 		self.publisher = publisher
 		self.location = location
@@ -87,6 +93,11 @@ class Book(Text):
 		
 		row = (self.key, self.publication_year, self.title, self.publisher, self.location, self.number_of_pages)
 		db.save_row_to_table("books", row)
+
+	def remove(self, all_but=0):
+		"""Removes Text from SQLite database."""
+		
+		Text.remove(self, all_but=all_but)
 
 class Chapter(Text):
 	def __init__(	self, 
@@ -158,7 +169,7 @@ class Article(Text):
 		db.save_row_to_table("articles", row)
 		
 
-class Person(object):
+class Creator(object):
 	
 	def __init__(self, surname = "unknown", initial = "unknown"):
 		"""Initialize Person object."""
@@ -170,27 +181,21 @@ class Person(object):
 		
 	def save(self):
 		# ~ creator_columns = ('key', 'surname', 'initial', 'year_of_birth', 'year_of_death')
+	    # ~ text_creator_columns = ('key', 'text_key', 'creator_key', 'creator_role', 'creator_ordinal')
+
 		pass
   
 		
-class Author(Person):
-	
-	def __init__(self, surname = "unknown", initial = "unknown"):
-		
-		Person.__init__(self, surname, initial)
-		self.type = "author"
-		
-class Editor(Person):
-
-	def __init__(self, surname = "unknown", initial = "unknown"):
-		
-		Person.__init__(self, surname, initial)
-		self.type = "editor"
-
 class Citation(object):
 	
 	def __init__(self, citing, cited):
-		"""Initialize Citation object."""
+		"""
+		Initialize Citation object.
+		
+		Args:
+			citing (string): key of citing text.
+			cited (string): key of cited text.
+		"""
 		
 		self.key = citing+'-->'+cited
 		self.citing = citing
@@ -202,11 +207,9 @@ class Citation(object):
 	def save(self):
 		"""Saves citation to SQLite database."""
 		
-				    # ~ text_creator_columns = ('key', 'text_key', 'creator_key', 'creator_type', 'creator_ordinal')
 		citation_columns = ('key', 'citing_key', 'cited_key')
 		row = (self.key, self.citing, self.cited)
 		db.save_row_to_table("citations", row)
-		pass
 
 # ~ class Text(object):
     
@@ -295,7 +298,7 @@ class Citation(object):
 if __name__ == '__main__':
     ## run some simple tests.
     example_key = 'RWebberBurrows2018'
-    example_text = Text(example_key)
+    example_text = Book(example_key)
     e = example_text
     print(type(e), e.key, e.references, e.referals)
     # ~ for ref in e.references:
