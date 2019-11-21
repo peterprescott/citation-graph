@@ -1,4 +1,5 @@
 import os.path
+import sys
 from pybtex.database import parse_file  # for parsing .bib files
 from tika import unpack                 # for parsing .pdf files
 # tika requires Java to be installed on your system: https://java.com/en/download/manual.jsp
@@ -8,29 +9,79 @@ import codecs   # for reading utf-8 characters
 import re       # for using regular expressions to descripe reference patterns
 import requests # for fetching API JSON
 
+import literature as lit
+
 class Bib():
     """Uses pybtex to read .bib files (generated, at least in my case, by Zotero)."""
     
     def __init__(self, key):
+        """Immediately read in citations and references, if files exist."""
         self.key = key
-    
-    def citations(self):
+        if os.path.isfile(os.path.join('bib_files',f'{self.key}_citations.bib')):
+            self.citations = parse_file(os.path.join('bib_files',f'{self.key}_citations.bib'))
+        if os.path.isfile(os.path.join('bib_files',f'{self.key}_references.bib')):
+            self.references = parse_file(os.path.join('bib_files',f'{self.key}_references.bib'))
 
-        bib_data = parse_file(os.path.join('bib_files',f'{self.key}_citations.bib'))
-        return bib_data
+    def save(self, citations=True, references=True):
+        """Extract data and use appropriate literature class to save to db.
+        
+        Args:
+            citations (Boolean): Extract citation data unless False.
+            references (Boolean): Extract reference data unless False.
+        """
+        
+        refs = self.references.entries
+        # ~ print(ref_data.entries)
+        db_file=os.path.join(sys.path[0], 'citation_graph.db')
+        texts = []
+        for entry in refs:
+            key = entry
+            title = str(refs[entry].fields['title']).replace('}','').replace('{','')
+            try:
+                doi = refs.fields['doi']
+                print(doi)
+            except:
+                print('no doi')
 
-    def references(self):
+            creators = refs[entry].persons
+            creators_list = []
+            for creator_type in creators:
+                for creator in creators[creator_type]:
+                    surname = creator.last_names[0]
+                    initial = creator.first_names[0][0]
+                    creators_list.append({"surname" : surname, 
+                                        "initial" : initial, 
+                                        "role" : creator_type})
+                    
+            year = str(refs[entry].fields['year']).replace('}','').replace('{','')
+            text_type = refs[entry].type
+            print(text_type)
+            texts.append(lit.Text(db_file, key, year, title, text_type, creators=creators_list))
+            # ~ if text_type == "book":
+                # ~ #print(ref_data.entries[entry])
+                # ~ publisher = ref_data.entries[entry].fields['publisher']
+                # ~ location = ref_data.entries[entry].fields['address']
+                # ~ number_of_pages = "unknown"
+                # ~ isbn = ref_data.entries[entry].fields['isbn']
+            # ~ if text_type == "article":
+                # ~ print(ref_data.entries[entry])
+                # ~ try:
+                    # ~ doi = ref_data.entries[entry].fields['doi']
+                    # ~ print(doi)
+                # ~ except:
+                    # ~ print('no doi')
 
-        bib_data = parse_file(os.path.join('bib_files',f'{self.key}_references.bib'))
-        return bib_data
-
+            # ~ 'journal', 'volume', 'edition', 'pages'
+        
+        
+        
 
     def json_graph(self):
 
         node_list = []
         edge_list = []
         
-        ref_data = self.references()
+        ref_data = self.references
         
         for entry in ref_data.entries:
             node_list.append(
@@ -47,7 +98,7 @@ class Bib():
                 edge_list.append(dict(source = self.key, target = entry, value = 1))
 
         
-        cite_data = self.citations()
+        cite_data = self.citations
         
         for entry in cite_data.entries:
             if entry != self.key:
@@ -142,3 +193,8 @@ class Api():
             self.reference_data = requests.get(f'{references_api}/{self.doi}')
             return [self.doi_data, self.citation_data, self.reference_data]
             
+
+if __name__ == '__main__':
+    print('hello reader')
+    start = Bib('RWebberBurrows2018')
+    start.save()
