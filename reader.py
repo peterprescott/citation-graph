@@ -35,16 +35,29 @@ class Bib():
         db_file=os.path.join(sys.path[0], 'citation_graph.db')
         texts = []
         for entry in refs:
+            # get key
             key = entry
+            
+            # get publication_year
+            publication_year = str(refs[entry].fields['year']).replace('}','').replace('{','')
+            
+            # get title
             title = str(refs[entry].fields['title']).replace('}','').replace('{','')
+            
+            # get text_type
+            text_type = refs[entry].type
+            
+            # try and get doi
             try:
                 doi = refs.fields['doi']
                 print(doi)
             except:
                 print('no doi')
+                doi = '?'
 
-            creators = refs[entry].persons
+            # get creators' data
             creators_list = []
+            creators = refs[entry].persons
             for creator_type in creators:
                 for creator in creators[creator_type]:
                     surname = creator.last_names[0]
@@ -53,28 +66,39 @@ class Bib():
                                         "initial" : initial, 
                                         "role" : creator_type})
                     
-            year = str(refs[entry].fields['year']).replace('}','').replace('{','')
-            text_type = refs[entry].type
-            print(text_type)
-            texts.append(lit.Text(db_file, key, year, title, text_type, creators=creators_list))
-            # ~ if text_type == "book":
-                # ~ #print(ref_data.entries[entry])
-                # ~ publisher = ref_data.entries[entry].fields['publisher']
-                # ~ location = ref_data.entries[entry].fields['address']
-                # ~ number_of_pages = "unknown"
-                # ~ isbn = ref_data.entries[entry].fields['isbn']
-            # ~ if text_type == "article":
-                # ~ print(ref_data.entries[entry])
-                # ~ try:
-                    # ~ doi = ref_data.entries[entry].fields['doi']
-                    # ~ print(doi)
-                # ~ except:
-                    # ~ print('no doi')
-
-            # ~ 'journal', 'volume', 'edition', 'pages'
-        
-        
-        
+            text_data = (key, publication_year, title, text_type, doi, creators_list)
+            texts.append(text_data)
+            
+            if text_type == "book":
+                publisher = refs[entry].fields['publisher']
+                location = refs[entry].fields['address']
+                number_of_pages = "unknown"
+                isbn = refs[entry].fields['isbn']
+                book_data = (publisher, location, number_of_pages, isbn)
+                lit.Book(db_file, key, publication_year, title, text_type, 
+                            location, number_of_pages, doi, isbn, creators_list)
+                            
+            if text_type == "incollection":
+                print(refs[entry])
+                title = refs[entry].fields['title']
+                pages = refs[entry].fields['pages']
+                chapter_data = (title, pages)
+                
+                publication_year = refs[entry].fields['year']
+                book_title = refs[entry].fields['booktitle']
+                publisher = refs[entry].fields['publisher']
+                chapter_book_data = (book_key, publication_year, 
+                        book_title, publisher, location, creators=book_creators)
+            if text_type == "article":
+                journal = refs[entry].fields['journal']
+                volume = refs[entry].fields['volume']
+                try:
+                    edition = refs[entry].fields['number']
+                except:
+                    edition = None
+                pages = refs[entry].fields['pages']
+                article_data = (journal, volume, edition, pages)
+                print(article_data)
 
     def json_graph(self):
 
@@ -196,5 +220,6 @@ class Api():
 
 if __name__ == '__main__':
     print('hello reader')
-    start = Bib('RWebberBurrows2018')
+    # ~ start = Bib('RWebberBurrows2018')
+    start=Bib('chapter')
     start.save()
