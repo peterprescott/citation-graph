@@ -6,6 +6,12 @@ import sqlite3                  # for testing database
 import os                       # for navigating between folders
 import sys
 
+sys.path.append(os.path.dirname(os.path.expanduser(os.path.join(sys.path[0],'..','db_commands.py'))))
+import db_commands as db
+sys.path.append(os.path.dirname(os.path.expanduser(os.path.join(sys.path[0],'..','reader.py'))))
+import reader
+
+
 class Test():
     
     def __init__(self):
@@ -15,11 +21,11 @@ class Test():
             now = datetime.now()
             log.write("\n" + now.strftime("%d/%m/%Y %H:%M:%S"))
             log.write(self.logic())
-            log.write(self.flask_app("localhost:5000/test", "Running!"))
-            log.write(self.db_commands(os.path.join(sys.path[0],'..','db_commands.py')))
+            # ~ log.write(self.flask_app("localhost:5000/test", "Running!"))
+            log.write(self.db_commands())
+            log.write(self.bib_reader())
+            log.write(self.pdf_reader())
             # ~ log.write(self.lit_classes())
-            # ~ log.write(self.bib_reader())
-            # ~ log.write(self.pdf_reader())
             # ~ log.write(self.api_interactions())
             # ~ log.write(self.jamstack_gui())
             # ~ log.write(self.web_scraper())
@@ -69,16 +75,13 @@ class Test():
         print(result)
         return result
 
-    def db_commands(self, file):
+    def db_commands(self):
         """
         Tests that database commands from ../db_commands.py are working as expected.
         
         Args:
             file (string): file location for db_commands.py
         """ 
-        
-        sys.path.append(os.path.dirname(os.path.expanduser(file)))
-        import db_commands as db
         
         self.tests += 1
         
@@ -113,7 +116,44 @@ class Test():
             result += details
         print(result)
         return result
+        
+    def bib_reader(self):
+        
+        
+        self.tests += 1
+        
+        try:
+            get = reader.Bib('RWebberBurrows2018')
+            get.citations()
+            get.references()
+            data = get.json_graph()
+            # ~ print(data)
+            self.success += 1
+            result = "\nTest Successful: .bib Reader working as expected."
+        except:
+            result = """\nTest Failed: .bib Reader not working as expected.
+                        (Check that the _references.bib and _citations.bib files
+                        for RWebberBurrows 2018 are still in the bib_files folder)"""
+        
+        print(result)
+        return result
 
+    def pdf_reader(self):
+        
+        self.tests += 1
+
+        try:
+            get = reader.Pdf('RWebberBurrows2018')
+            data = get.refs()
+            assert len(data) == 216
+            self.success += 1
+            result = "\nTest Successful: PDF Reader working as expected."
+        except:
+            result = "\nTest Failed: PDF Reader not working as expected."
+        
+        print(result)
+        return result
+                
     def lit_classes(self):
         
         self.tests += 1
@@ -127,35 +167,7 @@ class Test():
         
         print(result)
         return result
-        
-    def bib_reader(self):
-        
-        self.tests += 1
-        
-        try:
-            assert True == True
-            self.success += 1
-            result = "\nTest Successful: .bib Reader working as expected."
-        except:
-            result = "\nTest Failed: .bib Reader not working as expected."
-        
-        print(result)
-        return result
 
-    def pdf_reader(self):
-        
-        selfcount += 1
-        
-        try:
-            assert True == True
-            self.success += 1
-            result = "\nTest Successful: PDF Reader working as expected."
-        except:
-            result = "\nTest Failed: PDF Reader not working as expected."
-        
-        print(result)
-        return result
-        
     def api_interactions(self):
         
         self.tests += 1
