@@ -25,29 +25,27 @@ class Bib():
         else: self.citations = None
         if os.path.isfile(os.path.join('bib_files',f'{self.key}_references.bib')):
             self.references = parse_file(os.path.join('bib_files',f'{self.key}_references.bib'))
-        else: self.citations = None
+        else: self.references = None
         self._citations()
         self._text_data()
 
     def _citations(self):
         """Use literature classes to save Citations to db"""
         
-        both = ['citations','references']
-        for either in both:
-            data = getattr(self, either)
-            if data: 
-                refs = data.entries
-                self.citation_list = []
-                texts = []
-                for entry in refs:
-                    ref_key = str(entry)
-                    if self.key != ref_key:
-                        self.citation_list.append(lit.Citation(self.db_file, 
-                                                                citing=self.key, 
-                                                                cited=ref_key))
+        if self.citations:
+            for entry in self.citations.entries:
+                ref_key = str(entry)
+                if ref_key != self.key:
+                    lit.Citation(self.db_file, citing=ref_key, cited=self.key)
+        
+        if self.references:
+            for entry in self.references.entries:
+                ref_key = str(entry)
+                if ref_key != self.key:
+                    lit.Citation(self.db_file, citing=self.key, cited=ref_key)
 
     def _text_data(self):
-        """ """
+        """Extract and save data for citation texts."""
         both = ['citations','references']
         for either in both:
             data = getattr(self, either)
@@ -108,6 +106,7 @@ class Bib():
                                     creators=creators_list)
         
     def _book_details(self, refs, entry):
+        """Get details specific to books."""
 
         try:
             publisher = refs[entry].fields['publisher']
@@ -122,6 +121,7 @@ class Bib():
         return (publisher, location, number_of_pages, isbn)
         
     def _chapter_details(self, refs, entry):
+        """Get details specific to chapter."""
         
         # get chapter details
         try:
@@ -154,7 +154,7 @@ class Bib():
         return (pages, book_key, publisher, location)
         
     def _article_details(self, refs, entry):
-        """ """
+        """Get details specific to journal article."""
 
         try:
             journal = refs[entry].fields['journal']
@@ -175,47 +175,6 @@ class Bib():
         
         return (journal, volume, edition, pages)
         
-
-    def json_graph(self):
-
-        node_list = []
-        edge_list = []
-        
-        ref_data = self.references
-        
-        for entry in ref_data.entries:
-            node_list.append(
-                            dict(id = entry, 
-                                     title = str(ref_data.entries[entry].fields['title']).strip('{}'), 
-                                     #author = str(ref_data.entries[entry].fields['author']).strip('{}'), 
-                                     #year = str(ref_data.entries[entry].fields['year']).strip('{}'), 
-                                     type = ref_data.entries[entry].type,
-                                     group = 1
-                                    )
-                            )
-            
-            if entry != self.key:
-                edge_list.append(dict(source = self.key, target = entry, value = 1))
-
-        
-        cite_data = self.citations
-        
-        for entry in cite_data.entries:
-            if entry != self.key:
-                node_list.append(
-                                dict(id = entry, 
-                                     title = str(cite_data.entries[entry].fields['title']).strip('{}'), 
-                                     #author = str(cite_data.entries[entry].fields['author']).strip('{}'), 
-                                     #year = str(cite_data.entries[entry].fields['year']).strip('{}'), 
-                                     type = cite_data.entries[entry].type,
-                                     group = 2
-                                    )
-                                )
-                if entry != self.key:
-                    edge_list.append(dict(source = entry, target = self.key, value = 1))
-        
-        
-        return {"nodes": node_list, "links": edge_list}
 
 class Pdf():
     
