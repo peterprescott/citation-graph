@@ -1,0 +1,22 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Api|citation_data\ldoi : NoneType\ldoi_data\lreference_data\l|data(choose)\l}", shape="record"];
+"1" [label="{Article|db_file\ledition : str\ljournal : str\lpages : str\lvolume : str\l|save()\l}", shape="record"];
+"2" [label="{Bib|citations : NoneType\ldb_file\lkey\lreferences : NoneType\l|}", shape="record"];
+"3" [label="{Book|db_file\lisbn : str\llocation : str\lnumber_of_pages : str\lpublisher : str\l|save()\l}", shape="record"];
+"4" [label="{Chapter|book : NoneType\lbook_creators\lbook_key\lbook_title\ldb_file\llocation : str\lpages : str\lpublisher : str\l|remove(remove_book)\lsave()\l}", shape="record"];
+"5" [label="{Citation|cited\lciting\ldb_file\lkey\lq\l|remove()\lsave()\l}", shape="record"];
+"6" [label="{Creator|db_file\linitial : str\lkey\lq\lsurname : str\lworks : list\l|remove()\lsave()\l}", shape="record"];
+"7" [label="{Pdf|key\lpdf\lref_file\lreferences : list\ltxt\l|refs(print_refs)\l}", shape="record"];
+"8" [label="{Query|c\lconn\ldb\l|close()\lcreate_table(table, columns)\ldrop_table(table)\lfull(table)\ljson_graph(text_key, radius)\lopen()\lreboot()\lremove_duplicate_rows(table, repeated_value, all_but, column)\lremove_row(table, rowid)\lsave_row_to_table(table, row, allow_duplicate)\lsearch(table, column, value, with_rowid)\ltest()\l}", shape="record"];
+"9" [label="{Test|success : int\ltests : int\l|api_interactions()\lbib_reader()\ldb_commands()\lflask_app(page_location, confirmation)\ljamstack_gui()\llit_classes()\llogic()\lpdf_reader()\lweb_scraper()\l}", shape="record"];
+"10" [label="{Text|creators : list\ldb_file\ldoi : str\lkey : str\lpublication_year : str\lq\lreferals : list\lreferences : list\ltext_type : str\ltext_types : tuple\ltitle : str\l|remove(all_but)\lsave()\l}", shape="record"];
+"1" -> "10" [arrowhead="empty", arrowtail="none"];
+"3" -> "10" [arrowhead="empty", arrowtail="none"];
+"4" -> "10" [arrowhead="empty", arrowtail="none"];
+"3" -> "4" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="book", style="solid"];
+"8" -> "5" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="q", style="solid"];
+"8" -> "6" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="q", style="solid"];
+"8" -> "10" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="q", style="solid"];
+}

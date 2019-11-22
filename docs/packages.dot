@@ -1,0 +1,17 @@
+digraph "packages" {
+charset="utf-8"
+rankdir=BT
+"0" [label="db_commands", shape="box"];
+"1" [label="literature", shape="box"];
+"2" [label="reader", shape="box"];
+"3" [label="run", shape="box"];
+"4" [label="tests", shape="box"];
+"1" -> "0" [arrowhead="open", arrowtail="none"];
+"1" -> "2" [arrowhead="open", arrowtail="none"];
+"2" -> "0" [arrowhead="open", arrowtail="none"];
+"2" -> "1" [arrowhead="open", arrowtail="none"];
+"3" -> "0" [arrowhead="open", arrowtail="none"];
+"4" -> "0" [arrowhead="open", arrowtail="none"];
+"4" -> "1" [arrowhead="open", arrowtail="none"];
+"4" -> "2" [arrowhead="open", arrowtail="none"];
+}
