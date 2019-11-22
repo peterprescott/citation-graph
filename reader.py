@@ -80,7 +80,10 @@ class Bib():
                     for creator_type in creators:
                         for creator in creators[creator_type]:
                             surname = creator.last_names[0]
-                            initial = creator.first_names[0][0]
+                            try:
+                                initial = creator.first_names[0][0]
+                            except IndexError:
+                                initial = ''
                             creators_list.append({"surname" : surname, 
                                                 "initial" : initial, 
                                                 "role" : creator_type})
@@ -117,7 +120,10 @@ class Bib():
         except KeyError:
             location = "?"
         number_of_pages = "unknown"
-        isbn = refs[entry].fields['isbn']
+        try:
+            isbn = refs[entry].fields['isbn']
+        except KeyError:
+            isbn = '?'
         return (publisher, location, number_of_pages, isbn)
         
     def _chapter_details(self, refs, entry):
@@ -256,6 +262,7 @@ class Api():
 if __name__ == '__main__':
     print('hello reader')
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
-    start = Bib(db_file, 'RWebberBurrows2018')
+    new_keys = ['DTimms1975', 'RBurrowsGane2006', 'RKitchin2014']
+    for new_key in new_keys: start = Bib(db_file, new_key)
     # ~ start=Bib(db_file, 'chapter')
     # ~ start.save()
