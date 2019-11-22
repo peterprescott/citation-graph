@@ -167,6 +167,33 @@ class Query():
         self.create_table('creators', creator_columns)
         self.create_table('text_creators', text_creator_columns)
         self.create_table('citations', citation_columns)
+        
+    def follow_edges(self, text_key, direction = "cited", full_node_list=[], full_edge_list=[], iteration=1):
+        """Helper function to get outgoing edges from text and connected nodes."""
+
+        
+        new_nodes = []
+        
+        citations = self.search("citations", f"{direction}_key", text_key)
+        for citation_row in citations:
+            if direction == "cited": 
+                other_key = citation_row[1]
+                group_colour = iteration
+            else: 
+                other_key = citation_row[2]
+                group_colour = iteration * -1
+            full_edge_list.append(dict(source = text_key, target = other_key, value = 1))
+
+            node_data = self.search("texts", "key", other_key)
+            if node_data:
+                node_row = node_data[0] # data returned by query as list of tuples
+                other_title = node_row[2] #.replace(':','--').replace('"','').replace("'",'')
+                other_type = node_row[3]
+                new_node = dict(id = other_key, title = other_title, type = other_type, group = group_colour)
+                full_node_list.append(new_node)
+                new_nodes.append(new_node)
+                
+        return new_nodes
     
     def json_graph(self, text_key, radius=1):
         """
@@ -176,42 +203,34 @@ class Query():
         radius (int): **TODO** degrees of separation between focal text and others included.
         """
         
-        edge_list = []
         node_list = []
+        edge_list = []
 
-        # cited texts
-        edges = self.search("citations", "citing_key", text_key)
-        for edge_row in edges:
-            edge = {"source": text_key,"target": edge_row[2]}
-            edge_list.append(edge)
-            node_data = self.search("texts", "key", edge_row[2])
-            if node_data:
-                print(node_data)
-                node_row = node_data[0]
-                node = {"id": edge_row[1]}
-                # ~ "year": node_row[1], 
-                # ~ "title": node_row[2], 
-                # ~ "type": node_row[3]
-                # ~ 
-                node_list.append(node)
-
-        # citing
-        edges = self.search("citations", "cited_key", text_key)
-        for edge_row in edges:
-            edge = {"source": edge_row[1],"target": text_key}
-            edge_list.append(edge)
-            node_data = self.search("texts", "key", edge_row[1])
-            if node_data:
-                node_row = node_data[0]
-                node = {"id": edge_row[1]} 
-                # ~ "year": node_row[1], 
-                # ~ "title": node_row[2], 
-                # ~ "type": node_row[3]
-                # ~ }
-                node_list.append(node)
+        # get data for the text
+        node_data = self.search("texts", "key", text_key)
+        if node_data:
+                node_row = node_data[0] # data returned by query as list of tuples
+                text_title = node_row[2].replace(':','--').replace('"','').replace("'",'')
+                text_type = node_row[3]
+                node_list.append(dict(id = text_key, title = text_title, type = text_type, group = 1))
         
-        return {"nodes": node_list, "links": edge_list}
-
+        next_nodes = [{'id':text_key}]
+        iteration = 1
+        while iteration <= radius:
+            new_nodes = next_nodes
+            next_nodes = []
+            for node in new_nodes:
+                citing_nodes = self.follow_edges(node['id'], "cited", node_list, edge_list, iteration)
+                for citing_node in citing_nodes: next_nodes.append(citing_node)
+                cited_nodes = self.follow_edges(node['id'], "citing", node_list, edge_list, iteration)
+                for cited_node in cited_nodes:  next_nodes.append(cited_node)
+                new_nodes.remove(node)
+                iteration = iteration + 1
+        
+        
+        graph = {"nodes": node_list, "links": edge_list}
+        print(graph)
+        return graph
         
 
 if __name__ == '__main__':
