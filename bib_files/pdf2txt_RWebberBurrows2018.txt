@@ -1,15 +1,11 @@
-# in progress.
-describe in regular expressions what the general reference entry looks like:
->>>       \n*. ([19 or 20][any two numbers])[]\n
-
 
 REFERENCES
 
 Abbott, A. (1999) Department and Discipline. Chicago Sociology at One Hundred. 
 Chicago, IL: Chicago University Press.
 
-Abbott, A. (2000) ëReflections on the Future of Sociologyí, Contemporary Sociology, 
-29(2): 296ñ300.
+Abbott, A. (2000) ‚ÄòReflections on the Future of Sociology‚Äô, Contemporary Sociology, 
+29(2): 296‚Äì300.
 
 Abler, R., Adams, S. and Gould, O. (1971) Spatial Organization. Englewood Cliffs, NJ: 
 Prentice Hall.
@@ -18,28 +14,28 @@ Anderson, M., Bechhofer, F. and Gerhuny, J. (eds) (1994) The Social and Politica
 of the Household. Oxford: Oxford University Press.
 
 Atkinson, R., Burrows, R., Glucksberg, L., Kei-Ho, H., Knowles, C. and Rhodes, D. 
-(2016a) ëMinimum City? A Critical Assessment of Some of the Deeper Impacts of the 
-ìSuper-Richî on Urban Lifeí, in R. Forrest, B. Wissink, and S. Yee Koh (eds) Cities and 
+(2016a) ‚ÄòMinimum City? A Critical Assessment of Some of the Deeper Impacts of the 
+‚ÄúSuper-Rich‚Äù on Urban Life‚Äô, in R. Forrest, B. Wissink, and S. Yee Koh (eds) Cities and 
 the Super-Rich: Real Estate, Elite Practices, and Urban Political Economies. London: 
-Palgrave, pp. 253ñ72.
+Palgrave, pp. 253‚Äì72.
 
-Atkinson, R., Burrows, R. and Rhodes, D. (2016b) ëCapital City? Londonís Housing Market 
-and the ìSuper Richîí, in I. Hay and J. Beaverstock (eds) International Handbook of 
-Wealth and the Super Rich. Cheltenham: Edward Elgar, pp. 225ñ43.
+Atkinson, R., Burrows, R. and Rhodes, D. (2016b) ‚ÄòCapital City? London‚Äôs Housing Market 
+and the ‚ÄúSuper Rich‚Äù‚Äô, in I. Hay and J. Beaverstock (eds) International Handbook of 
+Wealth and the Super Rich. Cheltenham: Edward Elgar, pp. 225‚Äì43.
 
-Back, L. (2016) ëTape Recorderí, in M. Bull and L. Back (eds) The Auditory Culture 
-Reader. London: Bloomsbury, pp. 137ñ50.
+Back, L. (2016) ‚ÄòTape Recorder‚Äô, in M. Bull and L. Back (eds) The Auditory Culture 
+Reader. London: Bloomsbury, pp. 137‚Äì50.
 
-BacquÈ, M., Bridge, G., Benson, M., Butler, T., Charmes, E., Fijalkow, Y., Jackson, E., 
+Bacqu√©, M., Bridge, G., Benson, M., Butler, T., Charmes, E., Fijalkow, Y., Jackson, E., 
 Launay, L. and Vermeersch, S. (2015) The Middle Classes and the City: A Study of Paris 
 and London. Basingstoke: Palgrave.
 
-Baker, K. (1991) ëUsing Geodemographics in Market Research Surveysí, Journal of the 
-Royal Statistical Society. Series D (The Statistician), 40(2): 203ñ7.
+Baker, K. (1991) ‚ÄòUsing Geodemographics in Market Research Surveys‚Äô, Journal of the 
+Royal Statistical Society. Series D (The Statistician), 40(2): 203‚Äì7.
 
-Bales, K. (1992) ëCharles Boothís Survey of Life and Labour of the People in London 
-1889ñ1903í, in M. Bulmer, K. Bales and K. K. Sklar (eds) The Social Survey in 
-Historical Perspective. Cambridge: Cambridge University Press, pp. 66ñ110.
+Bales, K. (1992) ‚ÄòCharles Booth‚Äôs Survey of Life and Labour of the People in London 
+1889‚Äì1903‚Äô, in M. Bulmer, K. Bales and K. K. Sklar (eds) The Social Survey in 
+Historical Perspective. Cambridge: Cambridge University Press, pp. 66‚Äì110.
 
 Barker, F. and Aldous, T. (2009) Guardians of the Heath. London: Blackheath Society.
 Batty, M. and Longley, P. (1994) Fractal Cities. London: Academic Press.
@@ -51,7 +47,7 @@ py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -160,19 +156,19 @@ Account: ns011247
 
 The Predictive Postcode
 
-Bermingham, J., Baker, K. and McDonald, C (1979) ëThe Utility to Market Research of 
-the Classification of Residential Neighbourhoodsí, Proceedings of the Market Research 
-Society Annual Conference, Brighton, pp. 253ñ71.
+Bermingham, J., Baker, K. and McDonald, C (1979) ‚ÄòThe Utility to Market Research of 
+the Classification of Residential Neighbourhoods‚Äô, Proceedings of the Market Research 
+Society Annual Conference, Brighton, pp. 253‚Äì71.
 
 Berry, B. and Kasarda, J. (1977) Contemporary Urban Ecology. New York: Macmillan.
 Bishop, B. with Cushing, R. (2009) The Big Sort. Boston, MA: Houghton Mifflin.
-Booth, C. (1902ñ3) Life and Labour of the People in London (3rd edn), 17 vols. London: 
+Booth, C. (1902‚Äì3) Life and Labour of the People in London (3rd edn), 17 vols. London: 
 
 Macmillan.
-Botterill, J. (2013) ëProperty Porn: An Analysis of Online Real Estate Advertisingí, in  
+Botterill, J. (2013) ‚ÄòProperty Porn: An Analysis of Online Real Estate Advertising‚Äô, in  
 
 M. McAllister and E. West (eds) The Routledge Companion to Advertising and 
-Promotional Culture. London: Routledge, pp. 326ñ37.
+Promotional Culture. London: Routledge, pp. 326‚Äì37.
 
 Bourdieu, P. (1984) Distinction: A Social Critique of the Judgement of Taste. Cambridge, 
 MA: Harvard University Press.
@@ -183,54 +179,54 @@ Cambridge, MA: MIT Press.
 Bradshaw, J. and Millar, J. (1991) Lone Parent Families in the UK. London: HM Stationery 
 Office.
 
-Bridge, G. (2006) ëItís not just a Question of Taste: Gentrification, the Neighbourhood and 
-Cultural Capitalí, Environment and Planning A, 38(10): 1965ñ78.
+Bridge, G. (2006) ‚ÄòIt‚Äôs not just a Question of Taste: Gentrification, the Neighbourhood and 
+Cultural Capital‚Äô, Environment and Planning A, 38(10): 1965‚Äì78.
 
 Bulmer, M. (1984) The Chicago School of Sociology: Institutionalization, Diversity, and 
 the Rise of Sociological Research. Chicago, IL: University of Chicago Press.
 
-Burgess, E. (1964), ëResearch in Urban Sociology: A Longer Viewí, in E. Burgess and  
+Burgess, E. (1964), ‚ÄòResearch in Urban Sociology: A Longer View‚Äô, in E. Burgess and  
 D. Bogue (eds) Contributions to Urban Sociology. Chicago, IL: University of Chicago 
 Press.
 
-Burnap, P., Gibson, R., Sloan, L., Southern, R. and Williams, M. (2016) ë140 Characters 
-to Victory?: Using Twitter to Predict the UK 2015 General Electioní, Electoral Studies, 
-41: 230ñ3.
+Burnap, P., Gibson, R., Sloan, L., Southern, R. and Williams, M. (2016) ‚Äò140 Characters 
+to Victory?: Using Twitter to Predict the UK 2015 General Election‚Äô, Electoral Studies, 
+41: 230‚Äì3.
 
-Burrows, R. (1997) ëVirtual Culture, Urban Social Polarisation and Social Science Fictioní, 
-in B. Loader (ed.) The Governance of Cyberspace. London: Routledge, pp. 38ñ45.
+Burrows, R. (1997) ‚ÄòVirtual Culture, Urban Social Polarisation and Social Science Fiction‚Äô, 
+in B. Loader (ed.) The Governance of Cyberspace. London: Routledge, pp. 38‚Äì45.
 
-Burrows, R. (1999) ëResidential Mobility and Residualisation in Social Housing in 
-Englandí, Journal of Social Policy, 28(1): 27ñ52.
+Burrows, R. (1999) ‚ÄòResidential Mobility and Residualisation in Social Housing in 
+England‚Äô, Journal of Social Policy, 28(1): 27‚Äì52.
 
-Burrows, R. (2003) ëHow the Other Half Lives: An Exploratory Analysis of the Relationship 
-between Poverty and Home-Ownership in Britainí, Urban Studies, 40(7): 1223ñ42.
+Burrows, R. (2003) ‚ÄòHow the Other Half Lives: An Exploratory Analysis of the Relationship 
+between Poverty and Home-Ownership in Britain‚Äô, Urban Studies, 40(7): 1223‚Äì42.
 
-Burrows, R. and Ellison, N. (2004) ëSorting Places Out? Towards a Social Politics of 
-Neighbourhood Informatizationí, Information, Communication and Society, 7(3): 321ñ36.
+Burrows, R. and Ellison, N. (2004) ‚ÄòSorting Places Out? Towards a Social Politics of 
+Neighbourhood Informatization‚Äô, Information, Communication and Society, 7(3): 321‚Äì36.
 
 Burrows, R., Ellison, N. and Woods, B. (2005) Neighbourhoods on the Net: Internet-Based 
 Neighbourhood Information Systems and their Consequences. Bristol: Policy.
 
-Burrows, R. and Gane, N. (2006) ëGeodemographics, Software and Classí, Sociology, 
-40(5): 793ñ812.
+Burrows, R. and Gane, N. (2006) ‚ÄòGeodemographics, Software and Class‚Äô, Sociology, 
+40(5): 793‚Äì812.
 
 Burrows, R. and Rhodes, D. (1998) Unpopular Places? Area Disadvantage and the 
 Geography of Misery. Bristol: Policy Press.
 
-Burrows, R. and Savage, M. (2014) ëAfter the Crisis? Big Data and the 
-Methodological Challenges of Empirical Sociologyí, Big Data and Society, 1(1) 
+Burrows, R. and Savage, M. (2014) ‚ÄòAfter the Crisis? Big Data and the 
+Methodological Challenges of Empirical Sociology‚Äô, Big Data and Society, 1(1) 
 10.1177/2053951714540280.
 
-Burrows, R., Webber, R. and Atkinson, R. (2017) ëWelcome to ìPikettyvilleî? Mapping 
-Londonís Alpha Territoriesí, Sociological Review, 65(2): 184ñ201.
+Burrows, R., Webber, R. and Atkinson, R. (2017) ‚ÄòWelcome to ‚ÄúPikettyville‚Äù? Mapping 
+London‚Äôs Alpha Territories‚Äô, Sociological Review, 65(2): 184‚Äì201.
 
 Co
 py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -339,34 +335,34 @@ Account: ns011247
 
  References
 
-Butler, T and Lees, L (2006) ëSuper-Gentrification in Barnsbury, London: Globalization 
-and Gentrifying Global Elites at the Neighbourhood Levelí, Transactions of the Institute 
-of British Geographers, 31(4): 467ñ87.
+Butler, T and Lees, L (2006) ‚ÄòSuper-Gentrification in Barnsbury, London: Globalization 
+and Gentrifying Global Elites at the Neighbourhood Level‚Äô, Transactions of the Institute 
+of British Geographers, 31(4): 467‚Äì87.
 
 Butler, T. with Robson, G. (2003) London Calling: The Middle Classes and the Remaking 
 of Inner London. London: Berg.
 
-Camina, M. and Wood, M. (2009) ëParallel Lives: Towards a Greater Understanding of 
-What Mixed Communities Can Offerí, Urban Studies, 46(2): 459ñ80.
+Camina, M. and Wood, M. (2009) ‚ÄòParallel Lives: Towards a Greater Understanding of 
+What Mixed Communities Can Offer‚Äô, Urban Studies, 46(2): 459‚Äì80.
 
-Catney, G., (2016) ëExploring a Decade of Small Area Ethnic (De-) Segregation in England 
-and Walesí, Urban Studies, 53(8): 1691ñ709.
+Catney, G., (2016) ‚ÄòExploring a Decade of Small Area Ethnic (De-) Segregation in England 
+and Wales‚Äô, Urban Studies, 53(8): 1691‚Äì709.
 
-Chaney, P. and Sherwood, K. (2000) ëThe Resale of Right to Buy Dwellings: A Case Study 
-of Migration and Social Change in Rural Englandí, Journal of Rural Studies, 16(1): 
-79ñ94.
+Chaney, P. and Sherwood, K. (2000) ‚ÄòThe Resale of Right to Buy Dwellings: A Case Study 
+of Migration and Social Change in Rural England‚Äô, Journal of Rural Studies, 16(1): 
+79‚Äì94.
 
-Cheshire, P. (2012) ëWhy do Birds of a Feather Flock Together? Social Mix and Social 
-Welfare: A Quantitative Appraisalí, in G. Bridge, T. Butler and L. Lees (eds) Mixed 
-Communities: Gentrification by Stealth? Bristol: Policy Press, pp. 17ñ24.
+Cheshire, P. (2012) ‚ÄòWhy do Birds of a Feather Flock Together? Social Mix and Social 
+Welfare: A Quantitative Appraisal‚Äô, in G. Bridge, T. Butler and L. Lees (eds) Mixed 
+Communities: Gentrification by Stealth? Bristol: Policy Press, pp. 17‚Äì24.
 
-Christie, I. (1974) ëCovent Garden: Approaches to Urban Renewalí, The Town Planning 
-Review, 45(1): 30ñ62.
+Christie, I. (1974) ‚ÄòCovent Garden: Approaches to Urban Renewal‚Äô, The Town Planning 
+Review, 45(1): 30‚Äì62.
 
 Clapson, M. (2004) A Social History of Milton Keynes: Middle England/Edge City. 
 London: Routledge.
 
-Crewe, I., Fox, A. and Day, N. (1995) The British Electorate, 1963ñ1992: A Compendium 
+Crewe, I., Fox, A. and Day, N. (1995) The British Electorate, 1963‚Äì1992: A Compendium 
 of Data from the British Election Studies. Cambridge: Cambridge University Press.
 
 Crow, G. and Ellis, J. (eds) (2017) Revisiting Divisions of Labour. Manchester: Manchester 
@@ -375,32 +371,32 @@ University Press.
 Curry, M. (1998) Digital Places: Living with Geographic Information Technologies. 
 London: Routledge.
 
-Dale, A., Gilbert, G.N. and Arber, S. (1985) ëIntegrating Women into Class Theoryí, 
-Sociology, 19(3): 384ñ408.
+Dale, A., Gilbert, G.N. and Arber, S. (1985) ‚ÄòIntegrating Women into Class Theory‚Äô, 
+Sociology, 19(3): 384‚Äì408.
 
-Dalton, C. and Thatcher, J. (2015) ëInflated Granularity: Spatial ìBig Dataî and 
-Geodemographicsí, Big Data and Society, 2(2): doi: 10.1177/2053951715601144.
+Dalton, C. and Thatcher, J. (2015) ‚ÄòInflated Granularity: Spatial ‚ÄúBig Data‚Äù and 
+Geodemographics‚Äô, Big Data and Society, 2(2): doi: 10.1177/2053951715601144.
 
 Davis, M. (1998) Ecology of Fear. New York: Metropolitan Books.
-Davies, W. (2016) ëThe New Neoliberalismí, New Left Review, 101: 121ñ34.
+Davies, W. (2016) ‚ÄòThe New Neoliberalism‚Äô, New Left Review, 101: 121‚Äì34.
 Davies, W. (2017) The Limits of Neoliberalism: Authority, Sovereignty and the Logic of 
 
 Competition (2nd edn). London: Sage.
-Davison, G., Dovey, K. and Woodcock, I. (2012) ëìKeeping Dalston Differentî: Defending 
+Davison, G., Dovey, K. and Woodcock, I. (2012) ‚Äò‚ÄúKeeping Dalston Different‚Äù: Defending 
 
-Place-Identity in East Londoní, Planning Theory and Practice, 13(1): 47ñ69.
+Place-Identity in East London‚Äô, Planning Theory and Practice, 13(1): 47‚Äì69.
 Dennis, N., Henriques, F. and Slaughter, C. (1956) Coal is our Life: An Analysis of a 
 
 Yorkshire Mining Community. London: Eyre & Spottiswoode.
 Devine, F. (1992) Affluent Workers Revisited: Privatism and the Working Class. Edinburgh: 
 
 Edinburgh University Press.
-Dunn, R., Forrest, R. and Murie, A. (1987) ëThe Geography of Council House Sales in 
+Dunn, R., Forrest, R. and Murie, A. (1987) ‚ÄòThe Geography of Council House Sales in 
 
-England ñ 1979ñ85í, Urban Studies, 24(1): 47ñ59.
-Ellison, N. and Burrows, R. (2007) ëNew Spaces of (Dis-) Engagement? Social Politics, 
+England ‚Äì 1979‚Äì85‚Äô, Urban Studies, 24(1): 47‚Äì59.
+Ellison, N. and Burrows, R. (2007) ‚ÄòNew Spaces of (Dis-) Engagement? Social Politics, 
 
-Urban Technologies and the Rezoning of the Cityí, Housing Studies, 22(3): 295ñ312.
+Urban Technologies and the Rezoning of the City‚Äô, Housing Studies, 22(3): 295‚Äì312.
 Eversley, D. (1973) The Planner in Society: The Changing Role of a Profession. London: 
 
 Faber and Faber.
@@ -410,7 +406,7 @@ py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -520,18 +516,18 @@ Account: ns011247
 The Predictive Postcode
 
 Featherstone, J. M. (1974) Human Ecology and Sociology: The Development of Human 
-Ecology in the Department of Sociology at the University of Chicago 1914ñ39. Durham 
+Ecology in the Department of Sociology at the University of Chicago 1914‚Äì39. Durham 
 Theses, Durham University. Available at Durham E-Theses Online: http://etheses.dur.
 ac.uk/10049.
 
 Fevre, R. (1988) Wales is Closed. Nottingham: Spokesman Books.
-Filandri, M. and Bertolini, S. (2016) ëYoung People and Home Ownership in Europeí, 
+Filandri, M. and Bertolini, S. (2016) ‚ÄòYoung People and Home Ownership in Europe‚Äô, 
 
-International Journal of Housing Policy, 16(2): 144ñ64.
+International Journal of Housing Policy, 16(2): 144‚Äì64.
 Forrest, R., Murie, A. and Williams, P. (1990) Home Ownership. London: Unwin Hyman.
-Forrest, R. and Wissink, B. (2017) ëWhose City Now? Urban Managerialism Reconsidered 
+Forrest, R. and Wissink, B. (2017) ‚ÄòWhose City Now? Urban Managerialism Reconsidered 
 
-(again)í, Sociological Review, 65(2): 155ñ67.
+(again)‚Äô, Sociological Review, 65(2): 155‚Äì67.
 Franklin, M. (1985) The Decline of Class Voting in Britain. Oxford: Clarendon Press.
 Frankenberg, R. (1957) Village on the Border: A Social Study of Religion, Politics and 
 
@@ -539,24 +535,24 @@ Football in a North Wales Community. London: Cogen and West.
 Frankenberg, R. (1966) Communities in Britain: Social Life in Town and Country. 
 
 Harmondsworth: Pelican.
-Fuller, M. and Harwood, G. (2016) ëAbstract Urbanismí in R. Kitchin and S. Y. Perng (eds) 
+Fuller, M. and Harwood, G. (2016) ‚ÄòAbstract Urbanism‚Äô in R. Kitchin and S. Y. Perng (eds) 
 
-Code and the City. London: Routledge, pp. 61ñ71.
+Code and the City. London: Routledge, pp. 61‚Äì71.
 Gallie, D., Marsh, C. and Vogler, C. (1994) Social Change and the Experience of 
 
 Unemployment. Oxford: Oxford University Press.
 Galpin, C. J. (1915) The Social Anatomy of an Agricultural Community, Research Bulletin 
 
 no. 34. Madison, WI: University of Wisconsin Agricultural Experiment Station.
-Galpin, C. J. (1937) ëThe Story of My Drift Into Rural Sociologyí, Rural Sociology, 2(3): 
+Galpin, C. J. (1937) ‚ÄòThe Story of My Drift Into Rural Sociology‚Äô, Rural Sociology, 2(3): 
 
-299ñ310.
-Gane, N. (2005) ëMax Weber as Social Theorist: Class, Status, Partyí, European Journal of 
+299‚Äì310.
+Gane, N. (2005) ‚ÄòMax Weber as Social Theorist: Class, Status, Party‚Äô, European Journal of 
 
-Social Theory, 8(2): 211ñ26.
-Glass, R (1964) ëAspects of Changeí, in R. Glass, E. Hobsbawm, H. Pollins et al. (eds) 
+Social Theory, 8(2): 211‚Äì26.
+Glass, R (1964) ‚ÄòAspects of Change‚Äô, in R. Glass, E. Hobsbawm, H. Pollins et al. (eds) 
 
-London: Aspects of Change. London: MacGibbon & Kee, pp. xiiiñxlii.
+London: Aspects of Change. London: MacGibbon & Kee, pp. xiii‚Äìxlii.
 Goldthorpe, J. H., Lockwood, D., Bechhofer, F. and Platt, J. (1968a) The Affluent Worker: 
 
 Industrial Attitudes and Behaviour. Cambridge: Cambridge University Press.
@@ -569,16 +565,16 @@ the Class Structure. Cambridge: Cambridge University Press.
 Goodhart, D. (2017) The Road to Somewhere: The Populist Revolt and the Future of 
 
 Politics. London: C. Hurst & Co.
-Goss, J. (1995a) ëMarketing the New Marketing: The Strategic Discourses of GISí, in 
+Goss, J. (1995a) ‚ÄòMarketing the New Marketing: The Strategic Discourses of GIS‚Äô, in 
 
 J. Pickles (ed.) Ground Truth: The Social Implications of GIS. New York: Guilford 
-Press, pp. 130ñ70.
+Press, pp. 130‚Äì70.
 
-Goss, J. (1995b) ëWe Know Who You Are and We Know Where You Live: The Instrumental 
-Rationality of Geodemographic Systemsí, Economic Geography, 71(2): 171ñ98.
+Goss, J. (1995b) ‚ÄòWe Know Who You Are and We Know Where You Live: The Instrumental 
+Rationality of Geodemographic Systems‚Äô, Economic Geography, 71(2): 171‚Äì98.
 
-Graham, S. (2005) ëSoftware-Sorted Geographiesí, Progress in Human Geography, 29(5): 
-562ñ80.
+Graham, S. (2005) ‚ÄòSoftware-Sorted Geographies‚Äô, Progress in Human Geography, 29(5): 
+562‚Äì80.
 
 Graham, S. (2016) Vertical: The City from Satellites to Bunkers. London: Verso.
 Groth, P. (1994) Living Downtown: The History of Residential Hotels in the United States. 
@@ -590,7 +586,7 @@ py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -699,11 +695,11 @@ Account: ns011247
 
  References
 
-Hardy, T. (1974) Tess of the díUrbervilles: A Pure Woman. London: Pan Macmillan.
+Hardy, T. (1974) Tess of the d‚ÄôUrbervilles: A Pure Woman. London: Pan Macmillan.
 Harris, R., Sleight, P. and Webber, R. (2005) Geodemographics, GIS and Neighbourhood 
 
 Targeting. Hoboken, NJ: John Wiley & Sons, Inc.
-Hatherley, O. (2012) ëHow Patrick Keiller is mapping the 21st-century landscapeí, The 
+Hatherley, O. (2012) ‚ÄòHow Patrick Keiller is mapping the 21st-century landscape‚Äô, The 
 
 Guardian, 30 March. Available at: www.theguardian.com/artanddesign/2012/mar/30/
 patrick-keiller-robinson-tate-exhibition.
@@ -714,16 +710,16 @@ Press.
 Healey, E. (1978) Lady Unknown, The Life of Angela Burdett-Coutts. London: Sidgwick 
 and Jackson.
 
-Heath, O. (2015) ëPolicy Representation, Social Representation and Class Voting in 
-Britainí, British Journal of Political Science, 45(1): 173ñ93.
+Heath, O. (2015) ‚ÄòPolicy Representation, Social Representation and Class Voting in 
+Britain‚Äô, British Journal of Political Science, 45(1): 173‚Äì93.
 
 Hurd, R. (1903) Principles of City Land Values. New York: The Record and Guide.
 Jackson, B. and Marsden, D. (1962) Education and the Working Class. Harmondsworth: 
 
 Pelican.
-Jennings, W. and Stoker, G. (2016) ëThe Bifurcation of Politics: Two Englandsí, The 
+Jennings, W. and Stoker, G. (2016) ‚ÄòThe Bifurcation of Politics: Two Englands‚Äô, The 
 
-Political Quarterly, 87(3): 372ñ82.
+Political Quarterly, 87(3): 372‚Äì82.
 Kandt, J. (2015) The Social and Spatial Context of Urban Health Inequalities: Towards 
 
 an Interpretive Geodemographic Framework, PhD Thesis, University College London. 
@@ -733,26 +729,26 @@ Karn, V. (1977) Retiring to the Seaside. London: Routledge & Kegan Paul.
 Kitchin, R. (2014) The Data Revolution: Big Data, Open Data, Data Infrastructures and 
 
 their Consequences. London: Sage.
-Kennett, P. and Forrest, R. (2006) ëThe Neighbourhood in a European Contextí, Urban 
+Kennett, P. and Forrest, R. (2006) ‚ÄòThe Neighbourhood in a European Context‚Äô, Urban 
 
-Studies, 43 (4): 713ñ18.
-Kemp, P. A. (2015) ëPrivate Renting after the Global Financial Crisisí, Housing Studies, 
+Studies, 43 (4): 713‚Äì18.
+Kemp, P. A. (2015) ‚ÄòPrivate Renting after the Global Financial Crisis‚Äô, Housing Studies, 
 
-30(4): 601ñ20.
+30(4): 601‚Äì20.
 Knowles, C. (1996) Family Boundaries: The Invention of Normality and Dangerousness. 
 
 Toronto: University of Toronto Press.
-Knowles, C. and Burrows, R. (2017) ëReimagining Chinese Londoní, in R. Burdett 
+Knowles, C. and Burrows, R. (2017) ‚ÄòReimagining Chinese London‚Äô, in R. Burdett 
 
 and S. Hall (eds) The SAGE Handbook of the 21st Century City. London: Sage,  
-pp. 87ñ101.
+pp. 87‚Äì101.
 
 Lees, L., Slater, T. and Wyly, E. (eds) (2010) The Gentrification Reader. London: Routledge.
 Le Grand, J. (1989) The Strategy of Equality. London: Allen & Unwin.
 Leventhal, B. (2016) Geodemographics for Marketers: Using Location Analysis for 
 
 Research and Marketing. London: Kogan Page.
-Lupton, T. and Mitchell, D. (1954) ëThe Liverpool Estateí, in D. Mitchell, T. Lupton,  
+Lupton, T. and Mitchell, D. (1954) ‚ÄòThe Liverpool Estate‚Äô, in D. Mitchell, T. Lupton,  
 
 M. Hodges and C. Smith (eds) Neighbourhood and Community. Liverpool: Liverpool 
 University Press.
@@ -760,8 +756,8 @@ University Press.
 Lyon, D. (2003) Surveillance and Social Sorting; Privacy, Risk and Digital Discrimination. 
 London: Routledge.
 
-Malpas, J. and Jacobs, K. (2016) ëPlace, Space, and Capital: The Landscapes of Patrick 
-Keillerí, Environment and Planning D: Society and Space, 34(6): 1132ñ49.
+Malpas, J. and Jacobs, K. (2016) ‚ÄòPlace, Space, and Capital: The Landscapes of Patrick 
+Keiller‚Äô, Environment and Planning D: Society and Space, 34(6): 1132‚Äì49.
 
 Marsden, T., Murdoch, J., Lowe, P. and Ward, N. (2012) The Differentiated Countryside. 
 London: Routledge.
@@ -771,7 +767,7 @@ py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -886,8 +882,8 @@ Policy Press.
 McKie, L. and Ryan, L. (eds) (2016) An End to the Crisis of Empirical Sociology? Trends 
 and Challenges in Social Research. London: Routledge.
 
-McPherson, M., Smith-Lovin, L. and Cook, J. (2001) ëBirds of a Feather: Homophily in 
-Social Networksí, Annual Review of Sociology, 27: 415ñ44.
+McPherson, M., Smith-Lovin, L. and Cook, J. (2001) ‚ÄòBirds of a Feather: Homophily in 
+Social Networks‚Äô, Annual Review of Sociology, 27: 415‚Äì44.
 
 Miller, M. (2006) Hampstead Garden Suburb, Arts and Crafts Utopia? Chichester: 
 Phillimore.
@@ -901,26 +897,26 @@ University Press.
 Monmonier, M. (2002) Spying with Maps: Surveillance Technologies and the Future of 
 Privacy. Chicago, IL: University of Chicago Press.
 
-Mowrer, E. R. (1938) ëThe Isometric Map as a Technique of Social Researchí, The 
-American Journal of Sociology, 44(1): 86ñ96.
+Mowrer, E. R. (1938) ‚ÄòThe Isometric Map as a Technique of Social Research‚Äô, The 
+American Journal of Sociology, 44(1): 86‚Äì96.
 
 Mullan, J. (2012) What Matters in Jane Austen? London: Bloomsbury.
 Munck, R. (ed.) (2003) Reinventing the City?: Liverpool in Comparative Perspective. 
 
 Liverpool: Liverpool University Press.
 Nicholson-Lord, D. (1987) The Greening of the Cities. London: Routledge.
-Openshaw, S., Cullingford, D. and Gillard, A. (1980) ëA Critique of the National 
+Openshaw, S., Cullingford, D. and Gillard, A. (1980) ‚ÄòA Critique of the National 
 
-Classifications of OPCS/PRAGí, The Town Planning Review, 51(4): 421ñ39.
-Osborne, T. and Rose, N. (1999) ëDo the Social Sciences Create Phenomena? The Example 
+Classifications of OPCS/PRAG‚Äô, The Town Planning Review, 51(4): 421‚Äì39.
+Osborne, T. and Rose, N. (1999) ‚ÄòDo the Social Sciences Create Phenomena? The Example 
 
-of Public Opinion Researchí, The British Journal of Sociology, 50(3): 367ñ96.
-Osborne, T. and Rose, N. (2008) ëPopulating Sociology: Carr-Saunders and the Problem of 
+of Public Opinion Research‚Äô, The British Journal of Sociology, 50(3): 367‚Äì96.
+Osborne, T. and Rose, N. (2008) ‚ÄòPopulating Sociology: Carr-Saunders and the Problem of 
 
-Populationí, The Sociological Review, 56(4): 552ñ78.
-Osborne T., Rose N. and Savage M. (2008) ëReinscribing British Sociology: Some Critical 
+Population‚Äô, The Sociological Review, 56(4): 552‚Äì78.
+Osborne T., Rose N. and Savage M. (2008) ‚ÄòReinscribing British Sociology: Some Critical 
 
-Reflectionsí, The Sociological Review, 56(4): 519ñ34.
+Reflections‚Äô, The Sociological Review, 56(4): 519‚Äì34.
 Pahl, R. (1965) Urbs in Rure. London: London School of Economics and Political Science, 
 
 Geographical Papers no. 2.
@@ -931,13 +927,13 @@ Pahl, R. (1984) Divisions of Labour. London: Blackwell.
 Panayi, P. (2010) An Immigration History of Britain: Multicultural Racism Since 1800. 
 
 London: Routledge.
-Park, R. E. (1929) ëUrbanization as Measured by Newspaper Circulationí, The American 
+Park, R. E. (1929) ‚ÄòUrbanization as Measured by Newspaper Circulation‚Äô, The American 
 
-Journal of Sociology, 35(1): 60ñ79.
-Park, R. E. (1952) [1929] ëThe City as a Social Laboratoryí, in R. E. Park, Human 
+Journal of Sociology, 35(1): 60‚Äì79.
+Park, R. E. (1952) [1929] ‚ÄòThe City as a Social Laboratory‚Äô, in R. E. Park, Human 
 
-Communities: The City and Human Ecology ñ The Collected Papers of Robert Ezra 
-Park (Vol. 2). Glencoe, IL: Free Press, pp. 73ñ87.
+Communities: The City and Human Ecology ‚Äì The Collected Papers of Robert Ezra 
+Park (Vol. 2). Glencoe, IL: Free Press, pp. 73‚Äì87.
 
 Park, R. E. and Burgess, E. (1921) Introduction to the Science of Sociology. Chicago, IL: 
 Chicago University Press.
@@ -950,7 +946,7 @@ py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -1062,39 +1058,39 @@ Account: ns011247
 Parker, S. (2015) Urban Theory and the Urban Experience: Encountering the City (2nd 
 edn). London: Routledge.
 
-Parker, S., Uprichard, E. and Burrows, R. (2007) ëClass Places and Place Classes: 
-Geodemographics and the Spatialization of Classí, Information, Communication and 
-Society, 11(6): 901ñ20.
+Parker, S., Uprichard, E. and Burrows, R. (2007) ‚ÄòClass Places and Place Classes: 
+Geodemographics and the Spatialization of Class‚Äô, Information, Communication and 
+Society, 11(6): 901‚Äì20.
 
 Patrick, J. (1973) A Glasgow Gang Observed. London: Eyre Methuen.
 Pfautz, H. (ed.) (1967) On the City: Physical Pattern and Social Structure (Selected 
 
 Writings of Charles Booth). Chicago, IL: University of Chicago Press.
-Phillips, D. and Curry, M. (2002) ëPrivacy and the Phenetic Urge: Geodemographics and 
+Phillips, D. and Curry, M. (2002) ‚ÄòPrivacy and the Phenetic Urge: Geodemographics and 
 
-the Changing Spatiality of Local Practiceí, in D. Lyon (ed.) Surveillance as Social 
-Sorting: Privacy, Risk and Digital Discrimination. London: Routledge, pp. 137ñ52.
+the Changing Spatiality of Local Practice‚Äô, in D. Lyon (ed.) Surveillance as Social 
+Sorting: Privacy, Risk and Digital Discrimination. London: Routledge, pp. 137‚Äì52.
 
-Pickles, J. (1994) ëRepresentations in an Electronic Age: Geography, GIS and Democracyí, 
+Pickles, J. (1994) ‚ÄòRepresentations in an Electronic Age: Geography, GIS and Democracy‚Äô, 
 in J. Pickles (ed.) Ground Truth. The Social Implications of Geographic Information 
-Systems. New York: The Guildford Press, pp. 1ñ30.
+Systems. New York: The Guildford Press, pp. 1‚Äì30.
 
-Platt, J. (1998) A History of Sociological Research Methods in America, 1920ñ1960. 
+Platt, J. (1998) A History of Sociological Research Methods in America, 1920‚Äì1960. 
 Cambridge: Cambridge University Press.
 
 Plummer, K. (1997) The Chicago School: Critical Assessments (4 vols). London: Routledge.
 Porter, J. R. and Howell, F. M. (2012) Geographical Sociology (Geojournal 105). New 
 
 York: Springer.
-Quinn, J. (1940) ëTopical Summary of Current Literature on Human Ecologyí, American 
+Quinn, J. (1940) ‚ÄòTopical Summary of Current Literature on Human Ecology‚Äô, American 
 
-Journal of Sociology, 44(2): 191ñ226.
-Rees, P. (1972) ëProblems of Classifying Subareas within Citiesí, in B. Berry and K. Smith (eds) 
+Journal of Sociology, 44(2): 191‚Äì226.
+Rees, P. (1972) ‚ÄòProblems of Classifying Subareas within Cities‚Äô, in B. Berry and K. Smith (eds) 
 
-City Classification Handbook: Methods and Applications. New York: Wiley, pp. 265ñ330.
-Reibel, M. (2011) ëClassification Approaches in Neighbourhood Research: Introduction 
+City Classification Handbook: Methods and Applications. New York: Wiley, pp. 265‚Äì330.
+Reibel, M. (2011) ‚ÄòClassification Approaches in Neighbourhood Research: Introduction 
 
-and Reviewí, Urban Geography, 32(3): 305ñ16.
+and Review‚Äô, Urban Geography, 32(3): 305‚Äì16.
 Rex, J. and Moore, R. (1967) Race, Community and Conflict: A Study of Sparkbrook. 
 
 Oxford: Oxford University Press.
@@ -1104,32 +1100,32 @@ Manchester University Press.
 Rienzo, C. and Vargas-Silva, C. (2017) Migrants in the UK: An Overview (6th Version). 
 
 Oxford: The Migration Observatory/COMPAS.
-Robbin, J. (1980) ëGeodemographics: The New Magicí, Campaigns and Elections, 1(1): 
+Robbin, J. (1980) ‚ÄòGeodemographics: The New Magic‚Äô, Campaigns and Elections, 1(1): 
 
-25ñ34.
+25‚Äì34.
 Rugg, J. and Rhodes, D. (2008) The Private Rented Sector. York: Centre for Housing Policy.
-Ruppert, E., Law, J. and Savage, M. (2013) ëReassembling Social Science Methods: The 
+Ruppert, E., Law, J. and Savage, M. (2013) ‚ÄòReassembling Social Science Methods: The 
 
-Challenge of Digital Devicesí, Theory, Culture & Society, 30(4): 22ñ46.
+Challenge of Digital Devices‚Äô, Theory, Culture & Society, 30(4): 22‚Äì46.
 Saetnan, A, Lomell, H. and Hammer, S. (eds) (2011) The Mutual Construction of Statistics 
 
 and Society. London, Routledge.
-Sage, J., Smith, D. and Hubbard, P. (2012) ëThe Diverse Geographies of Studentificationí, 
+Sage, J., Smith, D. and Hubbard, P. (2012) ‚ÄòThe Diverse Geographies of Studentification‚Äô, 
 
-Housing Studies, 27(8): 1057ñ78.
-Sage, J., Smith, D. and Hubbard, P. (2013) ëNew-Build Studentification: A Panacea for 
+Housing Studies, 27(8): 1057‚Äì78.
+Sage, J., Smith, D. and Hubbard, P. (2013) ‚ÄòNew-Build Studentification: A Panacea for 
 
-Balanced Communities?í, Urban Studies, 50(13): 2623ñ41.
-Saunders, P. (1989) ëThe Meaning of ìHomeî in Contemporary English Cultureí, Housing 
+Balanced Communities?‚Äô, Urban Studies, 50(13): 2623‚Äì41.
+Saunders, P. (1989) ‚ÄòThe Meaning of ‚ÄúHome‚Äù in Contemporary English Culture‚Äô, Housing 
 
-Studies, 4(3): 177ñ92.
+Studies, 4(3): 177‚Äì92.
 
 Co
 py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -1238,30 +1234,30 @@ Account: ns011247
 
 The Predictive Postcode
 
-Savage, M. (2005) ëWorking-Class Identities in the 1960s: Revisiting the Affluent Worker 
-Studyí, Sociology, 39(5): 929ñ46.
+Savage, M. (2005) ‚ÄòWorking-Class Identities in the 1960s: Revisiting the Affluent Worker 
+Study‚Äô, Sociology, 39(5): 929‚Äì46.
 
-Savage, M. (2008) ëElizabeth Bott and the Formation of Modern British Sociologyí, The 
-Sociological Review, 56(4): 579ñ605.
+Savage, M. (2008) ‚ÄòElizabeth Bott and the Formation of Modern British Sociology‚Äô, The 
+Sociological Review, 56(4): 579‚Äì605.
 
 Savage, M. (2010) Identities and Social Change in Britain since 1940: The Politics of 
 Method. Oxford: Oxford University Press.
 
-Savage, M. (2011) ëThe Lost Urban Sociology of Pierre Bourdieuí, in G. Bridge and  
+Savage, M. (2011) ‚ÄòThe Lost Urban Sociology of Pierre Bourdieu‚Äô, in G. Bridge and  
 S. Watson (eds) The New Blackwell Companion to the City. London: Blackwell-Wiley, 
-pp. 511ñ20.
+pp. 511‚Äì20.
 
-Savage, M. (2013) ëThe Social Life of Methods: A Critical Agendaí, Theory, Culture & Society, 
-30(4): 3ñ21.
+Savage, M. (2013) ‚ÄòThe Social Life of Methods: A Critical Agenda‚Äô, Theory, Culture & Society, 
+30(4): 3‚Äì21.
 
-Savage, M. (2016) ëThe Fall and Rise of Class Analysis in British Sociology, 1950ñ2016í, 
-Tempo Social, 28(2): 57ñ72.
+Savage, M. (2016) ‚ÄòThe Fall and Rise of Class Analysis in British Sociology, 1950‚Äì2016‚Äô, 
+Tempo Social, 28(2): 57‚Äì72.
 
-Savage, M. and Burrows, R. (2007) ëThe Coming Crisis of Empirical Sociologyí, Sociology, 
-41(5): 885ñ99.
+Savage, M. and Burrows, R. (2007) ‚ÄòThe Coming Crisis of Empirical Sociology‚Äô, Sociology, 
+41(5): 885‚Äì99.
 
-Savage, M. and Burrows, R. (2009) ëSome Further Reflections on the Coming Crisis of 
-Empirical Sociologyí, Sociology, 43(4): 762ñ72.
+Savage, M. and Burrows, R. (2009) ‚ÄòSome Further Reflections on the Coming Crisis of 
+Empirical Sociology‚Äô, Sociology, 43(4): 762‚Äì72.
 
 Savage, M., Bagnall, G. and Longhurst, B. (2005) Globalization and Belonging. London: 
 Sage.
@@ -1272,12 +1268,12 @@ H. and Wakeling, P. (2015) Social Class in the 21st Century. London: Penguin.
 Savage, M., Barlow, J., Dickens, P. and Fielding, T. (1995) Property, Bureaucracy and 
 Culture: Middle-Class Formation in Contemporary Britain. London: Routledge.
 
-Selvin, H. and Bernert, C. (1985) ëDurkheim, Booth and Yule: The Non-Diffusion of an 
-Intellectual Innovationí, in M. Bulmer (ed.) Essays on the History of British Sociological 
-Research. Cambridge: Cambridge University Press, pp. 70ñ82.
+Selvin, H. and Bernert, C. (1985) ‚ÄòDurkheim, Booth and Yule: The Non-Diffusion of an 
+Intellectual Innovation‚Äô, in M. Bulmer (ed.) Essays on the History of British Sociological 
+Research. Cambridge: Cambridge University Press, pp. 70‚Äì82.
 
-Schelling, T. (1971) ëDynamic Models of Segregationí, Journal of Mathematical Sociology, 
-1: 143ñ86.
+Schelling, T. (1971) ‚ÄòDynamic Models of Segregation‚Äô, Journal of Mathematical Sociology, 
+1: 143‚Äì86.
 
 Shevky, E. and Bell, W. (1955) Social Area Analysis. Stanford, CA: Stanford University 
 Press.
@@ -1285,12 +1281,12 @@ Press.
 Shevky, E. and Williams. M. (1949) The Social Areas of Los Angeles. Berkeley, CA: 
 University of California Press.
 
-Shiels, C., Baker, D., Barrow, S., Wright, G., McLennan, D. and Plunkett, E. (2013) ëHow 
+Shiels, C., Baker, D., Barrow, S., Wright, G., McLennan, D. and Plunkett, E. (2013) ‚ÄòHow 
 Accurately does Regeneration Target Local Need? Targeting Deprived Communities in 
-the UKí, International Journal of Public Sector Management, 26(3): 203ñ15.
+the UK‚Äô, International Journal of Public Sector Management, 26(3): 203‚Äì15.
 
-Shucksmith, M. (2012) ëClass, Power and Inequality in Rural Areas: Beyond Social 
-Exclusion?í Sociologia Ruralis, 52(4): 377ñ97.
+Shucksmith, M. (2012) ‚ÄòClass, Power and Inequality in Rural Areas: Beyond Social 
+Exclusion?‚Äô Sociologia Ruralis, 52(4): 377‚Äì97.
 
 Shucksmith, M. and Brown, D. (eds) (2016) The Routledge International Handbook of 
 Rural Studies. London: Routledge.
@@ -1298,16 +1294,16 @@ Rural Studies. London: Routledge.
 Shucksmith, M. and Henerson, M. with Raybould, S., Coombes, M. and Wong, C. (1995) A 
 Classification of Rural Housing Markets in England. London: HMSO.
 
-Singleton, A. (2016) ëCities and Context: The Codification of Small Areas Through 
-Geodemographic Classificationí, in R. Kitchin and S. Y. Perng (eds) Code and the 
-City. London: Routledge, pp. 215ñ35.
+Singleton, A. (2016) ‚ÄòCities and Context: The Codification of Small Areas Through 
+Geodemographic Classification‚Äô, in R. Kitchin and S. Y. Perng (eds) Code and the 
+City. London: Routledge, pp. 215‚Äì35.
 
 Co
 py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -1416,15 +1412,15 @@ Account: ns011247
 
  References
 
-Singleton, A. and Spielman, S. (2014) ëThe Past, Present, and Future of Geodemographic 
-Research in the United States and United Kingdomí, The Professional Geographer, 
-66(4): 558ñ67.
+Singleton, A. and Spielman, S. (2014) ‚ÄòThe Past, Present, and Future of Geodemographic 
+Research in the United States and United Kingdom‚Äô, The Professional Geographer, 
+66(4): 558‚Äì67.
 
-Simon, P. (2012) ëCollecting Ethnic Statistics in Europe: A Reviewí, Ethnic and Racial 
-Studies, 35(8): 1366ñ91.
+Simon, P. (2012) ‚ÄòCollecting Ethnic Statistics in Europe: A Review‚Äô, Ethnic and Racial 
+Studies, 35(8): 1366‚Äì91.
 
-Sleight, P. (2004) ëAn Introductory Review of Geodemographic Information Systemsí, 
-Journal of Targeting, Measurement and Analysis for Marketing, 12(4): 379ñ88.
+Sleight, P. (2004) ‚ÄòAn Introductory Review of Geodemographic Information Systems‚Äô, 
+Journal of Targeting, Measurement and Analysis for Marketing, 12(4): 379‚Äì88.
 
 Smith, D. (1988) The Chicago School: A Liberal Critique of Capitalism. Basingstoke: 
 Macmillan.
@@ -1432,10 +1428,10 @@ Macmillan.
 Smith, H. (2017) The Mobile Distinction: Economies of Intimacy in the Field of Location 
 Based Marketing. PhD, Faculty of Information, University of Toronto.
 
-Smith, H., Hardey, M., Hardey, M. and Burrows, R. (2016) ëSocial Cartography and 
-Knowing Capitalism: Critical Reflections on the Geo-Spatial Web and Social Researchí, 
+Smith, H., Hardey, M., Hardey, M. and Burrows, R. (2016) ‚ÄòSocial Cartography and 
+Knowing Capitalism: Critical Reflections on the Geo-Spatial Web and Social Research‚Äô, 
 in N. Fielding, R. M. Lee and G. Blank (eds) The Sage Handbook of Online Research 
-Methods (2nd edn). London: Sage, pp. 596ñ610.
+Methods (2nd edn). London: Sage, pp. 596‚Äì610.
 
 Smith, T., Noble, M., Noble, S. et al. (2015) The English Indices of Deprivation 2015: 
 Research Report. London: Department for Communities and Local Government.
@@ -1446,8 +1442,8 @@ Press.
 Stacey, M., Batstone, E., Bell, C. and Murcott, A. (1975) Power, Persistance and Change: 
 A Second Study of Banbury. London: Routledge & Kegan Paul.
 
-Sturzaker, J. and Shucksmith, M. (2011) ëPlanning for Housing in Rural England: Discursive 
-Power and Spatial Exclusioní, Town Planning Review, 82(2): 169ñ94.
+Sturzaker, J. and Shucksmith, M. (2011) ‚ÄòPlanning for Housing in Rural England: Discursive 
+Power and Spatial Exclusion‚Äô, Town Planning Review, 82(2): 169‚Äì94.
 
 Swami, V. (2016) Attraction Explained: The Science of How We Form Relationships. 
 London: Routledge.
@@ -1463,29 +1459,29 @@ Cambridge: Cambridge University Press.
 Tinniswood, A. (2016) The Long Weekend: Life in a Country House between the Wars. 
 
 London: Jonathan Cape.
-Tufail, W. (2015) ëRotherham, Rochdale, and the Racialised Threat of the ìMuslim 
+Tufail, W. (2015) ‚ÄòRotherham, Rochdale, and the Racialised Threat of the ‚ÄúMuslim 
 
-Grooming Gangîí, International Journal for Crime, Justice and Social Democracy, 
-4(3): 30ñ43.
+Grooming Gang‚Äù‚Äô, International Journal for Crime, Justice and Social Democracy, 
+4(3): 30‚Äì43.
 
-Uprichard, E., Burrows, R. and Byrne, D. (2008) ëSPSS as an ìInscription Deviceî: from 
-Causality to Description?í, Sociological Review, 56(4): 606ñ22.
+Uprichard, E., Burrows, R. and Byrne, D. (2008) ‚ÄòSPSS as an ‚ÄúInscription Device‚Äù: from 
+Causality to Description?‚Äô, Sociological Review, 56(4): 606‚Äì22.
 
-Uprichard, E., Burrows, R. and Parker, S. (2009) ëGeodemographic Code and the Production 
-of Spaceí, Environment and Planning A, 41(12): 2823ñ35.
+Uprichard, E., Burrows, R. and Parker, S. (2009) ‚ÄòGeodemographic Code and the Production 
+of Space‚Äô, Environment and Planning A, 41(12): 2823‚Äì35.
 
 van Ham, M., Manley, D., Bailey, N., Simpson, L. and MacLennan, D. (2012) (eds) 
 Neighbourhood Effects Research: New Perspectives. New York: Springer.
 
-Voas, D. and Williamson, P. (2001) ëThe Diversity of Diversity: A Critique of 
-Geodemographic Classificationí, Area, 33(1): 63ñ76.
+Voas, D. and Williamson, P. (2001) ‚ÄòThe Diversity of Diversity: A Critique of 
+Geodemographic Classification‚Äô, Area, 33(1): 63‚Äì76.
 
 Co
 py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -1594,19 +1590,19 @@ Account: ns011247
 
 The Predictive Postcode
 
-Warrington, M. (2005) ëMirage in the Desert? Access to Educational Opportunities in an 
-Area of Social Exclusioní, Antipode, 37(4): 796ñ816.
+Warrington, M. (2005) ‚ÄòMirage in the Desert? Access to Educational Opportunities in an 
+Area of Social Exclusion‚Äô, Antipode, 37(4): 796‚Äì816.
 
-Watt, P. (2009) ëSocial Housing and Regeneration in Londoní, in R. Imrie, L. Lees and 
+Watt, P. (2009) ‚ÄòSocial Housing and Regeneration in London‚Äô, in R. Imrie, L. Lees and 
 M. Raco (eds) Regenerating London: Governance, Sustainability and Community in a 
-Global City. London: Routledge, pp. 212ñ35.
+Global City. London: Routledge, pp. 212‚Äì35.
 
 Watkins, M. (2011) Henrietta Barnett: Social Worker and Community Planner. London: 
 Hampstead Garden Suburb Archive Trust.
 
-Webber, M. (1964) ëThe Urban Place and the Non-Place Urban Realmí, in M. Webber, 
+Webber, M. (1964) ‚ÄòThe Urban Place and the Non-Place Urban Realm‚Äô, in M. Webber, 
 J. Dyckman, D. Foley et al. (eds) Explorations in Urban Structure. Philadelphia, PA: 
-University of Pennsylvania Press, pp. 79ñ153.
+University of Pennsylvania Press, pp. 79‚Äì153.
 
 Webber, R. (1975) Liverpool Social Area Study 1971 Data: Final Report. London: Centre 
 for Environmental Studies.
@@ -1617,45 +1613,45 @@ London: Centre for Environmental Studies.
 Webber, R. (1978a) Parliamentary Constituencies: A Socio-economic Classification (OPCS 
 Occasional Paper 13). London: Office of Population Censuses and Surveys.
 
-Webber, R. (1978b) ëMaking the most of the Census for Strategic Analysisí, The Town 
-Planning Review, 49(3): 274ñ84.
+Webber, R. (1978b) ‚ÄòMaking the most of the Census for Strategic Analysis‚Äô, The Town 
+Planning Review, 49(3): 274‚Äì84.
 
 Webber, R. (1979) Census Enumeration Districts: A Socio-Economic Classification. 
 Occasional Paper 14. London: OPCS.
 
-Webber, R. (1980) ëA Response to the Critique of the OPCS/PRAG National Classificationsí, 
-The Town Planning Review, 51(4): 440ñ50.
+Webber, R. (1980) ‚ÄòA Response to the Critique of the OPCS/PRAG National Classifications‚Äô, 
+The Town Planning Review, 51(4): 440‚Äì50.
 
 Webber, R. (2004) The Relative Power of Geodemographics Vis a Vis Person and Household 
 Level Demographic Variables as Discriminators of Consumer Behaviour (CASA Working 
 Paper Series 84). London: Centre for Advanced Spatial Analysis.
 
-Webber, R. (2006) ëHow Parties used Segmentation in the 2005 British General Election 
-Campaigní, Journal of Direct, Data and Digital Marketing Practice, 7(3): 239ñ52.
+Webber, R. (2006) ‚ÄòHow Parties used Segmentation in the 2005 British General Election 
+Campaign‚Äô, Journal of Direct, Data and Digital Marketing Practice, 7(3): 239‚Äì52.
 
-Webber, R. (2007) ëThe Metropolitan Habitus: Its Manifestations, Locations, and 
-Consumption Profilesí, Environment and Planning A, 39(1): 182ñ207.
+Webber, R. (2007) ‚ÄòThe Metropolitan Habitus: Its Manifestations, Locations, and 
+Consumption Profiles‚Äô, Environment and Planning A, 39(1): 182‚Äì207.
 
-Webber R. and Burrows R. (2016) ëLife in an Alpha Territory: Discontinuity and Conflict 
-in an Elite London ìvillageîí, Urban Studies, 53(15): 3139ñ54.
+Webber R. and Burrows R. (2016) ‚ÄòLife in an Alpha Territory: Discontinuity and Conflict 
+in an Elite London ‚Äúvillage‚Äù‚Äô, Urban Studies, 53(15): 3139‚Äì54.
 
-Webber, R. and Butler, T. (2007) ëClassifying Pupils by Where they Live: How Well does 
-This Predict Variations in Their GCSE Results?í, Urban Studies, 44(7): 1229ñ53.
+Webber, R. and Butler, T. (2007) ‚ÄòClassifying Pupils by Where they Live: How Well does 
+This Predict Variations in Their GCSE Results?‚Äô, Urban Studies, 44(7): 1229‚Äì53.
 
-Webber, R., Butler, T. and Phillips, T. (2015) ëAdoption of Geodemographic and Ethno-
-Cultural Taxonomies for Analysing Big Dataí, Big Data and Society, 2(1): doi: 
+Webber, R., Butler, T. and Phillips, T. (2015) ‚ÄòAdoption of Geodemographic and Ethno-
+Cultural Taxonomies for Analysing Big Data‚Äô, Big Data and Society, 2(1): doi: 
 10.1177/2053951715583914.
 
-Webber, R. and Craig, J. (1976) ëWhich Local Authorities Are Alike?í, Population Trends, 
-5: 13ñ19.
+Webber, R. and Craig, J. (1976) ‚ÄòWhich Local Authorities Are Alike?‚Äô, Population Trends, 
+5: 13‚Äì19.
 
 Webber, R. and Craig, J. (1978) A Socio-Economic Classification of Local Authorities in 
 Great Britain. London: HMSO.
 
-Webber, R. and Phillips, T. (2016) ëMinority Communities in Britain: Pathways to Success 
-as Revealed by Big Dataí, in L. McKie and L. Ryan (eds) An End to the Crisis of 
+Webber, R. and Phillips, T. (2016) ‚ÄòMinority Communities in Britain: Pathways to Success 
+as Revealed by Big Data‚Äô, in L. McKie and L. Ryan (eds) An End to the Crisis of 
 Empirical Sociology? Trends and Challenges in Social Research. London: Routledge, 
-pp. 29ñ48.
+pp. 29‚Äì48.
 
 Weiss, M. (1988) The Clustering of America. New York: Harper & Row.
 
@@ -1664,7 +1660,7 @@ py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -1774,10 +1770,10 @@ Account: ns011247
  References
 
 Weiss, M. (2000) The Clustered World. Boston, MA: Little, Brown and Co.
-Wilkins, R., (2013) ëA Study of the Dominance of the Super-Wealthy in Londonís West 
+Wilkins, R., (2013) ‚ÄòA Study of the Dominance of the Super-Wealthy in London‚Äôs West 
 
-End during the Nineteenth Centuryí, in I. Hay (ed.) Geographies of the Super-Rich. 
-Cheltenham: Edward Elgar, pp. 110ñ22.
+End during the Nineteenth Century‚Äô, in I. Hay (ed.) Geographies of the Super-Rich. 
+Cheltenham: Edward Elgar, pp. 110‚Äì22.
 
 Williams, R. (1977) Marxism and Literature. Oxford: Oxford University Press.
 Willis, I. S. (2016) The Application of Multivariate Cluster Analysis in the Assessment of 
@@ -1786,22 +1782,22 @@ Volcanic Social Vulnerability. PhD Thesis, Birkbeck, University of London.
 Winlow, S., Hall, S. and Treadwell, J. (2016) The Rise of the Right: English Nationalism 
 
 and the Transformation of Working-Class Politics. Bristol: Policy Press.
-Wyly, E. (2015) ëGentrification on the Planetary Urban Frontier: The Evolution of Turnerís 
+Wyly, E. (2015) ‚ÄòGentrification on the Planetary Urban Frontier: The Evolution of Turner‚Äôs 
 
-Noˆsphereí, Urban Studies, 52(14): 2515ñ50.
+No√∂sphere‚Äô, Urban Studies, 52(14): 2515‚Äì50.
 Young, M. and Willmott, P. (1957) Family and Kinship in East London. Harmondsworth: 
 
 Pelican Books.
-Zelinsky, W. (1970) ëBeyond the Exponentials; the Role of Geography in the Great 
+Zelinsky, W. (1970) ‚ÄòBeyond the Exponentials; the Role of Geography in the Great 
 
-Transitioní, Economic Geography, 46(3): 498ñ535.
+Transition‚Äô, Economic Geography, 46(3): 498‚Äì535.
 
 Co
 py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.
@@ -1911,7 +1907,7 @@ py
 ri
 gh
 t 
-©
+¬©
  2
 01
 8.

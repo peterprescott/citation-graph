@@ -13,6 +13,9 @@ tika = "*"
 bs4 = "*"
 requests = "*"
 selenium = "*"
+supersqlite = "*"
+sqlalchemy = "*"
+sphinx-rtd-theme = "*"
 
 [requires]
 python_version = "3.7"
