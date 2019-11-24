@@ -96,18 +96,22 @@ class Bib():
                                 self.db_file, ref_key, publication_year, title, publisher, 
                                 location, number_of_pages, doi, isbn, creators=creators_list)
                                 
-                    if text_type == "incollection":
+                    elif text_type == "incollection":
                         pages, book_key, publisher, location = self._chapter_details(refs, entry)
                         lit.Chapter(
                                     self.db_file, ref_key, publication_year, title, publisher,
                                     location, pages, doi, creators=creators_list, book_key=book_key)
-                        
-                    if text_type == "article":
+                                    
+                    elif text_type == "article":
                         journal, volume, edition, pages = self._article_details(refs, entry)
                         lit.Article(self.db_file, ref_key, publication_year, title,
                                     journal, volume, edition, pages, doi,
                                     creators=creators_list)
-        
+                                    
+                    else:
+                        lit.Text(self.db_file, ref_key, publication_year, title, 
+                                    text_type = "unknown", doi=doi, creators=creators_list)
+                                
     def _book_details(self, refs, entry):
         """Get details specific to books."""
 
