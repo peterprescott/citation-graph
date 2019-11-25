@@ -188,13 +188,15 @@ class Bib():
 
 class Pdf():
     
-    def __init__(self, key):
+    def __init__(self, db_file, key):
         """Initializes PDF reader to extract and interpret references of text.
         
         Args:
+            db_file (string): file location of database file.
             key (string): in BetterBibTex format [authForeIni][authEtAl][year].
             """
         
+        self.db_file = db_file
         self.key = key
         self.pdf = f'{key}.pdf'
         self.txt = f"pdf2txt_{key}.txt"
@@ -216,22 +218,135 @@ class Pdf():
             tidied_refs = []
             for ref in self.references:
                 ref = ref.replace('\n',' ')
-                ref = ref.replace('  ','')
+                ref = ref.replace('  ',' ')
                 file.write(ref)
                 file.write('\n')
                 if print_refs: print(ref)
                 tidied_refs.append(ref)
         self.references = tidied_refs
         return self.references
+        
+    def refs_parsed(self):
+        """
+        
+        """
+        
+        with codecs.open(os.path.join('bib_files', f"{self.key}_refs.txt"), 'r', "utf-8") as file:
+            
+            for line in file:
+                line = line.replace('  ',' ')
+                
+                # get creator(s) data
+                creators_list = []
+                creators = line.split('(')
+                creator_names = creators[0].split(' ')
+                while '' in creator_names: creator_names.remove('')
+                while 'and' in creator_names: creator_names.remove('and')
+                
+                creator_count = len(creator_names)//2
+                
+                # are these editors?
+                editors = creators[1].split(')')[0]
+                if editors[0] == 'e': creator_type = 'editor'
+                else: creator_type = 'author'
+                
+                # get initials (not working for both WebberBurrows and Wily
+                for i in range(creator_count):
+                    initial = creator_names[i+1]
+                    surname = creator_names[i]
+                    creators_list.append({"surname" : surname, 
+                                        "initial" : initial, 
+                                        "role" : creator_type})
+                
+                # get publication_year
+                if creator_type == 'editor':
+                    publication_year = creators[2].split(')')[0]
+                else:
+                    publication_year = creators[1].split(')')[0]
+                 
+                if len(publication_year) > 4:
+                    if publication_year[4] in 'abcdefghijklm':
+                        text_key_letter = publication_year[4]
+                    publication_year = publication_year[0:4]
+                
+                # get item_type
+                if re.search('[:]',line):
+                    last_bit = line.split(':')[-1]
+                    
+                    # if a book, no page numbers at end of reference
+                    if re.search(r"\d\d", last_bit)==None:
+                        item_type = "book"
+                        publisher = last_bit.replace('.','')
+                        
+                        middle_bit = re.findall(r"[)].+[:]",line)
+                        try:
+                            title = re.findall(r"[A-Z].+[.?!]", middle_bit[0])[0].replace('.','')
+                            location = middle_bit[0].split('.')[-1].replace(':','')
+                            
+                        except IndexError:
+                            title = re.findall(r"[A-Z].+", middle_bit[0])[0]
+
+                        print(f"year = {publication_year}, title = {title}, publisher = {publisher}, location = {location}, creators = {creators_list}")
+
+                        # ~ lit.Book(
+                                # ~ self.db_file, ref_key, publication_year, title, publisher, 
+                                # ~ location, number_of_pages, doi, isbn, creators=creators_list)
+                        
+                    # if a chapter, letters as well as page numbers
+                    elif re.findall(r"[A-Za-z]+", last_bit):
+                        test = re.findall(r"[A-Za-z]+", last_bit)
+                        
+                        # ~ print(f"test = {test}")
+                        item_type = "chapter"
+                        try:
+                            [publisher, pages] = last_bit.split(',')[0], last_bit.split(',')[1]
+                            # ~ print(f"publisher = {publisher}")
+                            # ~ print(f"pages = {pages}")
+
+                        except IndexError:
+                            print(f"IndexError ~ {last_bit}")
+                    
+                    # otherwise just (page) numbers ==> article
+                    else:
+                        item_type = "article"
+                        pages = publisher # it's not actually a publisher, it's a list of pages.
+                        pages = re.findall(r"[\d].*[\d]", last_bit)[0]
+                        # ~ print(f"pages = {pages}")
+                        
+                else:
+                    item_type = "unknown"
+                
+                if item_type == 'book':
+                    print(f"item = {item_type}")
+                    
+                    print(line)
+
+                # ~ # get title
+                # ~ if item_type == "book" and creator_type == "author":
+                    # ~ first_cut = line.split(')')[1]
+                    # ~ try:
+                        # ~ second_cut = first_cut.split(':')[-2]
+                    # ~ except:
+                        # ~ print('ERROR')
+                    # ~ print(f' second_cut = {second_cut}')
+                    # ~ title = re.findall(r'.+[.]', second_cut)[0]
+                    # ~ print(f'title = {title}')
+                
+                
+
+
 
 class Api():
     
-    def __init__(self, doi=None):
-        """Initializes API reader.
+    def __init__(self, doi):
+        """
+        Initializes API reader.
         
         Args:
-            doi (string): Document Object Identifer; cf. https://www.doi.org/"""
-        if doi: self.doi = doi
+            doi (string): Document Object Identifer; cf. https://www.doi.org/
+        """
+        self.doi = doi
+        
         
     def data(self, choose="all"):
         """
@@ -264,9 +379,12 @@ class Api():
             
 
 if __name__ == '__main__':
-    print('hello reader')
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
-    new_keys = ['DTimms1975', 'RBurrowsGane2006', 'RKitchin2014']
-    for new_key in new_keys: start = Bib(db_file, new_key)
+    # ~ new_keys = ['DTimms1975', 'RBurrowsGane2006', 'RKitchin2014']
+    # ~ for new_key in new_keys: start = Bib(db_file, new_key)
     # ~ start=Bib(db_file, 'chapter')
     # ~ start.save()
+
+    get = Pdf(db_file, 'RWebberBurrows2018')
+    get.refs(True)
+    get.refs_parsed()
