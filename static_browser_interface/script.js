@@ -154,6 +154,10 @@ function fetch_JSON_data(json_api_address){
                 for (var j=0; j < totalData.nodes.length; j++){
                     if (data.nodes[i].id == totalData.nodes[j].id){new_node = "no"}
                 }
+                // check if node is added more than once in new data
+                for (var j=0; j<newNodes.length; j++){
+                    if (data.nodes[i].id == data.nodes[newNodes[j]].id){new_node = "no"}
+                }
                 if (new_node != "no"){newNodes.push(i)}
             }
             for (var i = 0; i <newNodes.length; i++){
