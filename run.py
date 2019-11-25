@@ -23,7 +23,7 @@ def api(key):
     
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
     q = db.Query(db_file)
-    graph_data = q.json_graph(key, 5)
+    graph_data = q.json_graph(key, 3)
 
     return jsonify(graph_data)
 

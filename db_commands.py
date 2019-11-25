@@ -212,7 +212,7 @@ class Query():
                 node_row = node_data[0] # data returned by query as list of tuples
                 text_title = node_row[2].replace(':','--').replace('"','').replace("'",'')
                 text_type = node_row[3]
-                node_list.append(dict(id = text_key, title = text_title, type = text_type, group = 1))
+                node_list.append(dict(id = text_key, title = text_title, type = text_type, group = 0))
         
         next_nodes = [{'id':text_key}]
         iteration = 1
