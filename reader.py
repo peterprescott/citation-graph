@@ -239,24 +239,31 @@ class Pdf():
                 # get creator(s) data
                 creators_list = []
                 creators = line.split('(')
-                creator_names = creators[0].split(' ')
-                while '' in creator_names: creator_names.remove('')
-                while 'and' in creator_names: creator_names.remove('and')
-                
-                creator_count = len(creator_names)//2
+                surnames = re.findall(r"[A-Z][A-Za-z ]+[,]", creators[0])
+                initials = re.findall(r"[A-Z][.,\s]", creators[0])
+
+                if len(surnames) == 1:
+                    while len(initials) > 1:
+                        initials.pop(1)
+
+                if len(initials) != len(surnames): 
+                    # TODO: Make sure initials are correct if multiple initials provided per author
+                    pass
+                    
+                creator_count = len(surnames)
                 
                 # are these editors?
                 editors = creators[1].split(')')[0]
                 if editors[0] == 'e': creator_type = 'editor'
                 else: creator_type = 'author'
                 
-                # get initials (not working for both WebberBurrows and Wily
                 for i in range(creator_count):
-                    initial = creator_names[i+1]
-                    surname = creator_names[i]
-                    creators_list.append({"surname" : surname, 
-                                        "initial" : initial, 
+                    initial = initials[i]
+                    surname = surnames[i]
+                    creators_list.append({"surname" : surname.replace(' ','').replace('.','').replace(',',''), 
+                                        "initial" : initial[0], 
                                         "role" : creator_type})
+
                 
                 # get publication_year
                 if creator_type == 'editor':
@@ -268,6 +275,13 @@ class Pdf():
                     if publication_year[4] in 'abcdefghijklm':
                         text_key_letter = publication_year[4]
                     publication_year = publication_year[0:4]
+                    
+                if creator_count == 1:
+                    ref_key = creators_list[0]['initial']+creators_list[0]['surname']+publication_year
+                if creator_count == 2:
+                    ref_key = creators_list[0]['initial']+creators_list[0]['surname']+creators_list[1]['surname']+publication_year
+                if creator_count > 2:
+                    ref_key = creators_list[0]['initial']+creators_list[0]['surname']+"EtAl"+publication_year
                 
                 # get item_type
                 if re.search('[:]',line):
@@ -280,31 +294,98 @@ class Pdf():
                         
                         middle_bit = re.findall(r"[)].+[:]",line)
                         try:
-                            title = re.findall(r"[A-Z].+[.?!]", middle_bit[0])[0].replace('.','')
+                            title = re.findall(r"[A-Z].+[.?!]", middle_bit[0])[0][0:-1]
                             location = middle_bit[0].split('.')[-1].replace(':','')
                             
                         except IndexError:
                             title = re.findall(r"[A-Z].+", middle_bit[0])[0]
-
-                        print(f"year = {publication_year}, title = {title}, publisher = {publisher}, location = {location}, creators = {creators_list}")
+                        
+                        # ~ print(line)
+                        # ~ print(f"year = {publication_year}, title = {title}, publisher = {publisher}, location = {location}, creators = {creators_list}")
+                        # ~ input('Is that right?')
+                        
 
                         # ~ lit.Book(
                                 # ~ self.db_file, ref_key, publication_year, title, publisher, 
-                                # ~ location, number_of_pages, doi, isbn, creators=creators_list)
+                                # ~ location, creators=creators_list)
                         
                     # if a chapter, letters as well as page numbers
                     elif re.findall(r"[A-Za-z]+", last_bit):
                         test = re.findall(r"[A-Za-z]+", last_bit)
                         
-                        # ~ print(f"test = {test}")
-                        item_type = "chapter"
                         try:
-                            [publisher, pages] = last_bit.split(',')[0], last_bit.split(',')[1]
-                            # ~ print(f"publisher = {publisher}")
-                            # ~ print(f"pages = {pages}")
+                            title = re.findall(r"‘.+’", line)
+                            title = title[0][1:-1]
 
                         except IndexError:
-                            print(f"IndexError ~ {last_bit}")
+                            title = "unknown"
+                        
+                        middle_bit = re.findall(r"[)].+[:]",line)
+                        
+                        middle_bit[0] = middle_bit[0].replace('?','.')
+                        location = middle_bit[0].split('.')[-1].replace(':','')
+                        
+                        try:
+                            book_info = re.findall(r"’[,\s] in .+[.?!]", middle_bit[0])[0]
+                            book_title = re.findall(r"[)].+", book_info)[0][2:-1]
+                            
+                        except IndexError:
+                            book_title = "unknown"
+                            pass
+
+                        try:
+                            book_info = re.findall(r"’[,\s] in .+[.?!]", middle_bit[0])[0]
+                            book_authors = re.findall(r".+[(]", book_info)[0]
+                            surnames = re.findall(r"[A-Z][A-Za-z ]+", book_authors)
+                            initials = re.findall(r"[A-Z][.,\s]", book_authors)
+
+                            if len(surnames) == 1:
+                                while len(initials) > 1:
+                                    initials.pop(1)
+
+                            if len(initials) != len(surnames): 
+                                # TODO: Make sure initials are correct if multiple initials provided per author
+                                pass
+                            
+                            book_creators  = []
+                            
+                            for i in range(len(surnames)):
+                                initial = initials[i][0]
+                                surname = surnames[i].replace(' ','').replace('.','').replace(',','')
+                                book_creators.append({"surname" : surname, 
+                                                    "initial" : initial, 
+                                                    "role" : "editor"})
+                                                    
+                            if len(surnames) == 1:
+                                book_key = book_creators[0]['initial']+book_creators[0]['surname']+publication_year
+                            if len(surnames) == 2:
+                                book_key = book_creators[0]['initial']+book_creators[0]['surname']+book_creators[1]['surname']+publication_year
+                            if len(surnames) > 2:
+                                book_key = book_creators[0]['initial']+book_creators[0]['surname']+"EtAl"+publication_year
+
+                        except:
+                            e = sys.exc_info()
+                            print(f"\n\n\nERROR: {e}")
+                            
+                            
+                        item_type = "chapter"
+
+                        try:
+                            [publisher, pages] = last_bit.split(',')[0], last_bit.split(',')[1]
+
+                        except IndexError:
+                            # ~ print(f"IndexError ~ {last_bit}")
+                            text_type = "website"
+                            web_address = location + last_bit
+                            web_address = web_address.replace('Available at ','')
+                            # ~ print(f"URL: {web_address}")
+                            
+                        if item_type == "chapter":
+                            # ~ lit.Chapter(
+                                        # ~ self.db_file, ref_key, publication_year, title,
+                                        # ~ publisher, location, pages, creators=creators_list,
+                                        # ~ book_key=book_key, book_title=book_title, book=None,
+                                        # ~ book_creators=book_creators)
                     
                     # otherwise just (page) numbers ==> article
                     else:
@@ -316,10 +397,10 @@ class Pdf():
                 else:
                     item_type = "unknown"
                 
-                if item_type == 'book':
-                    print(f"item = {item_type}")
+                # ~ if item_type == 'book':
+                    # ~ print(f"item = {item_type}")
                     
-                    print(line)
+                    # ~ print(line)
 
                 # ~ # get title
                 # ~ if item_type == "book" and creator_type == "author":
@@ -386,5 +467,5 @@ if __name__ == '__main__':
     # ~ start.save()
 
     get = Pdf(db_file, 'RWebberBurrows2018')
-    get.refs(True)
+    get.refs()
     get.refs_parsed()
