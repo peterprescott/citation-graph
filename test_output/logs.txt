@@ -1428,3 +1428,27 @@ Test Successful: .bib Reader working as expected.
 Test Successful: PDF Reader working as expected.
 Test Successful: Literature Classes working as expected.
 Ran 5 tests: 5/5 were successful.
+
+25/11/2019 11:04:57
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Successful: Literature Classes working as expected.
+Ran 5 tests: 5/5 were successful.
+
+25/11/2019 16:31:39
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Failed: PDF Reader not working as expected.
+Test Successful: Literature Classes working as expected.
+Ran 5 tests: 4/5 were successful.
+
+25/11/2019 16:34:16
+Test Successful: Logic working as expected.
+Test Successful: Database Commands working as expected.
+Test Successful: .bib Reader working as expected.
+Test Successful: PDF Reader working as expected.
+Test Successful: Literature Classes working as expected.
+Ran 5 tests: 5/5 were successful.

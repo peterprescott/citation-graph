@@ -226,14 +226,18 @@ class Pdf():
         self.references = tidied_refs
         return self.references
         
-    def refs_parsed(self):
+    def refs_parsed(self, check):
         """
         
         """
+        
+        self.check = check
         
         with codecs.open(os.path.join('bib_files', f"{self.key}_refs.txt"), 'r', "utf-8") as file:
             
             for line in file:
+                check = self.check
+                
                 line = line.replace('  ',' ')
                 
                 # get creator(s) data
@@ -257,12 +261,15 @@ class Pdf():
                 if editors[0] == 'e': creator_type = 'editor'
                 else: creator_type = 'author'
                 
-                for i in range(creator_count):
-                    initial = initials[i]
-                    surname = surnames[i]
-                    creators_list.append({"surname" : surname.replace(' ','').replace('.','').replace(',',''), 
-                                        "initial" : initial[0], 
-                                        "role" : creator_type})
+                try:
+                    for i in range(creator_count):
+                        initial = initials[i]
+                        surname = surnames[i]
+                        creators_list.append({"surname" : surname.replace(' ','').replace('.','').replace(',',''), 
+                                            "initial" : initial[0], 
+                                            "role" : creator_type})
+                except:
+                    creators_list = []
 
                 
                 # get publication_year
@@ -275,13 +282,18 @@ class Pdf():
                     if publication_year[4] in 'abcdefghijklm':
                         text_key_letter = publication_year[4]
                     publication_year = publication_year[0:4]
-                    
-                if creator_count == 1:
-                    ref_key = creators_list[0]['initial']+creators_list[0]['surname']+publication_year
-                if creator_count == 2:
-                    ref_key = creators_list[0]['initial']+creators_list[0]['surname']+creators_list[1]['surname']+publication_year
-                if creator_count > 2:
-                    ref_key = creators_list[0]['initial']+creators_list[0]['surname']+"EtAl"+publication_year
+                
+                try:
+                    if creator_count == 1:
+                        ref_key = creators_list[0]['initial']+creators_list[0]['surname']+publication_year
+                    elif creator_count == 2:
+                        ref_key = creators_list[0]['initial']+creators_list[0]['surname']+creators_list[1]['surname']+publication_year
+                    elif creator_count > 2:
+                        ref_key = creators_list[0]['initial']+creators_list[0]['surname']+"EtAl"+publication_year
+                    else:
+                        ref_key = "unknown"
+                except:
+                    ref_key = "unknown"
                 
                 # get item_type
                 if re.search('[:]',line):
@@ -298,16 +310,22 @@ class Pdf():
                             location = middle_bit[0].split('.')[-1].replace(':','')
                             
                         except IndexError:
-                            title = re.findall(r"[A-Z].+", middle_bit[0])[0]
+                            e = sys.exc_info()
+                            print(f"\n\n\nERROR: {e}")
                         
-                        # ~ print(line)
+                        # ~ print(f"\n\n{line}")
                         # ~ print(f"year = {publication_year}, title = {title}, publisher = {publisher}, location = {location}, creators = {creators_list}")
                         # ~ input('Is that right?')
                         
-
-                        # ~ lit.Book(
-                                # ~ self.db_file, ref_key, publication_year, title, publisher, 
-                                # ~ location, creators=creators_list)
+                        if ref_key != "unknown":
+                            if check != "y":
+                                print(f"\n\n{line}")
+                                print(f"ref_key:{ref_key}\npublication_year:{publication_year}\ntitle:{title}\npublisher:{publisher}\nlocation:{location}\ncreators:{creators_list}")
+                                check = input("Enter 'y' to accept, or anything else to move on to the next entry.\n>>> ")
+                            if check=="y":
+                                lit.Book(
+                                    self.db_file, ref_key, publication_year, title, publisher, 
+                                    location, creators=creators_list)
                         
                     # if a chapter, letters as well as page numbers
                     elif re.findall(r"[A-Za-z]+", last_bit):
@@ -322,8 +340,11 @@ class Pdf():
                         
                         middle_bit = re.findall(r"[)].+[:]",line)
                         
-                        middle_bit[0] = middle_bit[0].replace('?','.')
-                        location = middle_bit[0].split('.')[-1].replace(':','')
+                        try:
+                            middle_bit[0] = middle_bit[0].replace('?','.')
+                            location = middle_bit[0].split('.')[-1].replace(':','')
+                        except:
+                            location = "unknown"
                         
                         try:
                             book_info = re.findall(r"’[,\s] in .+[.?!]", middle_bit[0])[0]
@@ -331,7 +352,8 @@ class Pdf():
                             
                         except IndexError:
                             book_title = "unknown"
-                            pass
+                            e = sys.exc_info()
+                            print(f"\n\n\nERROR: {e}")
 
                         try:
                             book_info = re.findall(r"’[,\s] in .+[.?!]", middle_bit[0])[0]
@@ -358,15 +380,21 @@ class Pdf():
                                                     
                             if len(surnames) == 1:
                                 book_key = book_creators[0]['initial']+book_creators[0]['surname']+publication_year
-                            if len(surnames) == 2:
+                            elif len(surnames) == 2:
                                 book_key = book_creators[0]['initial']+book_creators[0]['surname']+book_creators[1]['surname']+publication_year
-                            if len(surnames) > 2:
+                            elif len(surnames) > 2:
                                 book_key = book_creators[0]['initial']+book_creators[0]['surname']+"EtAl"+publication_year
+
 
                         except:
                             e = sys.exc_info()
                             # ~ print(f"\n\n\nERROR: {e}")
                             
+                        try:
+                            book_key
+                        except:
+                            book_key = "unknown"
+                            book_creators = []
                             
                         item_type = "chapter"
 
@@ -381,12 +409,20 @@ class Pdf():
                             # ~ print(f"URL: {web_address}")
                             
                         if item_type == "chapter":
-                            # ~ lit.Chapter(
-                                        # ~ self.db_file, ref_key, publication_year, title,
-                                        # ~ publisher, location, pages, creators=creators_list,
-                                        # ~ book_key=book_key, book_title=book_title, book=None,
-                                        # ~ book_creators=book_creators)
-                            pass
+                            if ref_key != "unknown":
+                                if check != "y":
+                                    print(f"\n\n{line}")
+                                    print(f"""ref_key:{ref_key}\npublication_year:{publication_year}\ntitle:{title}\n
+                                            publisher:{publisher}\nlocation:{location}\ncreators:{creators_list}\n
+                                            book_key:{book_key}\nbook_title:{book_title}\nbook_creators:{book_creators}""")
+                                    check = input("Enter 'y' to accept, or anything else to move on to the next entry.\n>>> ")
+                                    if ref_key != "unknown":
+                                        if check=="y":
+                                            lit.Chapter(
+                                                        self.db_file, ref_key, publication_year, title,
+                                                        publisher, location, pages, creators=creators_list,
+                                                        book_key=book_key, book_title=book_title, book=None,
+                                                        book_creators=book_creators)
                     
                     # otherwise just (page) numbers ==> article
                     else:
@@ -401,28 +437,51 @@ class Pdf():
                             title = "unknown"
                             
                         journal_info = line.split('’')[-1]
-                        journal = re.findall(r"[\s].+[,]", journal_info)[0]
+                        
+                        try:
+                            journal = re.findall(r"[\s].+[,]", journal_info)[0]
+                        except:
+                            journal = "unknown"
+                            
                         try:
                             volume = re.findall(r"[\d]+[\s]*[(]", journal_info)[0][0:-1]
                             edition = re.findall(r"[(][\d]+[)]", journal_info)[0][1:-1]
                         except IndexError:
-                            volume = re.findall(r"[\d]+[\s]*[:]", journal_info)[0][0:-1]
-                            edition = "na"
+                            e = sys.exc_info()
+                            print(f"\n\n\nERROR: {e}")
 
                         if len(journal) == 0:
-                            print(line)
+                            print(f"\n\n{line}")
                         else:
                             journal = journal[1:-1]
-                        
-                        # ~ lit.Article(
-                                # ~ self.db_file, ref_key, publication_year, title,
-                                # ~ journal, volume, edition, pages,
-                                # ~ creators=creators_list)
-                                
+
+                        if ref_key != "unknown":
+                            if check != "y":
+                                print(f"\n\n{line}")
+                                print(f"ref_key:{ref_key}\npublication_year:{publication_year}\ntitle:{title}\njournal:{journal}\nvolume:{volume}\nedition:{edition}\npages:{pages}\ncreators:{creators_list}")
+                                check = input("Enter 'y' to accept, or anything else to move on to the next entry.\n>>> ")
+                            if check=="y":
+                                lit.Article(
+                                    self.db_file, ref_key, publication_year, title,
+                                    journal, volume, edition, pages,
+                                    creators=creators_list)
+                                    
                         
                 else:
                     item_type = "unknown"
-                
+                    
+                    if ref_key != "unknown":
+                    
+                        if check != "y":
+                            print(f"\n\n{line}")
+                            print(f"ref_key:{ref_key}, publication_year:{publication_year}, creators:{creators_list}")
+                            check = input("Enter 'y' to accept, or anything else to move on to the next entry.\n>>> ")
+                        if check=="y":
+                            lit.Text(self.db_file, ref_key, publication_year, text_type = "unknown", creators=creators_list)
+
+                if ref_key != "unknown":
+                    if check=="y":
+                        lit.Citation(self.db_file, self.key, ref_key)
 
                 
                 
@@ -473,11 +532,11 @@ class Api():
 
 if __name__ == '__main__':
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
-    # ~ new_keys = ['DTimms1975', 'RBurrowsGane2006', 'RKitchin2014']
-    # ~ for new_key in new_keys: start = Bib(db_file, new_key)
+    new_keys = ['DTimms1975']
+    for new_key in new_keys: start = Bib(db_file, new_key)
     # ~ start=Bib(db_file, 'chapter')
     # ~ start.save()
 
-    get = Pdf(db_file, 'RWebberBurrows2018')
-    get.refs()
-    get.refs_parsed()
+    # ~ get = Pdf(db_file, 'EWily2015')
+    # ~ get.refs(True)
+    # ~ get.refs_parsed("check")

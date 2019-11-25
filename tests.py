@@ -158,7 +158,8 @@ class Test():
         self.tests += 1
 
         try:
-            get = reader.Pdf('RWebberBurrows2018')
+            db_file = os.path.join(sys.path[0], 'citation_graph.db')
+            get = reader.Pdf(db_file, 'RWebberBurrows2018')
             data = get.refs()
             assert len(data) == 216
             self.success += 1
