@@ -365,7 +365,7 @@ class Pdf():
 
                         except:
                             e = sys.exc_info()
-                            print(f"\n\n\nERROR: {e}")
+                            # ~ print(f"\n\n\nERROR: {e}")
                             
                             
                         item_type = "chapter"
@@ -386,32 +386,44 @@ class Pdf():
                                         # ~ publisher, location, pages, creators=creators_list,
                                         # ~ book_key=book_key, book_title=book_title, book=None,
                                         # ~ book_creators=book_creators)
+                            pass
                     
                     # otherwise just (page) numbers ==> article
                     else:
                         item_type = "article"
                         pages = publisher # it's not actually a publisher, it's a list of pages.
                         pages = re.findall(r"[\d].*[\d]", last_bit)[0]
-                        # ~ print(f"pages = {pages}")
+                        
+                        try:
+                            title = re.findall(r"‘.+’", line)
+                            title = title[0][1:-1]
+                        except IndexError:
+                            title = "unknown"
+                            
+                        journal_info = line.split('’')[-1]
+                        journal = re.findall(r"[\s].+[,]", journal_info)[0]
+                        try:
+                            volume = re.findall(r"[\d]+[\s]*[(]", journal_info)[0][0:-1]
+                            edition = re.findall(r"[(][\d]+[)]", journal_info)[0][1:-1]
+                        except IndexError:
+                            volume = re.findall(r"[\d]+[\s]*[:]", journal_info)[0][0:-1]
+                            edition = "na"
+
+                        if len(journal) == 0:
+                            print(line)
+                        else:
+                            journal = journal[1:-1]
+                        
+                        # ~ lit.Article(
+                                # ~ self.db_file, ref_key, publication_year, title,
+                                # ~ journal, volume, edition, pages,
+                                # ~ creators=creators_list)
+                                
                         
                 else:
                     item_type = "unknown"
                 
-                # ~ if item_type == 'book':
-                    # ~ print(f"item = {item_type}")
-                    
-                    # ~ print(line)
 
-                # ~ # get title
-                # ~ if item_type == "book" and creator_type == "author":
-                    # ~ first_cut = line.split(')')[1]
-                    # ~ try:
-                        # ~ second_cut = first_cut.split(':')[-2]
-                    # ~ except:
-                        # ~ print('ERROR')
-                    # ~ print(f' second_cut = {second_cut}')
-                    # ~ title = re.findall(r'.+[.]', second_cut)[0]
-                    # ~ print(f'title = {title}')
                 
                 
 
