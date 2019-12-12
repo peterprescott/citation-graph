@@ -1,3 +1,10 @@
+"""
+Contains class frameworks for parsing data from .bib files, .pdf files, and bibliographic/citation APIs respectively.
+
+Can be run directly if there is new data you want to save to the database.
+
+"""
+
 import os.path
 import sys
 from pybtex.database import parse_file  # for parsing .bib files

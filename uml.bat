@@ -1,0 +1,1 @@
+pyreverse *.py -o png

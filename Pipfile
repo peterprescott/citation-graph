@@ -16,6 +16,7 @@ selenium = "*"
 supersqlite = "*"
 sqlalchemy = "*"
 sphinx-rtd-theme = "*"
+m2r = "*"
 
 [requires]
 python_version = "3.7"

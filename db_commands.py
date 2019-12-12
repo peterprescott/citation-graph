@@ -1,3 +1,7 @@
+"""
+Includes a variety of commands to make querying the SQLite database simple.
+"""
+
 import sqlite3  #db functionality ~ https://docs.python.org/3/library/sqlite3.html
 import string
 import os.path
