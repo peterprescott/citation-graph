@@ -1,4 +1,4 @@
-"""Runs tests and documents results. """
+"""Runs tests (encapuslated in a Test class) and documents results in `test_output/logs.txt`"""
 
 from datetime import datetime   # for recording data and time of tests
 from selenium import webdriver  # for testing web app
@@ -233,38 +233,6 @@ class Test():
             print(f"\n\n\nERROR: {e}")
             result = "\nTest Failed: Literature Classes not working as expected."
             result += details
-        
-        print(result)
-        return result
-
-    def jamstack_gui(self):
-        
-        self.tests += 1
-        
-        try:
-            assert True == True
-            self.success += 1
-            result = "\nTest Successful: JAMstack GUI working as expected."
-        except:
-            e = sys.exc_info()
-            print(f"\n\n\nERROR: {e}")
-            result = "\nTest Failed: JAMstack GUI not working as expected."
-        
-        print(result)
-        return result
-        
-    def web_scraper(self):
-        
-        self.tests += 1
-        
-        try:
-            assert True == True
-            self.success += 1
-            result = "\nTest Successful: Web Scraper working as expected."
-        except:
-            e = sys.exc_info()
-            print(f"\n\n\nERROR: {e}")
-            result = "\nTest Failed: Web Scraper not working as expected."
         
         print(result)
         return result
