@@ -10,13 +10,13 @@ Contents: [Task](#task). [Background Research](#research). [Software Design](#de
 Our [brief](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/index.html) was as follows:
 
 > *This assignment is a major project building up a model, application, or analysis from scratch. The project can be either something of your own invention, or one of the [suggested] projects... Broadly speaking, your project should:*
-
+>
 > *- Read in some data.*
-
+>
 > *- Process it in some way.*
-
+>
 > *- Display the results.*
-
+>
 > *- Write the results to a file.*
 
 After a [brief attempt](https://github.com/peterprescott/sitelocation) at [one of the suggested projects](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/best.html), I instead decided to do something relating more directly to my -- and potentially anyone's! -- PhD.
