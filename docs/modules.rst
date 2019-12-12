@@ -8,5 +8,4 @@ citation-graph
    literature
    reader
    run
-   script
    tests

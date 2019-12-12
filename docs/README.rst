@@ -2,154 +2,136 @@
    :format: html
 
 
-Citation Graph
-==============
+Citation Graph of Scholarly Literature
+======================================
 
-What have people already done?
-------------------------------
+A second project (\ `here's the first <https://geodemographics.co.uk/projects/agent-based-modelling/>`_\ ) done as part of `the Data CDT <https://datacdt.org/>`_\ 's `GEOG5995M/ENVS802 module <https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/>`_\ : **Programming For Social Scientists**.
 
+Contents: `Task <#task>`_. `Background Research <#research>`_. `Software Design <#design>`_. `Installation <#install>`_. `Instructions <#instructions>`_. `Personal Evaluation <#evaluation>`_.
 
-* 
-  https://physics.stackexchange.com/questions/5569/is-there-a-nice-tool-to-plot-graphs-of-paper-citations
+:raw-html-m2r:`<a id="task"></a>`
 
-* 
-  https://longair.net/blog/2009/10/21/thesis-visualization/
+Task
+====
 
-* 
-  http://ongraphs.de/blog/2015/01/dynamic-citation-graph/ ***** Andre2015
+Our `brief <https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/index.html>`_ was as follows:
 
-* 
-  http://bl.ocks.org/jose187/4733747 # a simple d3 network graph
+..
 
-* 
-  https://academia.stackexchange.com/questions/83582/in-google-scholar-is-it-possible-to-view-the-list-of-papers-cited-by-a-specific
+   *This assignment is a major project building up a model, application, or analysis from scratch. The project can be either something of your own invention, or one of the [suggested] projects... Broadly speaking, your project should:*
 
-How would we go about this?
----------------------------
+   *- Read in some data.*
 
+   *- Process it in some way.*
 
-* 
-  to visualise a graph, you need two lists: nodes and edges.
+   *- Display the results.*
 
-* 
-  Andre2015's code should do the job. 
-    His node lists include a simple counting id, the year of publication, the 'cyear' (?year first cited?), and a 'label' which gives the title.
-    His edge ('link') lists include an edge id, the id of the citing work ('target'), the id of the cited work ('source'), and the year of citation (which is always the same as the year of publication of the citing work).
-
-* 
-  to generate these we need two, and ideally would have three tables (/dicts?):
+   *- Write the results to a file.*
 
 
-  #. references in a book: {"Book1" : ["Book2","Book3","Book4"], ...}
-  #. citations of a book: {"Book2": ["Book1",...], ...}
-  #. and also the data for the book: [CitationKey, Author, Date, Title, Publisher, Abstract, ISBN, doi, ...]
+After a `brief attempt <https://github.com/peterprescott/sitelocation/blob/master/sitelocation.ipynb>`_ at `one of the suggested projects <https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/best.html>`_\ , I instead decided to do something relating more directly to my -- and potentially anyone's! -- PhD.
 
-* 
-  Citations can be found on Google Scholar. We'll try to use Beautiful Soup and Requests or perhaps Selenium to scrape these...
+I decided to create some software to help visualize the webbed citation relationships of scholarly literature for an area of study, which for me is *The Geodemographics of British Streets*.
 
+:raw-html-m2r:`<a id="research"></a>`
 
-  * Start here: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=The+predictive+postcode%3A+the+geodemographic+classification+of+British+society&btnG=
+Background Research
+===================
 
-* 
-  References can be found in the text itself. If we can get copies of articles or bibliography chapters as PDFs, then we might be able to scrape these...
+It turned out that what I was imagining is called a `citation network <https://en.wikipedia.org/wiki/Citation_network>`_ or citation `graph <https://en.wikipedia.org/wiki/Graph_theory>`_\ , which consists of *nodes* and *edges*.
 
+Initial investigation confirmed I wasn't the only one who might find such a thing useful: `someone else (2011) <https://physics.stackexchange.com/questions/5569/is-there-a-nice-tool-to-plot-graphs-of-paper-citations>`_  was asking a similar question on StackExchange. I found a blog post from `Mark Longair (2009) <https://longair.net/blog/2009/10/21/thesis-visualization/>`_ showing a graph of papers related to his thesis, scanned from PDFs he had collected. `Andre (2015) <http://ongraphs.de/blog/2015/01/dynamic-citation-graph/>`_ had a very neat visualization comparing the citation networks of two related conferences, using "the force-directed layout engine included in d3.js", and linking to some examples: `Bostock (2017) <https://observablehq.com/@d3/force-directed-graph>`_ and `Raper (2014) <http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/>`_. 
 
-  * https://github.com/anderser/pydocsplit
+All this suggested that what I was imagining would be possible, but would also require enough effort to make it a worthy project for this assignment.
 
-* 
-  Book data can be obtained from Zotero, if we have what Zotero calls an 'identifier': an ISBN, a doi, a PMID, or an arXiv id.
+It also suggested some possible ways of going about the task, both with regards to data collection (webscraping information from Google Scholar or Microsoft Academic, or scanning it from journal article PDFs) and data visualization (using `Graphviz <http://www.graphviz.org/>`_ or `D3.js <https://d3js.org/>`_\ ).
 
+I also discovered `Zotero <https://en.wikipedia.org/wiki/Zotero>`_\ , a "free and open source reference management system" which I hadn't come across before starting this course (I finished my undergraduate degree in 2010, and haven't been writing academic essays in the meantime). Zotero has a `web browser plug-in <https://www.zotero.org/download/connectors>`_ which makes it simple to extract bibliographic information for literature referenced on the webpage you are browsing. I found that it uses `this Wikipedia API <https://en.wikipedia.org/api/rest_v1/#/Citation/getCitation>`_ to generate citation data given an `ISBN <https://www.isbn-international.org/content/what-isbn>`_ or `DOI <https://en.wikipedia.org/wiki/Digital_object_identifier>`_.
 
-  * Can this be automated? 
+Zotero allows bibliographic information to be exported as a *.bib* file, and I found that this can be parsed for Python by `Pybtex <https://pybtex.org/>`_\ : "a BibTeX-compatible bibliography processor written in Python" that can be installed with ``pip``. Zotero generates citation keys at time of export "using an algorithm that *usually* generates unique keys" -- `Better BibTex <https://retorque.re/zotero-better-bibtex/citing/>`_ is a plug-in for Zotero that gives better control over citation keys. 
 
-    * https://forums.zotero.org/discussion/70995/perform-add-item-by-identifier-action-through-api
-    * Most easily through Wikipedia's Zotero API: https://en.wikipedia.org/api/rest_v1/#/Citation/getCitation
+I also discovered `Open Citations <http://opencitations.net/>`_\ , "a scholarly infrastructure organization dedicated to open scholarship"  and "engaged in advocacy for semantic publishing and open citations". They also have `an API <http://opencitations.net/index/coci/api/v1>`_\ , for retrieving data about citations (ie. not the bibliographic data for an individual item, but the relational data about what each item cites and is cited by), but its dataset seems currently quite sparse, at least for my field of study.
 
-* 
-  Once you have all the data (saved in SQLite tables?), then you need to produce the json lists.
+:raw-html-m2r:`<a id="running"></a>`
 
+Software Design
+===============
 
-  * to produce the list of nodes, just run through table 3 which lists all the books.
-  * to produce the list of edges, run through tables 1 and 2, generating all the edges.
+Main Program
+------------
 
-MVP: Visualized graph of *Predictive Postcode*\ ,
----------------------------------------------------
+I decided to try and write a Python program that would be able to *read in data* from .bib files, from PDF files, and from the Zotero/Wikipedia API. It would *process this data* to get bibliographic information (minimally Author and Year of Publication, but ideally also Title, Item Type, Publisher, etc.) and citation relationships. It would use `D3.js Javascript <https://d3js.org/>`_ running on `a static web page <https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf>`_ to *display the results* as an interactive visualization, obtaining the relevant data from the Python program by ``fetch()``\ ing it from an API served by our Python program using `the Flask plug-in <https://palletsprojects.com/p/flask/>`_. The program would also *write the results* to a SQLite database file.
 
-
-* with full set of citations scraped from Google Scholar, 
-* and full set of references gleaned from PDF of references chapter.
-* Book data gained from Zotero and interpreted by pybtex (https://docs.pybtex.org/api/parsing.html)
-* Data stored in :raw-html-m2r:`<del>SQLite database</del>` .bib files so that it's all human readable.
-
-Or actually,
+UML Diagrams
+------------
 
 
-* instead of building a webscraper, let's for the moment just pull all the citations into Zotero using the Chrome toolbar plugin, 
-    and use Zotero + BetterBibTex to generate a .bib citations file.
-* and then let's just manually add some references to Zotero, and similarly generate a reference .bib file.
-* then let's use pybtex to pull in those .bib files
-* and then let's see if we can build an interface between a static front-end web-page using a JavaScript Fetch call 
-    to pull in the relevant bibliographic data from a Flask API. https://pythonise.com/series/learning-flask/flask-and-fetch-api
-* we might be able to automate the documentation for the API: https://flask-apispec.readthedocs.io/en/latest/
-
-Okay, for tomorrow:
+.. image:: https://raw.githubusercontent.com/peterprescott/citation-graph/master/packages.png
+   :target: https://raw.githubusercontent.com/peterprescott/citation-graph/master/packages.png
+   :alt: Package Relationships
 
 
-* add JS functionality:
 
-  * when you call the API, you should *add* data to the front-end, not lose what's already there.
-  * add some of the A-Z extra functionality: 
-
-    * :raw-html-m2r:`<del>arrows</del>`
-    * no overlap
-    * :raw-html-m2r:`<del>(bigger circles)</del>`
-    * highlighting
-    * pinning down nodes
-    * search
-
-* scrape PDFs with Python (or even Ruby!)
-* use pyzotero and scrape Google Scholar
-* integrate literature.Text class into Flask API.
-
-Another day, what have we done?
+.. image:: https://raw.githubusercontent.com/peterprescott/citation-graph/master/classes.png
+   :target: https://raw.githubusercontent.com/peterprescott/citation-graph/master/classes.png
+   :alt: Class Relationships
 
 
-* we can easily make it so that you can drag a circle, and the data emerges in a nearby text box.
-* we have managed to scrape pdfs, and we are beginning to learn regular expressions to identify at least the first line of the references.
-* we thought that we could use this to scrape lots of useful information from google scholar and microsoft academic...
-* but they both make it very difficult to automate this...
-* though `some <https://mystudentvoices.com/scraping-google-scholar-to-write-your-phd-literature-chapter-2ea35f8f4fa1>`_ `people <http://thebiobucket.blogspot.com/2011/11/visually-examine-google-scholar-search.html>`_ seem to have done it...
-* might be able to use selenium to make the mouse click on the link...
+These UML diagrams were automatically created using `pyreverse <https://www.logilab.org/blogentry/6883>`_ with a single line of code:
 
-UML
----
+.. code-block:: {console}
+
+   pyreverse *.py -o png
+
+Tests
+-----
+
+Throughout the development of this program, I am trying to practise the principles of *Test-Driven Development* `(eg. Percival, 2017) <https://www.obeythetestinggoat.com/>`_. This requires that before actually doing anything, we run a test that will check whether what we want to do is done. We run the test before writing the desired feature, so that it fails (obviously), then we write the feature, and then the test should run successfully.
+
+Virtual Environment & Package Installation Management
+-----------------------------------------------------
+
+I have also used `Pipenv <https://pypi.org/project/pipenv/>`_ to manage package installation within a contained virtual environment.
+
+:raw-html-m2r:`<a id="install"></a>`
+
+Installation
+============
+
+You need to have Git and Python installed. If you don't, use your system's recommended package manager to download them from the command line. (For Windows, use `Chocolatey <https://chocolatey.org/install>`_.)
+
+Then clone the Github repository, and navigate into the project folder. You can then immediately run the model:
+
+.. code-block:: console
+
+   python --version
+   git --version
+   git clone https://github.com/peterprescott/citation-graph
+   cd citation-graph
+   pipenv shell
+   python run.py
+
+The program makes use of `Chris Mattmann's tika-python library <https://github.com/chrismattmann/tika-python>`_\ , which allows Python to use `the Apache Tika toolkit <http://tika.apache.org/>`_ for extracting data and metdata from PDFs. This does require that "Java 7+ installed on your system as tika-python starts up the Tika REST server in the background". Which is an added complication -- but it is quicker, more accurate, and simpler to use `Boylan-Toomey 2018 <https://medium.com/@justinboylantoomey/fast-text-extraction-with-python-and-tika-41ac34b0fe61>`_ than the other Python PDF libraries.
+
+:raw-html-m2r:`<a id="instructions"></a>`
+
+Instructions
+============
+
+:raw-html-m2r:`<a id="evaluation"></a>`
+
+Personal Evaluation
+===================
+
+Documentation
+=============
 
 
-.. image:: https://raw.githubusercontent.com/peterprescott/citation-graph/master/docs/uml.gif
-   :target: https://raw.githubusercontent.com/peterprescott/citation-graph/master/docs/uml.gif
-   :alt: Graphic UML
-:raw-html-m2r:`<br>`
-(Graphic generated by `Pynsource <https://pynsource.com/>`_\ , discovered through `StackOverflow <https://stackoverflow.com/questions/260165/whats-the-best-way-to-generate-a-uml-diagram-from-python-source-code>`_\ ).
-
-Software (that will be) used:
------------------------------
+.. image:: https://readthedocs.org/projects/citation-graph/badge/?version=latest
+   :target: https://citation-graph.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
 
 
-* Zotero
-* Better Bibtex for Zotero (https://retorque.re/zotero-better-bibtex/citing/)
-* Python
-* Pybtex ( + documentation from https://www1.unipa.it/paolo.monella/pybtex/index.html)
-* Pylint
-* Pipenv
-* Flask
-* Sphinx (& ReadTheDocs) -- using Napoleon Extension & m2r
-* Git (& GitHub)
+Documentation can be automatically generated by `Sphinx <https://www.sphinx-doc.org/en/master/usage/quickstart.html>`_\ , which I learnt to use for `the previous project <https://github.com/peterprescott/agent-based-modelling>`_. For this to work we have to make sure we write proper docstrings. We use `Google style <https://google.github.io/styleguide/pyguide.html#383-functions-and-methods>`_\ , which means we require `the Napoleon extension <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_ for Sphinx. We also use `m2r <https://github.com/miyakogi/m2r>`_ to convert the README.md file to .rst so that it can be included.
 
-Also...
--------
-
-
-* `Open Citations <https://opencitations.wordpress.com/2018/02/25/citations-as-first-class-data-entities-the-opencitations-data-model/>`_ would be a great thing...
-* http://opencitations.net/index
-* http://opencitations.net/index/coci/api/v1
-* https://figshare.com/articles/Open_Citation_Identifier_Definition/7127816
+Having generated it with Sphinx, we can also host the documentation freely at `ReadTheDocs.org <https://citation-graph.readthedocs.io/en/latest/>`_. 
