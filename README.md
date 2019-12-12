@@ -1,8 +1,8 @@
-Citation Graph of Scholarly Literature
+# Citation Graph of Scholarly Literature
 
 A second project ([here's the first](https://geodemographics.co.uk/projects/agent-based-modelling/)) done as part of [the Data CDT](https://datacdt.org/)'s [GEOG5995M/ENVS802 module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/): **Programming For Social Scientists**.
 
-Contents: [Task](#task). [Background Research](#research). [Software Design](#design). [Installation](#install). [Instructions](#instructions). [Personal Evaluation](#evaluation).
+Contents: [Task](#task). [Background Research](#research). [Software Design](#design). [Installation](#install). [Documentation](#docs).
 
 <a id="task"></a>
 # Task
@@ -26,9 +26,9 @@ I decided to create some software to help visualize the webbed citation relation
 <a id="research"></a>
 # Background Research
 
-It turned out that what I was imagining is called a [citation network](https://en.wikipedia.org/wiki/Citation_network) or citation [graph](https://en.wikipedia.org/wiki/Graph_theory)
+It turned out that what I was imagining is called a [citation network](https://en.wikipedia.org/wiki/Citation_network) or citation [graph](https://en.wikipedia.org/wiki/Graph_theory), which consists of *nodes* and *edges*.
 
-Initial investigation confirmed I wasn't the only one who might find such a thing useful: [someone else (2011)](https://physics.stackexchange.com/questions/5569/is-there-a-nice-tool-to-plot-graphs-of-paper-citations)  was asking a similar question on StackExchange. I found a blog post from [Mark Longair (2009)](https://longair.net/blog/2009/10/21/thesis-visualization/) showing a graph of papers related to his thesis, scanned from PDFs he had collected. [André (2015)](http://ongraphs.de/blog/2015/01/dynamic-citation-graph/) had a very neat visualization comparing the citation networks of two related conferences, using "the force-directed layout engine included in d3.js", and linking to some examples: [Bostock (2017)](https://observablehq.com/@d3/force-directed-graph) and [Raper (2014)](http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/). 
+Initial investigation confirmed I wasn't the only one who might find such a thing useful: [someone else (2011)](https://physics.stackexchange.com/questions/5569/is-there-a-nice-tool-to-plot-graphs-of-paper-citations)  was asking a similar question on StackExchange. I found a blog post from [Mark Longair (2009)](https://longair.net/blog/2009/10/21/thesis-visualization/) showing a graph of papers related to his thesis, scanned from PDFs he had collected. [Andre (2015)](http://ongraphs.de/blog/2015/01/dynamic-citation-graph/) had a very neat visualization comparing the citation networks of two related conferences, using "the force-directed layout engine included in d3.js", and linking to some examples: [Bostock (2017)](https://observablehq.com/@d3/force-directed-graph) and [Raper (2014)](http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/). 
 
 All this suggested that what I was imagining would be possible, but would also require enough effort to make it a worthy project for this assignment.
 
@@ -43,22 +43,36 @@ I also discovered [Open Citations](http://opencitations.net/), "a scholarly infr
 <a id="running"></a>
 # Software Design
 
-## Main Program
+## Basic Functionality
 
 I decided to try and write a Python program that would be able to *read in data* from .bib files, from PDF files, and from the Zotero/Wikipedia API. It would *process this data* to get bibliographic information (minimally Author and Year of Publication, but ideally also Title, Item Type, Publisher, etc.) and citation relationships. It would use [D3.js Javascript](https://d3js.org/) running on [a static web page](https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf) to *display the results* as an interactive visualization, obtaining the relevant data from the Python program by `fetch()`ing it from an API served by our Python program using [the Flask plug-in](https://palletsprojects.com/p/flask/). The program would also *write the results* to a SQLite database file.
 
-## UML Diagrams
+## More Detailed Explanation (with UML Diagrams)
 
+The Python program consists of five modules (files): `run.py`, `db_commands.py`, `literature.py`, `reader.py`, and `tests.py`.
 
-![Package Relationships](https://github.com/peterprescott/citation-graph/blob/master/packages.png)
+![Module Relationships](https://raw.githubusercontent.com/peterprescott/citation-graph/master/packages.png)
+Figure 1: Module Relationships
 
-![Class Relationships](https://github.com/peterprescott/citation-graph/blob/master/classes.png)
+`run.py`
 
-These UML diagrams were automatically created using [`pyreverse`](https://www.logilab.org/blogentry/6883) with a single line of code:
+`db_commands.py`
+
+`literature.py`
+
+`reader.py`
+
+`tests.py`
+
+![Class Relationships](https://raw.githubusercontent.com/peterprescott/citation-graph/master/classes.png)
+Figure 2: Class Relationships
+
+These UML diagrams were automatically created using [pyreverse](https://www.logilab.org/blogentry/6883) with a single line of code:
 
 ```{console}
 pyreverse *.py -o png
 ```
+My only quibble would be that for some reason, pyreverse's automatically generated UML diagrams refers to my *modules* as *packages*, whereas in Python (as I understand thing at least) a ["module is a file containing Python definitions and statements"](https://docs.python.org/3/tutorial/modules.html), while a 'package' is ["is a directory which MUST contain a special file called __init__.py."](https://www.learnpython.org/en/Modules_and_Packages)
 
 ## Tests
 
@@ -68,14 +82,6 @@ Throughout the development of this program, I am trying to practise the principl
 ## Virtual Environment & Package Installation Management
 
 I have also used [Pipenv](https://pypi.org/project/pipenv/) to manage package installation within a contained virtual environment.
-
-## Documentation
-
-Documenatation can be automatically generated by [Sphinx](https://www.sphinx-doc.org/en/master/usage/quickstart.html), which I learnt to use for [the previous project](https://github.com/peterprescott/agent-based-modelling). For this to work we have to make sure we write proper docstrings. We use [Google style](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods), which means we require [the Napoleon extension](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html) for Sphinx. We also use [m2r](https://github.com/miyakogi/m2r) to convert the README.md file to .rst so that it can be included.
-
-Having generated it with Sphinx, we can also host the documentation freely at [ReadTheDocs.org](https://readthedocs.org). 
-
-[![Documentation Status](https://readthedocs.org/projects/house-prices/badge/?version=latest)](https://house-prices.readthedocs.io/en/latest/?badge=latest)
 
 <a id="install"></a>
 # Installation
@@ -94,14 +100,10 @@ python run.py
 ```
 The program makes use of [Chris Mattmann's tika-python library](https://github.com/chrismattmann/tika-python), which allows Python to use [the Apache Tika toolkit](http://tika.apache.org/) for extracting data and metdata from PDFs. This does require that "Java 7+ installed on your system as tika-python starts up the Tika REST server in the background". Which is an added complication -- but it is quicker, more accurate, and simpler to use [Boylan-Toomey 2018](https://medium.com/@justinboylantoomey/fast-text-extraction-with-python-and-tika-41ac34b0fe61) than the other Python PDF libraries.
 
+<a id="docs"></a>
+# Documentation
+[![Documentation Status](https://readthedocs.org/projects/citation-graph/badge/?version=latest)](https://citation-graph.readthedocs.io/en/latest/?badge=latest)
 
+Documentation can be automatically generated by [Sphinx](https://www.sphinx-doc.org/en/master/usage/quickstart.html), which I learnt to use for [the previous project](https://github.com/peterprescott/agent-based-modelling). For this to work we have to make sure we write proper docstrings. We use [Google style](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods), which means we require [the Napoleon extension](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html) for Sphinx. We also use [m2r](https://github.com/miyakogi/m2r) to convert the README.md file to .rst so that it can be included.
 
-<a id="instructions"></a>
-# Instructions
-
-
-
-<a id="evaluation"></a>
-# Personal Evaluation
-
-
+Having generated it with Sphinx, we can also host the documentation freely at [ReadTheDocs.org](https://citation-graph.readthedocs.io/en/latest/). 

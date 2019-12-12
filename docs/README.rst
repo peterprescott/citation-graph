@@ -7,7 +7,7 @@ Citation Graph of Scholarly Literature
 
 A second project (\ `here's the first <https://geodemographics.co.uk/projects/agent-based-modelling/>`_\ ) done as part of `the Data CDT <https://datacdt.org/>`_\ 's `GEOG5995M/ENVS802 module <https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/>`_\ : **Programming For Social Scientists**.
 
-Contents: `Task <#task>`_. `Background Research <#research>`_. `Software Design <#design>`_. `Installation <#install>`_. `Instructions <#instructions>`_. `Personal Evaluation <#evaluation>`_.
+Contents: `Task <#task>`_. `Background Research <#research>`_. `Software Design <#design>`_. `Installation <#install>`_. `Documentation <#docs>`_.
 
 :raw-html-m2r:`<a id="task"></a>`
 
@@ -57,31 +57,47 @@ I also discovered `Open Citations <http://opencitations.net/>`_\ , "a scholarly 
 Software Design
 ===============
 
-Main Program
-------------
+Basic Functionality
+-------------------
 
 I decided to try and write a Python program that would be able to *read in data* from .bib files, from PDF files, and from the Zotero/Wikipedia API. It would *process this data* to get bibliographic information (minimally Author and Year of Publication, but ideally also Title, Item Type, Publisher, etc.) and citation relationships. It would use `D3.js Javascript <https://d3js.org/>`_ running on `a static web page <https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf>`_ to *display the results* as an interactive visualization, obtaining the relevant data from the Python program by ``fetch()``\ ing it from an API served by our Python program using `the Flask plug-in <https://palletsprojects.com/p/flask/>`_. The program would also *write the results* to a SQLite database file.
 
-UML Diagrams
-------------
+More Detailed Explanation (with UML Diagrams)
+---------------------------------------------
+
+The Python program consists of five modules (files): ``run.py``\ , ``db_commands.py``\ , ``literature.py``\ , ``reader.py``\ , and ``tests.py``.
 
 
 .. image:: https://raw.githubusercontent.com/peterprescott/citation-graph/master/packages.png
    :target: https://raw.githubusercontent.com/peterprescott/citation-graph/master/packages.png
-   :alt: Package Relationships
+   :alt: Module Relationships
 
+Figure 1: Module Relationships
+
+``run.py``
+
+``db_commands.py``
+
+``literature.py``
+
+``reader.py``
+
+``tests.py``
 
 
 .. image:: https://raw.githubusercontent.com/peterprescott/citation-graph/master/classes.png
    :target: https://raw.githubusercontent.com/peterprescott/citation-graph/master/classes.png
    :alt: Class Relationships
 
+Figure 2: Class Relationships
 
 These UML diagrams were automatically created using `pyreverse <https://www.logilab.org/blogentry/6883>`_ with a single line of code:
 
 .. code-block:: {console}
 
    pyreverse *.py -o png
+
+My only quibble would be that for some reason, pyreverse's automatically generated UML diagrams refers to my *modules* as *packages*\ , whereas in Python (as I understand thing at least) a `"module is a file containing Python definitions and statements" <https://docs.python.org/3/tutorial/modules.html>`_\ , while a 'package' is `"is a directory which MUST contain a special file called **init**.py." <https://www.learnpython.org/en/Modules_and_Packages>`_
 
 Tests
 -----
@@ -113,15 +129,7 @@ Then clone the Github repository, and navigate into the project folder. You can 
 
 The program makes use of `Chris Mattmann's tika-python library <https://github.com/chrismattmann/tika-python>`_\ , which allows Python to use `the Apache Tika toolkit <http://tika.apache.org/>`_ for extracting data and metdata from PDFs. This does require that "Java 7+ installed on your system as tika-python starts up the Tika REST server in the background". Which is an added complication -- but it is quicker, more accurate, and simpler to use `Boylan-Toomey 2018 <https://medium.com/@justinboylantoomey/fast-text-extraction-with-python-and-tika-41ac34b0fe61>`_ than the other Python PDF libraries.
 
-:raw-html-m2r:`<a id="instructions"></a>`
-
-Instructions
-============
-
-:raw-html-m2r:`<a id="evaluation"></a>`
-
-Personal Evaluation
-===================
+:raw-html-m2r:`<a id="docs"></a>`
 
 Documentation
 =============
