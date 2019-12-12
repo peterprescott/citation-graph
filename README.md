@@ -19,7 +19,7 @@ Our [brief](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd
 >
 > *- Write the results to a file.*
 
-After a [brief attempt](https://github.com/peterprescott/sitelocation) at [one of the suggested projects](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/best.html), I instead decided to do something relating more directly to my -- and potentially anyone's! -- PhD.
+After a [brief attempt](https://github.com/peterprescott/sitelocation/blob/master/sitelocation.ipynb) at [one of the suggested projects](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/best.html), I instead decided to do something relating more directly to my -- and potentially anyone's! -- PhD.
 
 I decided to create some software to help visualize the webbed citation relationships of scholarly literature for an area of study, which for me is *The Geodemographics of British Streets*.
 
