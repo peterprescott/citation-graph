@@ -18,7 +18,9 @@ python --version
 git --version
 git clone https://github.com/peterprescott/citation-graph
 cd citation-graph
+pip install pipenv
 pipenv shell
+pipenv install
 python run.py
 ```
 The program will be initially running on data that I've already entered, saved in the SQLite database `citation-graph.db`. (Note that the visualized nodes do sometimes get stuck in the top left of their SVG field -- if that happens just click-and-drag them down with your mouse cursor). 
