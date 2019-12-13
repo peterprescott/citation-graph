@@ -219,13 +219,13 @@ class Pdf():
         Args:
             db_file (string): file location of database file.
             key (string): in BetterBibTex format [authForeIni][authEtAl][year].
-            number (integer): number of refs to extract before stopping, if not all.
+            number (integer): (TODO) number of refs to extract before stopping, if not all.
             """
         
         self.db_file = db_file
         self.key = key
         self.pdf = f'{key}.pdf'
-        self.number = number
+        # TODO: self.number = number
         lit.Text(self.db_file, self.key)
         
         if os.path.isfile(os.path.join('bib_files',f'{self.pdf}')):
@@ -566,7 +566,7 @@ class Api():
 if __name__ == '__main__':
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
     
-    demo_list = ["EShevkyBell1955", "GBowkerStar1999", "PBourdieu2013", "RBurrowsGane2006", "RKitchin2014", "RWebberBurrows2018"]
+    demo_list = ["EShevkyBell1955", "GBowkerStar1999", "PBourdieu2013", "DTimms1971", "RKitchin2014", "RWebberBurrows2018"]
     
     if len(argv) == 1:
         print('Include some citation keys for me to read in the files of, \nor else write "python reader.py load" for the demo files')
@@ -574,6 +574,19 @@ if __name__ == '__main__':
     elif argv[1] == "load":
         for new_key in demo_list: 
             Bib(db_file, new_key)
+    elif argv[1] == "pdf":
+        if len(argv)>2:
+            cmd_params = argv
+            # remove the first two parameters of argv 
+            file_name = cmd_params.pop(0)
+            pdf_instruction = cmd_params.pop(0)
+            
+            pdf_keys = cmd_params
+            for key in pdf_keys:
+                Pdf(db_file, key)
+        else:
+            Pdf(db_file, "RWebberBurrows2018")                
+    
     else:
         new_keys = argv
 

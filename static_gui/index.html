@@ -13,20 +13,24 @@
 
 </head>
 
-<body>
-    <center>
+<body><span class="border border-primary">
+    <center><div width=600>
         <h1>Citation Graph</h1>
         <h2>Literature Info:</h2>
         <textTitle></textTitle><br>
-        <authors>Click a Citation Graph Node for Bibliographic Data</authors> <publicationDate></publicationDate><br>
-        <svg width="960" height="400"></svg>
+        <authors>Drag a Citation Graph Node for Bibliographic Data</authors> <publicationDate></publicationDate><br>
+
+        <svg width="600" height="400"></svg>
     <br>
     @<citationKey>RWebberBurrows2018</citationKey><br>
     <button  type="button" class="btn btn-light btn-sm" onClick="decrease()">-</button>
     <radius>1</radius>
     <button  type="button" class="btn btn-light btn-sm" onClick="increase()">+</button><br>
-    <button  type="button" class="btn btn-primary btn-sm" onClick="clickButton()">Add Data</button>
-    
+    <button  type="button" class="btn btn-primary btn-sm" onClick="clickButton()">Add Data</button></span>
+    <div class="container-sm"><p>When you click and drag the node, you will see its title, author, and publication date above the visualization; and below you will see its 'citation key', and you can set the 'radius' of the network centred on that text which you want to see graphed.
+
+    (Note that when you load more data the visualized nodes do sometimes get stuck in the top left of their SVG field -- if that happens just click-and-drag them down with your mouse cursor).</p></div>
+    </div>
     </center>
 </body>
 

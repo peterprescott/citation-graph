@@ -265,5 +265,4 @@ class Query():
 if __name__ == '__main__':
     
     q = Query(os.path.join(sys.path[0], 'citation_graph.db'))
-#    q.reboot()
-    q.txt_output()
+    q.reboot()

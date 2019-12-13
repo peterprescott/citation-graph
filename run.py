@@ -14,6 +14,7 @@ from flask_cors import CORS             # stop CORS errors
 import webbrowser                       # to load static gui without hassle
 
 import db_commands as db
+import literature as lit
 
 webbrowser.open(".\static_gui\index.html")
 
@@ -41,5 +42,5 @@ def api(key, radius):
     return jsonify(graph_data)
 
 if __name__ == "__main__":
-    
+
     app.run()
