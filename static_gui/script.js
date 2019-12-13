@@ -100,9 +100,11 @@ function displayData(d) {
 // needs to be prettified, but it should do for now.
 
     d3.select('textTitle')
-      .text(d.title)
-    d3.select('citeKey')
-      .text(d.id)
+      .html("<a href='https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q="+d.title+"'>" + d.title + "</a>")
+    d3.select('authors')
+      .text(d.authors)
+    d3.select('publicationDate')
+      .text("(" + d.year + ")")
     
 }
 
@@ -177,8 +179,21 @@ function fetch_JSON_data(json_api_address){
 
 
 
-totalData = {"nodes":[{"id":"A Book"},{"id":"Another Book"}, {"id":"Yet Another Book"}],
-    "links":[{"target":"A Book","source":"Yet Another Book","value":"3"},{"target":"Another Book","source":"Yet Another Book","value":"5"},{"target":"Another Book","source":"A Book","value":"1"}]}
+totalData = {"nodes":[  {"id":"RWebberBurrows2018",
+                        "authors":["Webber", "Burrows"],
+                        "title":"The Predictive Postcode-- The Geodemographic Classification of British Society",
+                        "type": "book",
+                        "year": "2018",
+                        "group":0},
+                        
+                        {"id": "EShevkyBell1955",
+                        "authors": ["Shevky", "Bell"],
+                        "title": "Social Area Analysis: Theory, Illustrative Application, and Computational Procedures",
+                        "type": "book",
+                        "year": "1955",
+                        "group": -1},],
+                                
+        "links":[{"target":"EShevkyBell1955","source":"RWebberBurrows2018","value":"1"}]}
 
 
 function clickButton(){

@@ -81,6 +81,9 @@ There are also a few other odd files:
 ``static_gui\``
 ^^^^^^^^^^^^^^^^^^^
 
+``index.html``\ , ``graph.css``\ , ``script.js``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 A simple static site interface is used for graphic visualization.
 
 The static site interface (separated of course into its HTML, CSS, and JS components) is influenced by `modern JAMstack principles <https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf>`_ which suggest enabling dynamic interactivity on fundamentally static web-pages by using front-end Javascript in combination with cloud-hosted APIs, which increases speed, security and simplicity compared to the traditional 'dynamic web-page' served live (most commonly with the `LAMPstack <https://en.wikipedia.org/wiki/LAMP_(software_bundle>`_\ ).
@@ -106,7 +109,7 @@ Read the full documentation `here <https://citation-graph.readthedocs.io/en/late
 ``reader.py``
 ^^^^^^^^^^^^^^^^^
 
-Contains class frameworks for parsing data from .bib files, .pdf files, and bibliographic/citation APIs respectively.
+Contains class frameworks for parsing data from .bib files (Bib), .pdf files (Pdf), and bibliographic/citation APIs (Api) respectively.
 
 Can be run directly if there is new data you want to save to the database.
 
@@ -126,14 +129,14 @@ Read the full documentation `here <https://citation-graph.readthedocs.io/en/late
 ``db_commands.py``
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Includes a variety of commands to make querying the SQLite database simple.
+Includes a variety of commands to make querying the SQLite database simple, encapsulated in a class framework called Query.
 
 Read the full documentation `here <https://citation-graph.readthedocs.io/en/latest/db_commands.html>`_\ , or examine the source code directly `here <https://github.com/peterprescott/citation-graph/blob/master/db_commands.py>`_.
 
 ``tests.py``
 ^^^^^^^^^^^^^^^^
 
-Runs tests and document results in ``test_output/logs.txt``.
+Runs tests (encapsulated in a Test class) and documents results in ``test_output/logs.txt``.
 
 Read the full documentation `here <https://citation-graph.readthedocs.io/en/latest/tests.html>`_\ , or examine the source code directly `here <https://github.com/peterprescott/citation-graph/blob/master/tests.py>`_.
 

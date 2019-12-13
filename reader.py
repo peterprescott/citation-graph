@@ -15,12 +15,18 @@ from tika import unpack                 # for parsing .pdf files
 import codecs   # for reading utf-8 characters
 import re       # for using regular expressions to descripe reference patterns
 import requests # for fetching API JSON
+from sys import argv    # to read parameters when file is run from command line
 
 import literature as lit
 import db_commands as db
 
 class Bib():
-    """Uses pybtex to read .bib files (generated, at least in my case, by Zotero)."""
+    """
+    Uses pybtex to read .bib files (generated, at least in my case, by Zotero),
+    and uses the data to call the relevant literature classes, thus saving
+    data to database.
+    
+    """
     
     def __init__(self, db_file, key):
         """Immediately read in citations and references, if files exist."""
@@ -195,21 +201,30 @@ class Bib():
 
 class Pdf():
     
-    def __init__(self, db_file, key):
+    def __init__(self, db_file, key, number=20):
         """Initializes PDF reader to extract and interpret references of text.
         
         Args:
             db_file (string): file location of database file.
             key (string): in BetterBibTex format [authForeIni][authEtAl][year].
+            number (integer): number of refs to extract before stopping, if not all.
             """
         
         self.db_file = db_file
         self.key = key
         self.pdf = f'{key}.pdf'
-        self.txt = f"pdf2txt_{key}.txt"
-        parsed = unpack.from_file(os.path.join('bib_files', self.pdf))
-        with codecs.open(os.path.join('bib_files', self.txt), 'w', 'utf-8') as file:
-            file.write(parsed['content'])
+        self.number = number
+        lit.Text(self.db_file, self.key)
+        
+        if os.path.isfile(os.path.join('bib_files',f'{self.pdf}')):
+            self.txt = f"pdf2txt_{key}.txt"
+            parsed = unpack.from_file(os.path.join('bib_files', self.pdf))
+            with codecs.open(os.path.join('bib_files', self.txt), 'w', 'utf-8') as file:
+                file.write(parsed['content'])
+            self.refs()
+            self.refs_parsed('y')
+        else:
+            print(f'Could not find {self.pdf}. Is it in the bib_files folder?')
             
     def refs(self, print_refs=False):
         """ """
@@ -333,6 +348,7 @@ class Pdf():
                                 lit.Book(
                                     self.db_file, ref_key, publication_year, title, publisher, 
                                     location, creators=creators_list)
+                                lit.Citation(self.db_file, self.key, ref_key)
                         
                     # if a chapter, letters as well as page numbers
                     elif re.findall(r"[A-Za-z]+", last_bit):
@@ -430,6 +446,7 @@ class Pdf():
                                                         publisher, location, pages, creators=creators_list,
                                                         book_key=book_key, book_title=book_title, book=None,
                                                         book_creators=book_creators)
+                                            lit.Citation(self.db_file, self.key, ref_key)
                     
                     # otherwise just (page) numbers ==> article
                     else:
@@ -472,6 +489,7 @@ class Pdf():
                                     self.db_file, ref_key, publication_year, title,
                                     journal, volume, edition, pages,
                                     creators=creators_list)
+                                lit.Citation(self.db_file, self.key, ref_key)
                                     
                         
                 else:
@@ -485,17 +503,13 @@ class Pdf():
                             check = input("Enter 'y' to accept, or anything else to move on to the next entry.\n>>> ")
                         if check=="y":
                             lit.Text(self.db_file, ref_key, publication_year, text_type = "unknown", creators=creators_list)
-
-                if ref_key != "unknown":
-                    if check=="y":
-                        lit.Citation(self.db_file, self.key, ref_key)
-
-                
-                
-
+                            lit.Citation(self.db_file, self.key, ref_key)
 
 
 class Api():
+    """
+    TODO: integrate with literature classes so that received data is saved.
+    """
     
     def __init__(self, doi):
         """
@@ -539,11 +553,21 @@ class Api():
 
 if __name__ == '__main__':
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
-    new_keys = ['DTimms1975']
-    for new_key in new_keys: start = Bib(db_file, new_key)
-    # ~ start=Bib(db_file, 'chapter')
-    # ~ start.save()
+    
+    demo_list = ["EShevkyBell1955", "GBowkerStar1999", "PBourdieu2013", "RBurrowsGane2006", "RKitchin2014", "RWebberBurrows2018"]
+    
+    if len(argv) == 1:
+        print('Include some citation keys for me to read in the files of, \nor else write "python reader.py load" for the demo files')
+    
+    elif argv[1] == "load":
+        for new_key in demo_list: 
+            Bib(db_file, new_key)
+    else:
+        new_keys = argv
 
-    # ~ get = Pdf(db_file, 'EWily2015')
-    # ~ get.refs(True)
-    # ~ get.refs_parsed("check")
+        # remove the file name from the new_keys array
+        file_name = new_keys.pop(0)
+
+        for new_key in new_keys: 
+            Bib(db_file, new_key)
+            # ~ Pdf(db_file, new_key)

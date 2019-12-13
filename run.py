@@ -23,7 +23,7 @@ CORS(app)
 
 @app.route('/test')
 def test():
-    """Confirms Flask App is running."""
+    """Confirms Flask App is running for tests.py"""
 
     return "<title>Running!</title>"
 
@@ -32,9 +32,11 @@ def test():
 def api(key):
     """API to return citation graph"""
     
+    print(f"API called for {key}")
+    
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
     q = db.Query(db_file)
-    graph_data = q.json_graph(key, 3)
+    graph_data = q.json_graph(key, 10)
 
     return jsonify(graph_data)
 

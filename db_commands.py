@@ -1,5 +1,9 @@
 """
-Includes a variety of commands to make querying the SQLite database simple.
+Includes a variety of commands to make querying the SQLite database simple,
+encapsulated in a class called Query.
+
+When run directly it builds the necessary tables to run the Citation Graph program,
+for if and when the database is deleted.
 """
 
 import sqlite3  #db functionality ~ https://docs.python.org/3/library/sqlite3.html
@@ -105,7 +109,25 @@ class Query():
             self.c.execute(f"SELECT * FROM {table} WHERE {column}=?", (value,))
         search_results = self.c.fetchall()
         
+        print(search_results)
         return search_results
+        
+    def get_creator_surnames(self, text_key):
+        """
+        Returns author(s) for given text key.
+        
+        Args:
+            text_key (string)
+        """
+        creator_surnames = []
+        text_creator_rows = self.search("text_creators", "text_key", text_key)
+        for row in text_creator_rows:
+            creator_key = row[2]
+            creator_row_element = self.search("creators", "key", creator_key)
+            creator_row = creator_row_element[0]
+            surname = creator_row[1]
+            creator_surnames.append(surname)
+        return creator_surnames
         
     def full(self, table):
         """
@@ -191,9 +213,10 @@ class Query():
             node_data = self.search("texts", "key", other_key)
             if node_data:
                 node_row = node_data[0] # data returned by query as list of tuples
+                publication_year = node_row[1]
                 other_title = node_row[2] #.replace(':','--').replace('"','').replace("'",'')
                 other_type = node_row[3]
-                new_node = dict(id = other_key, title = other_title, type = other_type, group = group_colour)
+                new_node = dict(id = other_key, authors = self.get_creator_surnames(other_key), year = publication_year, title = other_title, type = other_type, group = group_colour)
                 full_node_list.append(new_node)
                 new_nodes.append(new_node)
                 
@@ -214,9 +237,10 @@ class Query():
         node_data = self.search("texts", "key", text_key)
         if node_data:
                 node_row = node_data[0] # data returned by query as list of tuples
+                publication_year = node_row[1]
                 text_title = node_row[2].replace(':','--').replace('"','').replace("'",'')
                 text_type = node_row[3]
-                node_list.append(dict(id = text_key, title = text_title, type = text_type, group = 0))
+                node_list.append(dict(id = text_key, authors = self.get_creator_surnames(text_key), year = publication_year, title = text_title, type = text_type, group = 0))
         
         next_nodes = [{'id':text_key}]
         iteration = 1
@@ -240,15 +264,5 @@ class Query():
 if __name__ == '__main__':
     
     q = Query(os.path.join(sys.path[0], 'citation_graph.db'))
-    # ~ q.reboot()
-
-    # ~ for row in q.full('texts'): print(row)
-    # ~ for row in q.full('books'): print(row)
-    # ~ for row in q.full('chapters'): print(row)
-    # ~ for row in q.full('articles'): print(row)
-    # ~ for row in q.full('creators'): print(row)
-    # ~ for row in q.full('text_creators'): print(row)
-    edge_list = []
-    
-    text_key = 'RWebberBurrows2018'
-    print(q.json_graph(text_key))
+    q.reboot()
+    # ~ print(q.get_creator_surnames('RWebberBurrows2018'))
