@@ -28,15 +28,15 @@ def test():
     return "<title>Running!</title>"
 
 
-@app.route('/api/<key>')
-def api(key):
+@app.route('/api/<key>/<radius>')
+def api(key, radius):
     """API to return citation graph"""
     
     print(f"API called for {key}")
     
     db_file = os.path.join(sys.path[0], 'citation_graph.db')
     q = db.Query(db_file)
-    graph_data = q.json_graph(key, 10)
+    graph_data = q.json_graph(key, int(radius))
 
     return jsonify(graph_data)
 

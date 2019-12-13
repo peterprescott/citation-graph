@@ -143,6 +143,7 @@ class Query():
         print(f"Returning full results for {table} table.")
         return full_results
 
+
     def remove_row(self, table, rowid):
         """
         Removes specified row from table.
@@ -264,5 +265,5 @@ class Query():
 if __name__ == '__main__':
     
     q = Query(os.path.join(sys.path[0], 'citation_graph.db'))
-    q.reboot()
-    # ~ print(q.get_creator_surnames('RWebberBurrows2018'))
+#    q.reboot()
+    q.txt_output()

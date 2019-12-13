@@ -1,7 +1,8 @@
+// much of this has been borrowed from these three variants on a force-directed network graph:
 // force-directed layout: http://bl.ocks.org/mbostock/4062045
-// ***this is the one we started from *** force-directed with labels: https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
+// force-directed with labels: https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
 // modified force-directed layout: http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/
-// slider: http://bl.ocks.org/mbostock/6452972
+
 var svg
 var color
 var simulation
@@ -97,7 +98,6 @@ function ticked() {
 }
 
 function displayData(d) {
-// needs to be prettified, but it should do for now.
 
     d3.select('textTitle')
       .html("<a href='https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q="+d.title+"'>" + d.title + "</a>")
@@ -105,7 +105,10 @@ function displayData(d) {
       .text(d.authors)
     d3.select('publicationDate')
       .text("(" + d.year + ")")
-    
+    d3.select('citationKey')
+      .text(d.id)
+    citationKey = d.id
+
 }
 
 function dragstarted(d) {
@@ -179,7 +182,7 @@ function fetch_JSON_data(json_api_address){
 
 
 
-totalData = {"nodes":[  {"id":"RWebberBurrows2018",
+initialData = {"nodes":[  {"id":"RWebberBurrows2018",
                         "authors":["Webber", "Burrows"],
                         "title":"The Predictive Postcode-- The Geodemographic Classification of British Society",
                         "type": "book",
@@ -196,9 +199,30 @@ totalData = {"nodes":[  {"id":"RWebberBurrows2018",
         "links":[{"target":"EShevkyBell1955","source":"RWebberBurrows2018","value":"1"}]}
 
 
+totalData=initialData
+
+citationKey = 'RWebberBurrows2018'
+radius =1
+
+function increase() { 
+    radius++
+    if (radius >3){radius = 3}
+    d3.select('radius')
+      .text(radius) 
+      }
+
+function decrease() {
+    radius--;
+    if (radius<0){radius = 0}
+    d3.select('radius')
+      .text(radius)
+      }
+
 function clickButton(){
+    totalData = {"nodes":[], "links":[]}
     console.log('Clicked Button')
-    fetch_JSON_data('http://127.0.0.1:5000/api/RWebberBurrows2018')
+    console.log(document.getElementById('radius'))
+    fetch_JSON_data('http://127.0.0.1:5000/api/' + citationKey + '/' + radius)
 }
 
 loadGraph(totalData)
