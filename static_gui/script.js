@@ -194,9 +194,20 @@ initialData = {"nodes":[  {"id":"RWebberBurrows2018",
                         "title": "Social Area Analysis: Theory, Illustrative Application, and Computational Procedures",
                         "type": "book",
                         "year": "1955",
+                        "group": -1},
+                        
+                        {"id": "DTimms1971",
+                        "authors": ["Timms"],
+                        "title": "The urban mosaic: towards a theory of residential differentiation",
+                        "type":"book",
+                        "year":"1971",
                         "group": -1},],
                                 
-        "links":[{"target":"EShevkyBell1955","source":"RWebberBurrows2018","value":"1"}]}
+        "links":[   {"target":"EShevkyBell1955","source":"RWebberBurrows2018","value":"1"},
+                    {"target":"EShevkyBell1955","source":"DTimms1971","value":"1"},
+                    {"target":"DTimms1971","source":"RWebberBurrows2018","value":"1"}],
+                
+                }
 
 
 totalData=initialData
