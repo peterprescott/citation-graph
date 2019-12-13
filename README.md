@@ -1,15 +1,50 @@
 # Citation Graph of Scholarly Literature
 
-A second project ([here's the first](https://geodemographics.co.uk/projects/agent-based-modelling/)) done as part of [the Data CDT](https://datacdt.org/)'s [GEOG5995M/ENVS802 module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/): **Programming For Social Scientists**.
+A second project done as part of [the Data CDT](https://datacdt.org/)'s [GEOG5995M/ENVS802 module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/): **Programming For Social Scientists**.
 
 It is 'licensed' under the [The Unlicense](https://unlicense.org/), and available on [my Github](https://github.com/peterprescott/citation-graph).
 
-README Contents: [Task](#task). [Background Research](#research). [Software Design](#design). [Installation](#install). [Documentation](#docs).
+README Contents:  [Installation and Quickstart](#install). [Task](#task). [Background Research](#research). [Software Design](#design). [Documentation](#docs).
+
+<a id="install"></a>
+# Installation and Quickstart
+
+To run this on your machine you need to have Git and Python installed. If you don't, use your system's recommended package manager to download them from the command line. (For Windows, use [Chocolatey](https://chocolatey.org/install).)
+
+Then clone the Github repository, and navigate into the project folder. You can then immediately run the program:
+
+```console
+python --version
+git --version
+git clone https://github.com/peterprescott/citation-graph
+cd citation-graph
+pipenv shell
+python run.py
+```
+The program will be initially running on data that I've already entered, saved in the SQLite database `citation-graph.db`. (Note that the visualized nodes do sometimes get stuck in the top left of their SVG field -- if that happens just click-and-drag them down with your mouse cursor). 
+
+To prove the functionality of the program, let's delete the database file, and then recreate it.
+
+```console
+rm citation-graph.db
+```
+
+You can still keep the web-page interface open, but if you try clicking *Load More Data*, the Python code will report `sqlite3.OperationalError: no such table: texts`. But we can quickly recreate the database (which is generated from .bib files in the `bib_files\` folder -- more on that later!)
+
+```
+pipenv shell
+python db_commands.py
+python reader.py load
+python run.py
+```
+Now you will be able to *Load More Data*. And indeed if you want you are able to load your own data. 
+
+But let's slow down and start at the beginning...
 
 <a id="task"></a>
 # Task
 
-Our [brief](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/index.html) was as follows:
+Our [brief](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/assessment2/index.html) for this assignment was as follows:
 
 > *This assignment is a major project building up a model, application, or analysis from scratch. The project can be either something of your own invention, or one of the [suggested] projects... Broadly speaking, your project should:*
 >
@@ -45,7 +80,7 @@ I also discovered [Open Citations](http://opencitations.net/), "a scholarly infr
 
 ## Basic Functionality
 
-I decided to try and write a Python program that would be able to *read in data* from .bib files, from PDF files, and from the Zotero/Wikipedia API. It would *process this data* to get bibliographic information (minimally Author and Year of Publication, but ideally also Title, Item Type, Publisher, etc.) and citation relationships. It would use [D3.js Javascript](https://d3js.org/) running on [a static web page](https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf) to *display the results* as an interactive visualization, obtaining the relevant data from the Python program by `fetch()`ing it from an API served by our Python program using [the Flask plug-in](https://palletsprojects.com/p/flask/). The program would also *write the results* to a SQLite database file.
+I decided to try and write a Python program that would be able to *read in data* from .bib files, from PDF files, and from the Zotero/Wikipedia API. It would *process this data* to get bibliographic information (minimally Author and Year of Publication, but ideally also Title, Item Type, Publisher, etc.) and citation relationships. It would use [D3.js Javascript](https://d3js.org/) running on [a static web page](https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf) to *display the results* as an interactive visualization, obtaining the relevant data from the Python program by `fetch()`ing it from an API served by our Python program using [the Flask plug-in](https://palletsprojects.com/p/flask/). The program would also *write the results* to a [SQLite](https://docs.python.org/2/library/sqlite3.html) database file.
 
 ## More Detailed Explanation (with UML Diagrams)
 
@@ -81,11 +116,24 @@ Read the full documentation [here](https://citation-graph.readthedocs.io/en/late
 ### `reader.py`
 Contains class frameworks for parsing data from .bib files (Bib), .pdf files (Pdf), and bibliographic/citation APIs (Api) respectively.
 
+Can be run directly from the command-line if there is new data you want to save to the database, like so:
+```
+python reader.py citationkey
+```
+where *citationkey* is the citation key of a .pdf file (ie. citationkey.pdf) 
+including references (ie. journal article or bibliography chapter) or 
+.bib file (ie. citationkey_citations.bib or citationkey_references.bib) 
+in the bib_files folder.
+
+Running `python reader.py load` should load the six bib_files that I have already put in the folder as a demonstration.
+
+NB: .bib files can be generated by Zotero, ideally using the BetterBibTex format [authForeIni][authEtAl][year]. Create a unique Subcollection with the item referred to by the citation key, together with a selection of works it references, or which cite it, and export it to a .bib file named accordingly.
+
 Parsing .bib files makes use of Pybtex.
 
-Parsing .pdf files makes use of Tika for extracting text and then *regular expressions* for making sense of that data. Unfortunately the standardization of 'Harvard style' is still vague enough that there is a lot of variation, which makes it difficult to generalize a formula for automatically extracting the references from a journal article or book. Currently the algorithm is calibrated to read the references from our initial example starting point: Webber, R., Burrows, R., (2018), *The Predictive Postcode*; the reference chapter of which is saved as `RWebberBurrows2018.pdf` in the `bib_files\` folder.
+Parsing .pdf files makes use of [Chris Mattmann's tika-python library](https://github.com/chrismattmann/tika-python), which allows Python to use [the Apache Tika toolkit](http://tika.apache.org/) for extracting data and metdata from PDFs. This does require that "Java 7+ installed on your system as tika-python starts up the Tika REST server in the background". Which is an added complication -- but it is quicker, more accurate, and simpler to use ([Boylan-Toomey, 2018](https://medium.com/@justinboylantoomey/fast-text-extraction-with-python-and-tika-41ac34b0fe61)) than the other Python PDF libraries.
 
-Can be run directly if there is new data you want to save to the database.
+Once Tika has extracted the text from the PDF, it is then written to a text-file. This is then parsed using [*regular expressions*](https://docs.python.org/3/library/re.html) for making sense of that data. Unfortunately the standardization of 'Harvard style' is still vague enough that there is a lot of variation, which makes it difficult to generalize a formula for automatically extracting the references from a journal article or book. Currently the algorithm is calibrated to read the references from our initial example starting point: Webber, R., Burrows, R., (2018), *The Predictive Postcode*; the reference chapter of which is saved as `RWebberBurrows2018.pdf` in the `bib_files\` folder.
 
 Read the full documentation [here](https://citation-graph.readthedocs.io/en/latest/reader.html), or examine the source code directly [here](https://github.com/peterprescott/citation-graph/blob/master/reader.py).
 
@@ -100,6 +148,9 @@ Read the full documentation [here](https://citation-graph.readthedocs.io/en/late
 
 ### `db_commands.py`
 Includes a variety of commands to make querying the SQLite database simple, encapsulated in a class framework called Query.
+
+When run directly it builds the necessary tables to run the Citation Graph program,
+for if and when the database is deleted.
 
 Read the full documentation [here](https://citation-graph.readthedocs.io/en/latest/db_commands.html), or examine the source code directly [here](https://github.com/peterprescott/citation-graph/blob/master/db_commands.py).
 
@@ -120,23 +171,6 @@ Throughout the development of this program, I am trying to practise the principl
 ## Virtual Environment & Package Installation Management
 
 I have also used [Pipenv](https://pypi.org/project/pipenv/) to manage package installation within a contained virtual environment.
-
-<a id="install"></a>
-# Installation
-
-You need to have Git and Python installed. If you don't, use your system's recommended package manager to download them from the command line. (For Windows, use [Chocolatey](https://chocolatey.org/install).)
-
-Then clone the Github repository, and navigate into the project folder. You can then immediately run the model:
-
-```console
-python --version
-git --version
-git clone https://github.com/peterprescott/citation-graph
-cd citation-graph
-pipenv shell
-python run.py
-```
-The program makes use of [Chris Mattmann's tika-python library](https://github.com/chrismattmann/tika-python), which allows Python to use [the Apache Tika toolkit](http://tika.apache.org/) for extracting data and metdata from PDFs. This does require that "Java 7+ installed on your system as tika-python starts up the Tika REST server in the background". Which is an added complication -- but it is quicker, more accurate, and simpler to use ([Boylan-Toomey, 2018](https://medium.com/@justinboylantoomey/fast-text-extraction-with-python-and-tika-41ac34b0fe61)) than the other Python PDF libraries.
 
 <a id="docs"></a>
 # Documentation
