@@ -1,4 +1,4 @@
-"""Runs tests (encapuslated in a Test class) and documents results in `test_output/logs.txt`"""
+"""Runs tests (encapsulated in a Test class) and documents results in `test_output/logs.txt`"""
 
 from datetime import datetime   # for recording data and time of tests
 from selenium import webdriver  # for testing web app
