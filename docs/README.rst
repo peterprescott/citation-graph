@@ -131,6 +131,10 @@ As an example, I have set up a cloud-hosted copy of this program at `citations.p
 
 But a static site can also engage with an API served locally, as is the primary intention here.
 
+Examine the source code directly for 
+`index.html <https://github.com/peterprescott/citation-graph/blob/master/static_gui/index.html>`_\ ,
+`graph.css <https://github.com/peterprescott/citation-graph/blob/master/static_gui/graph.css>`_\ , `script.js <https://github.com/peterprescott/citation-graph/blob/master/static_gui/script.js>`_.
+
 ``run.py``
 ^^^^^^^^^^^^^^
 

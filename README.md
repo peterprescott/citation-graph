@@ -107,6 +107,10 @@ As an example, I have set up a cloud-hosted copy of this program at [citations.p
 
 But a static site can also engage with an API served locally, as is the primary intention here.
 
+Examine the source code directly for 
+[index.html](https://github.com/peterprescott/citation-graph/blob/master/static_gui/index.html),
+[graph.css](https://github.com/peterprescott/citation-graph/blob/master/static_gui/graph.css), or  [script.js](https://github.com/peterprescott/citation-graph/blob/master/static_gui/script.js).
+
 ### `run.py`
 This is the main file intended to be run. It first opens static_gui/index.html in your default webbrowser, and then serves the Flask API which is called from that static interface. When called it responds with the required graph data by returning a JSON object with the necessary nodes and edges.
 
