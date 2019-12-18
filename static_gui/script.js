@@ -116,7 +116,7 @@ function displayData(d) {
       .text("(" + d.year + ")")
     d3.select('citationKey')
       .text(d.id)
-    citationKey = d.id
+    document.getElementById("citationKey").value = d.id
 
 }
 
@@ -238,7 +238,10 @@ initialData = {"nodes":[  {"id":"RWebberBurrows2018",
 totalData=initialData
 
 citationKey = 'RWebberBurrows2018'
+document.getElementById("citationKey").value = citationKey
+
 radius =1
+
 
 function increase() { 
     radius++
@@ -258,7 +261,9 @@ function clickButton(){
     totalData = {"nodes":[], "links":[]}
     console.log('Clicked Button')
     console.log(document.getElementById('radius'))
+    citationKey = document.getElementById("citationKey").value
     fetch_JSON_data('http://127.0.0.1:5000/api/' + citationKey + '/' + radius)
+    document.getElementById("citationKey").value = citationKey
 }
 
 loadGraph(totalData)
