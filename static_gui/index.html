@@ -16,9 +16,9 @@
 <body><span class="border border-primary">
     <center><div width=600>
         <h1>Citation Graph</h1>
-        <h2>Literature Info:</h2>
         <textTitle></textTitle><br>
         <authors>Drag a Citation Graph Node for Bibliographic Data</authors> <publicationDate></publicationDate><br>
+        <em>(Show Citation Keys: <input type="checkbox" id="myCheck" onclick="showKeys()">)</em><br>
 
         <svg width="600" height="400"></svg>
     <br>
@@ -27,11 +27,8 @@
     <radius>1</radius>
     <button  type="button" class="btn btn-light btn-sm" onClick="increase()">+</button><br>
     <button  type="button" class="btn btn-primary btn-sm" onClick="clickButton()">Add Data</button></span>
-    <div class="container-sm"><p>When you click and drag the node, you will see its title, author, and publication date above the visualization; and below you will see its 'citation key', and you can set the 'radius' of the network centred on that text which you want to see graphed.<br>
+    <div class="container-sm"><p>When you click and drag the node, you will see its title, author, and publication date above the visualization; and below you will see its 'citation key', and you can set the 'radius' (ie. degree of separation from centre) of the network centred on that text which you want to see graphed.<br>
 
-    By 'radius', I mean the degree of separation between the text and another: ie. '0' only returns the text itself; '1' returns all that cite or are cited by the text, '2' includes things that are cited by texts that are cited by the text... Note that our data is being drawn from a limited set that I have inputted (as we will discuss).<br>
-    
-    (Note that when you load more data the visualized nodes do sometimes get stuck in the top left of their SVG field -- if that happens just click-and-drag them down with your mouse cursor).</p></div>
     </div>
     </center>
 </body>
